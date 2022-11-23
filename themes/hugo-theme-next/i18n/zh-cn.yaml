@@ -1,0 +1,178 @@
+#--------------------------------------
+# 中文版本
+#--------------------------------------
+
+archives:
+  other: 文章
+tag:
+  other: 标签
+tags:
+  other: 标签
+TagTitle:
+  other: 标签集锦
+category:
+  other: 分类
+categories:
+  other: 分类
+CateTitle:
+  other: 分类栏目
+AllSome:
+  other: "所有 {{ .Some }}"
+
+NavToggleLabel:
+  other: 切换导航栏
+
+MSearchLabel:
+  other: 搜索
+
+SymbolColon:
+  other: "："
+SymbolComma:
+  other: "，"
+SymbolPeriod:
+  other: "。"
+ 
+SbPostsLable:
+  other: 日志
+SbCatesTitle:
+  other: 分类
+SbTagsTitle:
+  other: 标签
+TableOfContents:
+  other: 文章目录
+SiteOverview:
+  other: 站点概览
+RSSLable:
+  other: RSS 订阅
+CCLinkTitle:
+  other: 共享知识
+
+TagsCounterTitle:
+  zero: 暂无标签
+  other: "目前共计 <strong>{{ .Count }}</strong> 个标签"
+CatesCounterTitle:
+  zero: 暂无分类
+  other: "目前共计 <strong>{{ .Count }}</strong> 个分类"
+ArchiveCounterTitle:
+  zero: 暂无日志
+  other: "目前共计 <strong>{{ .Count }}</strong> 篇日志"
+
+PostArchiveCheersUm:
+  other: 嗯..
+PostArchiveCheersOk:
+  other: 还行
+PostArchiveCheersNice:
+  other: 不错
+PostArchiveCheersGood:
+  other: 很好
+PostArchiveCheersGreat:
+  other: 非常好
+PostArchiveCheersExcellent:
+  other: 太棒了
+PostArchiveKeepOn:
+  other: 继续努力哟。╰(*°▽°*)╯
+
+PostStickyTitle:
+  other: 置顶
+PostPublishDate:
+  other: 发表于
+PostPublishTime:
+  other: 创建时间
+PostLastModDate:
+  other: 更新于
+PostLastModTime:
+  other: 修改时间
+PostCategory:
+  other: "分类于"
+PostWords:
+  other: 字数
+PostWordCount:
+  other: "{{- .WordCount -}}"
+PostReading:
+  other: 阅读
+PostReadTime:
+  other: "{{- .ReadingTime -}}分钟"
+PostViews:
+  other: 浏览
+PostComments:
+  other: 评论
+PostTags:
+  other: 标签
+PostReadMore:
+  other: 阅读全文
+PostEditTitle:
+  other: 编辑
+
+PostCRTitle:
+  other: 文章标题
+PostCRAuthor:
+  other: 本文作者
+PostCRLink:
+  other: 本文链接
+PostCROriginAuthor:
+  other: 原文作者
+PostCROriginLink:
+  other: 原文链接
+PostCRLicenseTitle:
+  other: 版权声明
+PostCRLicenseContent:
+  other: "本博客所有文章除特别声明外，均采用 <i class=\"fab fa-fw fa-creative-commons\"></i>%s 许可协议。转载请注明出处！"
+
+PostFollowMe:
+  other: 欢迎关注我的其它发布渠道
+
+RewardDonate:
+  other: 赞赏
+RewardWechatpay:
+  other: 微信
+RewardAlipay:
+  other: 支付宝
+RewardPaypal:
+  other: PayPal
+RewardBitcoin:
+  other: 比特币
+
+PostCommentTitle:
+  other: 评论交流
+
+SiteInfoItems:
+  title: "网站资讯"
+  runTimes: "已运行："
+  words: "总字数："
+  readTimes: "阅读约："
+  visitors: "总访客数："
+  pageViews: "页面浏览："
+  todayViews: "今日访问："
+  yesterdayViews: "昨日访问："
+  monthViews: "本月访问："
+  totalViews: "总访问量："
+  lastUpdate: "最后更新于："
+
+FooterPowerby:
+  other: 由 %s 强力驱动
+
+SearchPh:
+  other: 搜索...
+SearchEmpty:
+  other: "没有找到任何搜索结果：${query}"
+SearchHits:
+  hits: "找到 ${hits} 个搜索结果"
+SearchHitsTime:
+  other: "找到 ${hits} 个搜索结果（用时 ${time} 毫秒）"
+
+DateSuffix:
+  years: " 年 "
+  days: " 天 "
+  hours: " 小时 "
+  mins: " 分钟"
+  month: " 个月前"
+  day: " 天前"
+  hour: " 小时前"
+  min: " 分钟前"
+  just: "刚刚"
+
+ToolBtns:
+  comment: "直达评论"
+  theme: "深浅模式切换"
+  lang: "多语言翻译"
+  backTop: "返回顶部"

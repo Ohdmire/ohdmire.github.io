@@ -1,0 +1,109 @@
+// Footer Section
+// --------------------------------------------------
+.footer {
+  color: $grey-dark;
+  font-size: $font-size-small;
+  padding: 20px 0;
+
+  &.footer-fixed {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+
+// Flexbox layout makes it possible to reorder the child
+// elements of .footer-inner through the `order` CSS property
+.footer-inner {
+  box-sizing: border-box;
+  text-align: center;
+  @include flex-column();
+  @include main-container();
+
+  @include mobile() {
+    font-size: $font-size-smaller;
+  }
+  
+  @include mobile-small() {
+    font-size: $font-size-smallest;
+  }
+
+  .google-translate {
+    display: flex;
+    justify-content: center;
+    .fa {
+      font-size: $font-size-larger;
+      margin: auto 0;
+      line-height: normal;
+    }
+  }
+
+  @if $footer_vendors_enable {
+    .vendors-list {
+      a {
+        margin-right: 5px;
+      }
+
+      img {
+        display: inline-block;
+      }
+      
+      $footer_vendors_imgs_len: length($footer_vendors_imgs_width);
+      @if ($footer_vendors_imgs_len>0) {
+        @for $i from 1 through $footer_vendors_imgs_len {
+          a:nth-child(#{$i}) img {
+            width: #{nth($footer_vendors_imgs_width, $i)}px;
+
+            @include mobile() {
+              width: #{nth($footer_vendors_imgs_width, $i)-10}px;
+            }
+          }
+        }
+      }      
+    }
+  }
+}
+
+.use-motion {
+  .footer {
+    opacity: 0;
+  }
+}
+
+.languages {
+  display: inline-block;
+  font-size: $font-size-large;
+  position: relative;
+
+  .lang-select-label span {
+    margin: 0 .5em;
+  }
+
+  .lang-select {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.with-love {
+  color: $footer_icon_color;
+  display: inline-block;
+  margin: 0 5px;
+
+  @if $footer_icon_animated {
+    animation: beat 1.33s ease-in-out infinite;
+  }
+}
+
+@if $footer_beian_enable {
+  .beian img {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
+  }
+}

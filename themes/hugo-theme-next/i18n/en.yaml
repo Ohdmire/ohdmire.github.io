@@ -1,0 +1,177 @@
+#--------------------------------------
+# English Version
+#--------------------------------------
+archives:
+  other: Posts
+tag:
+  other: Tag
+tags:
+  other: Tags
+TagTitle:
+  other: Tag Collection
+category:
+  other: Category
+categories:
+  other: Categories
+CateTitle:
+  other: Classification Items
+AllSome:
+  other: "All {{ .Some }}"
+
+NavToggleLabel:
+  other: Toggle navigation bar
+
+MSearchLabel:
+  other: Search
+
+SymbolColon:
+  other: ":"
+SymbolComma:
+  other: ","
+SymbolPeriod:
+  other: "."
+
+SbPostsLable:
+  other: "Posts"
+SbCatesTitle:
+  other: "Categories"
+SbTagsTitle:
+  other: "Tags"
+TableOfContents:
+  other: "TOC"
+SiteOverview:
+  other: "Overview"
+RSSLable:
+  other: "RSS Subscribe"
+CCLinkTitle:
+  other: "Creative Commons"
+
+TagsCounterTitle:
+  zero: No tags
+  other: "{{ .Count }} tags in total"
+CatesCounterTitle:
+  zero: No categories
+  other: "{{ .Count }} categories in total"
+ArchiveCounterTitle:
+  zero: No posts.
+  other: "{{ .Count }} posts in total"
+
+PostArchiveCheersUm:
+  other: Um..
+PostArchiveCheersOk:
+  other: Ok
+PostArchiveCheersNice:
+  other: Nice
+PostArchiveCheersGood:
+  other: Good
+PostArchiveCheersGreat:
+  other: Great
+PostArchiveCheersExcellent:
+  other: Excellent
+PostArchiveKeepOn:
+  other: Keep on posting.╰(*°▽°*)╯
+
+PostStickyTitle:
+  other: Strickys
+PostPublishDate:
+  other: "Publish on"
+PostPublishTime:
+  other: "Create Time"
+PostLastModDate:
+  other: "Update on"
+PostLastModTime:
+  other: "Modify Time"
+PostCategory:
+  other: "Classify at"
+PostWords:
+  other: "Words"
+PostWordCount:
+  other: "{{- .WordCount -}}"
+PostReading:
+  other: "Read"
+PostReadTime:
+  other: "{{- .ReadingTime -}}min"
+PostViews:
+  other: "Views"
+PostComments:
+  other: "Comments"
+PostTag:
+  other: "Tags"
+PostReadMore:
+  other: "Read More"
+PostEditTitle:
+  other: Edit this post
+
+PostCRTitle:
+  other: Post Title
+PostCRAuthor:
+  other: Post Author
+PostCRLink:
+  other: Post Link
+PostCROriginAuthor:
+  other: Written By
+PostCROriginLink:
+  other: Originally From
+PostCRLicenseTitle:
+  other: Copyright Notice
+PostCRLicenseContent:
+  other: "All articles in this blog are licensed under <i class=\"fab fa-fw fa-creative-commons\"></i>%s unless stating additionally."
+
+PostFollowMe:
+  other: Welcome to my other publishing channels
+
+RewardDonate:
+  other: Donate
+RewardWechatpay:
+  other: Wechat Pay
+RewardAlipay:
+  other: Alipay
+RewardPaypal:
+  other: PayPal
+RewardBitcoin:
+  other: Bitcoin
+
+PostCommentTitle:
+  other: Comments
+
+SiteInfoItems:
+  title: "Web Status"
+  runTimes: "Running:"
+  words: "Words:"
+  readTimes: "ReadTime:"
+  visitors: "Visitors:"
+  pageViews: "Views:"
+  todayViews: "Today Views:"
+  yesterdayViews: "Yesterday Views:"
+  monthViews: "Month Views:"
+  totalViews: "Total Views"
+  lastUpdate: "Last Update:"
+
+FooterPowerby:
+  other: "Power by %s"
+
+SearchPh:
+  other: Searching...
+SearchEmpty:
+  other: "We didn't find any results for the search: ${query}"
+SearchHits:
+  hits: "${hits} results found"
+SearchHitsTime:
+  other: "${hits} results found in ${time} ms"
+
+DateSuffix:
+  years: " Year "
+  days: " Day "
+  hours: " Hour "
+  mins: " Min"
+  month: " Month Ago"
+  day: " Day Ago"
+  hour: " Hour Ago"
+  min: " Min Ago"
+  just: "Just"
+
+ToolBtns:
+  comment: "Go to Comment"
+  theme: "Change Theme"
+  lang: "Multilingual translation"
+  backTop: "Back to Top"
