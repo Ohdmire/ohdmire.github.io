@@ -15,12 +15,6 @@ languages:
         title: 演示站点
         description: 演示说明
         weight: 2
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        description: وصف تجريبي
-        weight: 3
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -30,11 +24,11 @@ googleAnalytics:
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 permalinks:
     post: /p/:slug/
@@ -56,7 +50,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 😄
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
@@ -73,7 +67,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: gitalk
 
         disqusjs:
             shortname:
@@ -139,11 +133,11 @@ params:
             emitMetadata: 0
 
         gitalk:
-            owner:
-            admin:
-            repo:
-            clientID:
-            clientSecret:
+            owner: 10-24
+            admin: 10-24
+            repo: gitalk
+            clientID: a7e0fbc92edeab4658ca
+            clientSecret: 27191261d9aa31f2af692a2ec398041c08e0dd59
 
         cusdis:
             host:
@@ -199,7 +193,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/10-24/
           params:
               icon: brand-github
 
