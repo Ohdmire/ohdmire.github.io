@@ -36,8 +36,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: gitalk
 
         disqusjs:
             shortname:
@@ -101,11 +101,11 @@ params:
             lang:
 
         gitalk:
-            owner:
+            owner:10-24
             admin:
             repo:
-            clientID:
-            clientSecret:
+            clientID:a7e0fbc92edeab4658ca
+            clientSecret:27191261d9aa31f2af692a2ec398041c08e0dd59
 
         cusdis:
             host:
