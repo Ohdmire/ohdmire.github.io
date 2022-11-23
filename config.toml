@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://purple-pond-071aee200.2.azurestaticapps.net'
 languageCode = 'zh-cn'
-title = '我的个人博客'
-theme= "hugo-theme-diary"
+title = 'Ohdmire's博客'
+theme= "hugo-theme-next"
