@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Ohdmire&#39;s博客</title>
-        <link>https://purple-pond-071aee200.2.azurestaticapps.net/post/</link>
-        <description>Recent content in Posts on Ohdmire&#39;s博客</description>
+        <title>哲学 on Ohdmire&#39;s博客</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E5%93%B2%E5%AD%A6/</link>
+        <description>Recent content in 哲学 on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 23 Nov 2022 15:37:10 +0800</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 23 Nov 2022 15:37:10 +0800</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E5%93%B2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>维特根斯坦</title>
         <link>https://purple-pond-071aee200.2.azurestaticapps.net/post/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/</link>
         <pubDate>Wed, 23 Nov 2022 15:37:10 +0800</pubDate>
@@ -68,14 +68,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-        <item>
-        <title>My_first_blog</title>
-        <link>https://purple-pond-071aee200.2.azurestaticapps.net/post/my_first_blog/</link>
-        <pubDate>Wed, 23 Nov 2022 08:58:48 +0800</pubDate>
-        
-        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/post/my_first_blog/</guid>
-        <description></description>
         </item>
         
     </channel>
