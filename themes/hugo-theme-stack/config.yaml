@@ -102,8 +102,8 @@ params:
 
         gitalk:
             owner: 10-24
-            admin:
-            repo:
+            admin: 10-24
+            repo: gitalk
             clientID: a7e0fbc92edeab4658ca
             clientSecret: 27191261d9aa31f2af692a2ec398041c08e0dd59
 
