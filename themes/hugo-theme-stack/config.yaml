@@ -51,7 +51,7 @@ params:
 
     sidebar:
         emoji: 😄
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 我的语言的界限意味着我的世界的界限.
         avatar:
             enabled: true
             local: true
@@ -146,14 +146,14 @@ params:
         homepage:
             - type: search
             - type: archives
-              params:
-                  limit: 5
+            params:
+                limit: 5
             - type: categories
-              params:
-                  limit: 10
+            params:
+                limit: 10
             - type: tag-cloud
-              params:
-                  limit: 10
+            params:
+                limit: 10
         page:
             - type: toc
 
@@ -192,16 +192,16 @@ menu:
 
     social:
         - identifier: github
-          name: GitHub
-          url: https://github.com/10-24/
-          params:
-              icon: brand-github
+        name: GitHub
+        url: https://github.com/10-24/
+        params:
+            icon: brand-github
 
         - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        name: Twitter
+        url: https://twitter.com
+        params:
+            icon: brand-twitter
 
 related:
     includeNewer: true
@@ -209,10 +209,10 @@ related:
     toLower: false
     indices:
         - name: tags
-          weight: 100
+        weight: 100
 
         - name: categories
-          weight: 200
+        weight: 200
 
 markup:
     goldmark:
