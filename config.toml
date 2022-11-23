@@ -1,4 +1,0 @@
-baseURL = 'https://purple-pond-071aee200.2.azurestaticapps.net'
-languageCode = 'zh-cn'
-title = "Ohdmire's博客"
-theme= "hugo-theme-stack"
