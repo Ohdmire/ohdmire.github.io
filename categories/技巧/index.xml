@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>技巧 on Ohdmire&#39;s博客</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E6%8A%80%E5%B7%A7/</link>
+        <description>Recent content in 技巧 on Ohdmire&#39;s博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 24 Nov 2022 20:23:19 +0800</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我网站使用的一些东西</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</link>
+        <pubDate>Thu, 24 Nov 2022 20:23:19 +0800</pubDate>
+        
+        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</guid>
+        <description>&lt;h1 id=&#34;网站涉及的相关&#34;&gt;网站涉及的相关&lt;/h1&gt;
+&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
+&lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack主题&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
+&lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
+&lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
+&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
+&lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
+&lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Visual Studio Code&lt;/a&gt; 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
+&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
+&lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
+&lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://purple-pond-071aee200.2.azurestaticapps.net/%e7%a9%ba%e7%a9%ba%e7%9a%84%e5%8d%9a%e5%ae%a2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
