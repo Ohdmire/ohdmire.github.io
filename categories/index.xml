@@ -6,20 +6,12 @@
         <description>Recent content in Categories on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 24 Nov 2022 20:23:19 +0800</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>技巧</title>
         <link>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E6%8A%80%E5%B7%A7/</link>
-        <pubDate>Thu, 24 Nov 2022 20:23:19 +0800</pubDate>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
         <guid>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E6%8A%80%E5%B7%A7/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>哲学</title>
-        <link>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E5%93%B2%E5%AD%A6/</link>
-        <pubDate>Wed, 23 Nov 2022 15:37:10 +0800</pubDate>
-        
-        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E5%93%B2%E5%AD%A6/</guid>
         <description></description>
         </item>
         <item>
@@ -29,6 +21,14 @@
         
         <guid>https://purple-pond-071aee200.2.azurestaticapps.net/categories/test/</guid>
         <description>&lt;img src="https://purple-pond-071aee200.2.azurestaticapps.net/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        </item>
+        <item>
+        <title>笔记</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E7%AC%94%E8%AE%B0/</guid>
+        <description></description>
         </item>
         
     </channel>

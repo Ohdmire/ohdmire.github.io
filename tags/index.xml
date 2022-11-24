@@ -5,6 +5,23 @@
         <link>https://purple-pond-071aee200.2.azurestaticapps.net/tags/</link>
         <description>Recent content in Tags on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://purple-pond-071aee200.2.azurestaticapps.net/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>网站</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/tags/%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/tags/%E7%BD%91%E7%AB%99/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>哲学</title>
+        <link>https://purple-pond-071aee200.2.azurestaticapps.net/tags/%E5%93%B2%E5%AD%A6/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://purple-pond-071aee200.2.azurestaticapps.net/tags/%E5%93%B2%E5%AD%A6/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
