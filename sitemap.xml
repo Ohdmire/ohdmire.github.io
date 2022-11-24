@@ -2,19 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/%E6%AC%A2%E8%BF%8E/</loc>
-    <lastmod>2022-11-24T21:02:40+08:00</lastmod>
-  </url><url>
     <loc>https://purple-pond-071aee200.2.azurestaticapps.net/</loc>
     <lastmod>2022-11-24T20:23:19+08:00</lastmod>
   </url><url>
     <loc>https://purple-pond-071aee200.2.azurestaticapps.net/categories/</loc>
     <lastmod>2022-11-24T20:23:19+08:00</lastmod>
   </url><url>
-    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</loc>
+    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/post/</loc>
     <lastmod>2022-11-24T20:23:19+08:00</lastmod>
   </url><url>
-    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</loc>
+    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/post/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</loc>
     <lastmod>2022-11-24T20:23:19+08:00</lastmod>
   </url><url>
     <loc>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E6%8A%80%E5%B7%A7/</loc>
@@ -23,10 +20,7 @@
     <loc>https://purple-pond-071aee200.2.azurestaticapps.net/categories/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2022-11-23T15:37:10+08:00</lastmod>
   </url><url>
-    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/</loc>
-    <lastmod>2022-11-23T15:37:10+08:00</lastmod>
-  </url><url>
-    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/</loc>
+    <loc>https://purple-pond-071aee200.2.azurestaticapps.net/post/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/</loc>
     <lastmod>2022-11-23T15:37:10+08:00</lastmod>
   </url><url>
     <loc>https://purple-pond-071aee200.2.azurestaticapps.net/page/archives/</loc>
