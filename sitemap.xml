@@ -3,34 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>ohdmire.github.io/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/categories/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/post/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/tags/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/post/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/post/wittgenstein/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>ohdmire.github.io/page/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -41,8 +14,12 @@
     <loc>ohdmire.github.io/page/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>ohdmire.github.io/categories/</loc>
+  </url><url>
     <loc>ohdmire.github.io/page/links/</loc>
   </url><url>
     <loc>ohdmire.github.io/page/search/</loc>
+  </url><url>
+    <loc>ohdmire.github.io/tags/</loc>
   </url>
 </urlset>
