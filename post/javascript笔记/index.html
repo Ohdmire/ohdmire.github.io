@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='JavaScript笔记 JavaScript 显示方案 JavaScript 能够以不同方式“显示”数据：
+使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x &#43; y;	// 如何计算值 块作用域 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。
+可以使用 let 关键词声明拥有块作用域的变量。 在块 {} 内声明的变量无法从块外访问：
+{ var x = 10; } // 此处可以使用 x { let x = 10; } // 此处不可以使用 x 在第一个例子中，在循环中使用的变量使用 var 重新声明了循环之外的变量。 在第二个例子中，在循环中使用的变量使用 let 并没有重新声明循环外的变量。 如果在循环中用 let 声明了变量 i，那么只有在循环内，变量 i 才是可见的。 var i = 7; for (var i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处，i 为 10 let i = 7; for (let i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处 i 为 7 重新声明变量 允许在程序的任何位置使用 var 重新声明 JavaScript 变量 var x = 10; // 现在，x 为 10 var x = 6; // 现在，x 为 6 在不同的作用域或块中，通过 let 重新声明变量是允许的 let x = 6; // 允许 { let x = 7; // 允许 } { let x = 8; // 允许 } 其余情况不可以重新声明 不是真正的常数 关键字 const 有一定的误导性。 它没有定义常量值。它定义了对值的常量引用。 因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。'>
+<title></title>
+
+<link rel='canonical' href='https://thankful-water-038154a00.2.azurestaticapps.net/post/javascript%E7%AC%94%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content=''>
+<meta property='og:description' content='JavaScript笔记 JavaScript 显示方案 JavaScript 能够以不同方式“显示”数据：
+使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x &#43; y;	// 如何计算值 块作用域 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。
+可以使用 let 关键词声明拥有块作用域的变量。 在块 {} 内声明的变量无法从块外访问：
+{ var x = 10; } // 此处可以使用 x { let x = 10; } // 此处不可以使用 x 在第一个例子中，在循环中使用的变量使用 var 重新声明了循环之外的变量。 在第二个例子中，在循环中使用的变量使用 let 并没有重新声明循环外的变量。 如果在循环中用 let 声明了变量 i，那么只有在循环内，变量 i 才是可见的。 var i = 7; for (var i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处，i 为 10 let i = 7; for (let i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处 i 为 7 重新声明变量 允许在程序的任何位置使用 var 重新声明 JavaScript 变量 var x = 10; // 现在，x 为 10 var x = 6; // 现在，x 为 6 在不同的作用域或块中，通过 let 重新声明变量是允许的 let x = 6; // 允许 { let x = 7; // 允许 } { let x = 8; // 允许 } 其余情况不可以重新声明 不是真正的常数 关键字 const 有一定的误导性。 它没有定义常量值。它定义了对值的常量引用。 因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。'>
+<meta property='og:url' content='https://thankful-water-038154a00.2.azurestaticapps.net/post/javascript%E7%AC%94%E8%AE%B0/'>
+<meta property='og:site_name' content='Ohdmire&#39;s博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2022-12-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-12-14T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="JavaScript笔记 JavaScript 显示方案 JavaScript 能够以不同方式“显示”数据：
+使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x &#43; y;	// 如何计算值 块作用域 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。
+可以使用 let 关键词声明拥有块作用域的变量。 在块 {} 内声明的变量无法从块外访问：
+{ var x = 10; } // 此处可以使用 x { let x = 10; } // 此处不可以使用 x 在第一个例子中，在循环中使用的变量使用 var 重新声明了循环之外的变量。 在第二个例子中，在循环中使用的变量使用 let 并没有重新声明循环外的变量。 如果在循环中用 let 声明了变量 i，那么只有在循环内，变量 i 才是可见的。 var i = 7; for (var i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处，i 为 10 let i = 7; for (let i = 0; i &amp;lt; 10; i&#43;&#43;) { // 一些语句 } // 此处 i 为 7 重新声明变量 允许在程序的任何位置使用 var 重新声明 JavaScript 变量 var x = 10; // 现在，x 为 10 var x = 6; // 现在，x 为 6 在不同的作用域或块中，通过 let 重新声明变量是允许的 let x = 6; // 允许 { let x = 7; // 允许 } { let x = 8; // 允许 } 其余情况不可以重新声明 不是真正的常数 关键字 const 有一定的误导性。 它没有定义常量值。它定义了对值的常量引用。 因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu44626b0713f57603a42a56efb183250d_132092_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😄</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ohdmire&#39;s博客</a></h1>
+            <h2 class="site-description">我的语言的界限意味着我的世界的界限.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/ohdmire/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript-显示方案">JavaScript 显示方案</a></li>
+    <li><a href="#语法">语法</a></li>
+    <li><a href="#块作用域">块作用域</a></li>
+    <li><a href="#重新声明变量">重新声明变量</a></li>
+    <li><a href="#不是真正的常数">不是真正的常数</a>
+      <ul>
+        <li><a href="#特性">特性</a></li>
+      </ul>
+    </li>
+    <li><a href="#运算符">运算符</a>
+      <ul>
+        <li><a href="#算数">算数</a></li>
+        <li><a href="#赋值">赋值</a></li>
+        <li><a href="#比较">比较</a></li>
+        <li><a href="#逻辑">逻辑</a></li>
+        <li><a href="#类型">类型</a></li>
+        <li><a href="#位运算符">？位运算符</a></li>
+        <li><a href="#优先级">优先级</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据类型">数据类型</a>
+      <ul>
+        <li><a href="#undefined-与-null-的区别">Undefined 与 Null 的区别</a></li>
+        <li><a href="#复杂数据">复杂数据</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/javascript%E7%AC%94%E8%AE%B0/"></a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 14, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="javascript笔记">JavaScript笔记</h1>
+<h2 id="javascript-显示方案">JavaScript 显示方案</h2>
+<p>JavaScript 能够以不同方式“显示”数据：</p>
+<ul>
+<li>使用 <code>window.alert()</code> 写入警告框</li>
+<li>使用 <code>document.write()</code> 写入 HTML 输出</li>
+<li>使用 <code>innerHTML</code> 写入 HTML 元素</li>
+<li>使用 <code>console.log()</code> 写入浏览器控制台</li>
+</ul>
+<h2 id="语法">语法</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">y</span>;	<span style="color:#75715e">// 如何声明变量
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>; <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>;	<span style="color:#75715e">// 如何赋值
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span>;	<span style="color:#75715e">// 如何计算值
+</span></span></span></code></pre></div><h2 id="块作用域">块作用域</h2>
+<p>通过 <code>var</code> 关键词声明的变量没有块<strong>作用域</strong>。
+在块 <em>{}</em> 内声明的变量可以从块之外进行访问。</p>
+<p>可以使用 <code>let</code> 关键词声明拥有块作用域的变量。
+在块 <em>{}</em> 内声明的变量无法从块外访问：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>{ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 此处可以使用 x
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{ 
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 此处不可以使用 x
+</span></span></span></code></pre></div><ul>
+<li>在第一个例子中，在循环中使用的变量使用 <code>var</code> 重新声明了循环之外的变量。</li>
+<li>在第二个例子中，在循环中使用的变量使用 <code>let</code> 并没有重新声明循环外的变量。</li>
+<li>如果在循环中用 <code>let</code> 声明了变量 i，那么只有在循环内，变量 i 才是可见的。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 一些语句
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 此处，i 为 10
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 一些语句
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 此处 i 为 7
+</span></span></span></code></pre></div><h2 id="重新声明变量">重新声明变量</h2>
+<ul>
+<li>允许在程序的任何位置使用 <code>var</code> 重新声明 JavaScript 变量</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 现在，x 为 10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 现在，x 为 6
+</span></span></span></code></pre></div><ul>
+<li>在不同的作用域或块中，通过 <code>let</code> 重新声明变量是允许的</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;       <span style="color:#75715e">// 允许
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;   <span style="color:#75715e">// 允许
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>;   <span style="color:#75715e">// 允许
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><ul>
+<li>其余情况不可以重新声明</li>
+</ul>
+<h2 id="不是真正的常数">不是真正的常数</h2>
+<p>关键字 <code>const</code> 有一定的误导性。
+它没有定义常量值。它定义了对值的常量引用。
+因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。</p>
+<h3 id="特性">特性</h3>
+<ul>
+<li>不能改变原始值</li>
+<li>可以更改常量对象的属性</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// 您可以创建 const 对象：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;porsche&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;911&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Black&#34;</span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以更改属性：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">car</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;White&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以添加属性：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">car</span>.<span style="color:#a6e22e">owner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bill&#34;</span>;
+</span></span></code></pre></div><p><strong>但是您无法重新为常量对象赋值：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;porsche&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;911&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Black&#34;</span>};
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Volvo&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;XC60&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;White&#34;</span>};    <span style="color:#75715e">// ERROR
+</span></span></span></code></pre></div><ul>
+<li>常量数组可以更改</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// 您可以创建常量数组：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Audi&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#e6db74">&#34;porsche&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以更改元素：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">cars</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Honda&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以添加元素：
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">cars</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#34;Volvo&#34;</span>);
+</span></span></code></pre></div><p><strong>但是您无法重新为常量数组赋值</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Audi&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#e6db74">&#34;porsche&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Honda&#34;</span>, <span style="color:#e6db74">&#34;Toyota&#34;</span>, <span style="color:#e6db74">&#34;Volvo&#34;</span>];    <span style="color:#75715e">// ERROR
+</span></span></span></code></pre></div><h2 id="运算符">运算符</h2>
+<h3 id="算数">算数</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>加法</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除法</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模（余数）</td>
+</tr>
+<tr>
+<td>++</td>
+<td>递加</td>
+</tr>
+<tr>
+<td>&ndash;</td>
+<td>递减</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="赋值">赋值</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>例子</th>
+<th>等同于</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>x = y</td>
+<td>x = y</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>x += y</td>
+<td>x = x + y</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>x -= y</td>
+<td>x = x - y</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>x *= y</td>
+<td>x = x * y</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>x /= y</td>
+<td>x = x / y</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>x %= y</td>
+<td>x = x % y</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="比较">比较</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>===</td>
+<td>等值等型</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不相等</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>不等值或不等型</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于或等于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于或等于</td>
+</tr>
+<tr>
+<td>?</td>
+<td>三元运算符</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="逻辑">逻辑</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>逻辑与</td>
+</tr>
+<tr>
+<td>||</td>
+<td>逻辑或</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑非</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="类型">类型</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typeof</td>
+<td>返回变量的类型。</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>返回 true，如果对象是对象类型的实例。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="位运算符">？位运算符</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+<th>等同于</th>
+<th>结果</th>
+<th>十进制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>与</td>
+<td>5 &amp; 1</td>
+<td>0101 &amp; 0001</td>
+<td>0001</td>
+<td>1</td>
+</tr>
+<tr>
+<td>|</td>
+<td>或</td>
+<td>5 | 1</td>
+<td>0101 | 0001</td>
+<td>0101</td>
+<td>5</td>
+</tr>
+<tr>
+<td>~</td>
+<td>非</td>
+<td>~ 5</td>
+<td>~0101</td>
+<td>1010</td>
+<td>10</td>
+</tr>
+<tr>
+<td>^</td>
+<td>异或</td>
+<td>5 ^ 1</td>
+<td>0101 ^ 0001</td>
+<td>0100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>&laquo;</td>
+<td>零填充左位移</td>
+<td>5 &laquo; 1</td>
+<td>0101 &laquo; 1</td>
+<td>1010</td>
+<td>10</td>
+</tr>
+<tr>
+<td>&raquo;</td>
+<td>有符号右位移</td>
+<td>5 &raquo; 1</td>
+<td>0101 &raquo; 1</td>
+<td>0010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>&raquo;&gt;</td>
+<td>零填充右位移</td>
+<td>5 &raquo;&gt; 1</td>
+<td>0101 &raquo;&gt; 1</td>
+<td>0010</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="优先级">优先级</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>20</th>
+<th>( )</th>
+<th>表达式分组</th>
+<th>(3 + 4)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>.</td>
+<td>成员</td>
+<td>person.name</td>
+</tr>
+<tr>
+<td>19</td>
+<td>[]</td>
+<td>成员</td>
+<td>person[&ldquo;name&rdquo;]</td>
+</tr>
+<tr>
+<td>19</td>
+<td>()</td>
+<td>函数调用</td>
+<td>myFunction()</td>
+</tr>
+<tr>
+<td>19</td>
+<td>new</td>
+<td>创建</td>
+<td>new Date()</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>++</td>
+<td>后缀递增</td>
+<td>i++</td>
+</tr>
+<tr>
+<td>17</td>
+<td>&ndash;</td>
+<td>后缀递减</td>
+<td>i&ndash;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>++</td>
+<td>前缀递增</td>
+<td>++i</td>
+</tr>
+<tr>
+<td>16</td>
+<td>&ndash;</td>
+<td>前缀递减</td>
+<td>&ndash;i</td>
+</tr>
+<tr>
+<td>16</td>
+<td>!</td>
+<td>逻辑否</td>
+<td>!(x==y)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>typeof</td>
+<td>类型</td>
+<td>typeof x</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>**</td>
+<td>求幂 (ES7)</td>
+<td>10 ** 2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>*</td>
+<td>乘</td>
+<td>10 * 5</td>
+</tr>
+<tr>
+<td>14</td>
+<td>/</td>
+<td>除</td>
+<td>10 / 5</td>
+</tr>
+<tr>
+<td>14</td>
+<td>%</td>
+<td>模数除法</td>
+<td>10 % 5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>+</td>
+<td>加</td>
+<td>10 + 5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>-</td>
+<td>减</td>
+<td>10 - 5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>&laquo;</td>
+<td>左位移</td>
+<td>x &laquo; 2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>&raquo;</td>
+<td>右位移</td>
+<td>x &raquo; 2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>&raquo;&gt;</td>
+<td>右位移（无符号）</td>
+<td>x &raquo;&gt; 2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>&lt;</td>
+<td>小于</td>
+<td>x &lt; y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&lt;=</td>
+<td>小于或等于</td>
+<td>x &lt;= y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&gt;</td>
+<td>大于</td>
+<td>x &gt; y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&gt;=</td>
+<td>大于或等于</td>
+<td>x &gt;= y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>in</td>
+<td>对象中的属性</td>
+<td>&ldquo;PI&rdquo; in Math</td>
+</tr>
+<tr>
+<td>11</td>
+<td>instanceof</td>
+<td>对象的实例</td>
+<td>instanceof Array</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>==</td>
+<td>相等</td>
+<td>x == y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>===</td>
+<td>严格相等</td>
+<td>x === y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>!=</td>
+<td>不相等</td>
+<td>x != y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>!==</td>
+<td>严格不相等</td>
+<td>x !== y</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>&amp;</td>
+<td>按位与</td>
+<td>x &amp; y</td>
+</tr>
+<tr>
+<td>8</td>
+<td>^</td>
+<td>按位 XOR</td>
+<td>x ^ y</td>
+</tr>
+<tr>
+<td>7</td>
+<td>|</td>
+<td>按位或</td>
+<td>x | y</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&amp;&amp;</td>
+<td>逻辑与</td>
+<td>x &amp;&amp; y</td>
+</tr>
+<tr>
+<td>5</td>
+<td>||</td>
+<td>逻辑否</td>
+<td>x || y</td>
+</tr>
+<tr>
+<td>4</td>
+<td>? :</td>
+<td>条件</td>
+<td>? &ldquo;Yes&rdquo; : &ldquo;No&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>=</td>
+<td>赋值</td>
+<td>x = y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>+=</td>
+<td>赋值</td>
+<td>x += y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>-=</td>
+<td>赋值</td>
+<td>x -= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>*=</td>
+<td>赋值</td>
+<td>x *= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>%=</td>
+<td>赋值</td>
+<td>x %= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&laquo;=</td>
+<td>赋值</td>
+<td>x &laquo;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&raquo;=</td>
+<td>赋值</td>
+<td>x &raquo;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&raquo;&gt;=</td>
+<td>赋值</td>
+<td>x &raquo;&gt;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&amp;=</td>
+<td>赋值</td>
+<td>x &amp;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>^=</td>
+<td>赋值</td>
+<td>x ^= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>|=</td>
+<td>赋值</td>
+<td>x |= y</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>yield</td>
+<td>暂停函数</td>
+<td>yield x</td>
+</tr>
+<tr>
+<td>1</td>
+<td>,</td>
+<td>逗号</td>
+<td>7 , 8</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="数据类型">数据类型</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">length</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;                             <span style="color:#75715e">// 数字
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gates&#34;</span>;                      <span style="color:#75715e">// 字符串
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Porsche&#34;</span>, <span style="color:#e6db74">&#34;Volvo&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>];         <span style="color:#75715e">// 数组
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Bill&#34;</span>, <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Gates&#34;</span>};    <span style="color:#75715e">// 对象
+</span></span></span></code></pre></div><p>在第一个例子中，JavaScript 把 911 和 7 视作数值，直到遇见 &ldquo;Porsche&rdquo;。
+在第二个例子中，由于第一个操作数是字符串，因此所有操作数都被视为字符串。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">911</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Porsche&#34;</span>;
+</span></span></code></pre></div><blockquote>
+<p>x= 918Porsche</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Porsche&#34;</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">911</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span>;
+</span></span></code></pre></div><blockquote>
+<p>x = Porsche9117</p>
+</blockquote>
+<h3 id="undefined-与-null-的区别">Undefined 与 Null 的区别</h3>
+<p><code>Undefined</code> 与 <code>null</code> 的值相等，但类型不相等：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">undefined</span>              <span style="color:#75715e">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>                   <span style="color:#75715e">// object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">null</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>            <span style="color:#75715e">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">undefined</span>             <span style="color:#75715e">// true
+</span></span></span></code></pre></div><h3 id="复杂数据">复杂数据</h3>
+<p><code>typeof</code> 运算符可返回以下两种类型之一：</p>
+<ul>
+<li>function</li>
+<li>object</li>
+</ul>
+<p><code>typeof</code> 运算符把对象、数组或 <code>null</code> 返回 <code>object</code>。</p>
+<p><code>typeof</code> 运算符不会把函数返回 <code>object</code>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">typeof</span> {<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;Bill&#39;</span>, <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span><span style="color:#ae81ff">62</span>} <span style="color:#75715e">// 返回 &#34;object&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>]             <span style="color:#75715e">// 返回 &#34;object&#34; (并非 &#34;array&#34;，参见下面的注释)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>                  <span style="color:#75715e">// 返回 &#34;object&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">myFunc</span>(){}   <span style="color:#75715e">// 返回 &#34;function&#34;
+</span></span></span></code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/post/top/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">https://thankful-water-038154a00.2.azurestaticapps.net/</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: "66203c75b3329f29c131",
+        clientSecret: "a2f226176efd732f9072621d1990f7d7d2a55c87",
+        repo: "gitalk",
+        owner: "ohdmire",
+        admin: ["ohdmire"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+    });
+    (function () {
+        if (
+            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
+        ) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
+        }
+        gitalk.render("gitalk-container");
+    })();
+</script>
+
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 Ohdmire&#39;s博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
