@@ -245,7 +245,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#javascript-显示方案">JavaScript 显示方案</a></li>
+    <li><a href="#显示方案">显示方案</a></li>
     <li><a href="#语法">语法</a></li>
     <li><a href="#块作用域">块作用域</a></li>
     <li><a href="#重新声明变量">重新声明变量</a></li>
@@ -367,7 +367,9 @@
     
     
     <h1 id="javascript笔记">JavaScript笔记</h1>
-<h2 id="javascript-显示方案">JavaScript 显示方案</h2>
+<p>内容参考来源<a class="link" href="https://www.w3school.com.cn/js/index.asp"  target="_blank" rel="noopener"
+    >W3School</a></p>
+<h2 id="显示方案">显示方案</h2>
 <p>JavaScript 能够以不同方式“显示”数据：</p>
 <ul>
 <li>使用 <code>window.alert()</code> 写入警告框</li>
@@ -381,9 +383,9 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">y</span>;	<span style="color:#75715e">// 如何计算值
 </span></span></span></code></pre></div><h2 id="块作用域">块作用域</h2>
 <p>通过 <code>var</code> 关键词声明的变量没有块<strong>作用域</strong>。
-在块 <em>{}</em> 内声明的变量可以从块之外进行访问。</p>
+在块 <em>{}</em> 内声明的变量<em>可以从块之外进行访问</em>。</p>
 <p>可以使用 <code>let</code> 关键词声明拥有块作用域的变量。
-在块 <em>{}</em> 内声明的变量无法从块外访问：</p>
+在块 <em>{}</em> 内声明的变量<em>无法从块外访问</em>：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>{ 
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>; 
 </span></span><span style="display:flex;"><span>}
@@ -437,11 +439,11 @@
 <h2 id="不是真正的常数">不是真正的常数</h2>
 <p>关键字 <code>const</code> 有一定的误导性。
 它没有定义常量值。它定义了对值的常量引用。
-因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。</p>
+因此，我们<strong>不能更改常量原始值</strong>，但我们可以更改常量对象的属性。</p>
 <h3 id="特性">特性</h3>
 <ul>
-<li>不能改变原始值</li>
-<li>可以更改常量对象的属性</li>
+<li><strong>不能改变原始值</strong></li>
+<li><strong>可以更改常量对象的属性</strong></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// 您可以创建 const 对象：
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;porsche&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;911&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Black&#34;</span>};
@@ -451,12 +453,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以添加属性：
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">car</span>.<span style="color:#a6e22e">owner</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bill&#34;</span>;
-</span></span></code></pre></div><p><strong>但是您无法重新为常量对象赋值：</strong></p>
+</span></span></code></pre></div><p><em>但是您无法重新为常量对象赋值</em></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;porsche&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;911&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Black&#34;</span>};
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">type</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Volvo&#34;</span>, <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;XC60&#34;</span>, <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;White&#34;</span>};    <span style="color:#75715e">// ERROR
-</span></span></span></code></pre></div><ul>
-<li>常量数组可以更改</li>
-</ul>
+</span></span></span></code></pre></div><p><strong>常量数组可以更改</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// 您可以创建常量数组：
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Audi&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#e6db74">&#34;porsche&#34;</span>];
 </span></span><span style="display:flex;"><span>
@@ -465,7 +465,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// 您可以添加元素：
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">cars</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#34;Volvo&#34;</span>);
-</span></span></code></pre></div><p><strong>但是您无法重新为常量数组赋值</strong></p>
+</span></span></code></pre></div><p>但是您无法重新为常量数组赋值*</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Audi&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>, <span style="color:#e6db74">&#34;porsche&#34;</span>];
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Honda&#34;</span>, <span style="color:#e6db74">&#34;Toyota&#34;</span>, <span style="color:#e6db74">&#34;Volvo&#34;</span>];    <span style="color:#75715e">// ERROR
 </span></span></span></code></pre></div><h2 id="运算符">运算符</h2>
@@ -1088,8 +1088,10 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gates&#34;</span>;                      <span style="color:#75715e">// 字符串
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cars</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Porsche&#34;</span>, <span style="color:#e6db74">&#34;Volvo&#34;</span>, <span style="color:#e6db74">&#34;BMW&#34;</span>];         <span style="color:#75715e">// 数组
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">firstName</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Bill&#34;</span>, <span style="color:#a6e22e">lastName</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;Gates&#34;</span>};    <span style="color:#75715e">// 对象
-</span></span></span></code></pre></div><p>在第一个例子中，JavaScript 把 911 和 7 视作数值，直到遇见 &ldquo;Porsche&rdquo;。
-在第二个例子中，由于第一个操作数是字符串，因此所有操作数都被视为字符串。</p>
+</span></span></span></code></pre></div><ul>
+<li>在第一个例子中，JavaScript 把 911 和 7 视作数值，直到遇见 &ldquo;Porsche&rdquo;。</li>
+<li>在第二个例子中，<strong>由于第一个操作数是字符串，因此所有操作数都被视为字符串</strong>。</li>
+</ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">911</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">7</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;Porsche&#34;</span>;
 </span></span></code></pre></div><blockquote>
 <p>x= 918Porsche</p>
