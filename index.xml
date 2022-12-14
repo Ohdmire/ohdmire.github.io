@@ -795,9 +795,9 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;编写过程&#34;&gt;编写过程&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;首先采用的是&lt;em&gt;pyperclip&lt;/em&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
-&lt;li&gt;然后我采用&lt;em&gt;pyautogui&lt;/em&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库&lt;em&gt;pynput&lt;/em&gt;
+&lt;li&gt;首先采用的是&lt;code&gt;pyperclip&lt;/code&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
+&lt;li&gt;然后我采用&lt;code&gt;pyautogui&lt;/code&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库&lt;code&gt;pynput&lt;/code&gt;
 到这就终于能输入中文了。&lt;/li&gt;
 &lt;li&gt;最后再加上按键监听就完成了&lt;/li&gt;
 &lt;/ul&gt;
@@ -845,7 +845,7 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/SuperPaste/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohdmire/SuperPaste/releases&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
-&lt;p&gt;只要运行程序按下&lt;!-- raw HTML omitted --&gt;F2&lt;!-- raw HTML omitted --&gt;就能粘贴，按&lt;!-- raw HTML omitted --&gt;ESC&lt;!-- raw HTML omitted --&gt;退出程序&lt;/p&gt;
+&lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能粘贴，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你可能还需要将输入法切换为英文&lt;/p&gt;
 &lt;/blockquote&gt;
