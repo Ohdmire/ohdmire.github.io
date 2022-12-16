@@ -6,7 +6,7 @@
         <description>Recent content on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thankful-water-038154a00.2.azurestaticapps.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thankful-water-038154a00.2.azurestaticapps.net/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>https://thankful-water-038154a00.2.azurestaticapps.net/</title>
         <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/top/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
@@ -17,437 +17,12 @@
 </description>
         </item>
         <item>
-        <title>超级粘贴</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/</link>
-        <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+        <title>JavaScript笔记</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/javascriptnote/</link>
+        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/</guid>
-        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
-&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
-&lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
-&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
-&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
-&lt;p&gt;毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;读取剪切板内容&lt;/li&gt;
-&lt;li&gt;将内容通过模拟键盘进行粘贴&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我只会Python所以我就用Python来写:)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;编写过程&#34;&gt;编写过程&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;首先采用的是&lt;code&gt;pyperclip&lt;/code&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
-&lt;li&gt;然后我采用&lt;code&gt;pyautogui&lt;/code&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库&lt;code&gt;pynput&lt;/code&gt;
-到这就终于能输入中文了。&lt;/li&gt;
-&lt;li&gt;最后再加上按键监听就完成了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pyperclip
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; pynput.keyboard &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Controller,Listener,Key
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; time
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;paste&lt;/span&gt;():
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    time&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.2&lt;/span&gt;)     &lt;span style=&#34;color:#75715e&#34;&gt;#按下后间隔0.2s&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;pyperclip&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;paste()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keyboard &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Controller()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keyboard&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;type(i)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;粘贴成功&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;on_release&lt;/span&gt;(key):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; key &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Key&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;esc:      &lt;span style=&#34;color:#75715e&#34;&gt;# 停止监听&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; key &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Key&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;f2:       &lt;span style=&#34;color:#75715e&#34;&gt;# 这里是按f2调用粘贴函数&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        paste()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; Listener(
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        on_release&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;on_release) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; listener:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    listener&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我也会把exe文件发布在GitHub上&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/SuperPaste/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/ohdmire/SuperPaste/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
-&lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能粘贴，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;你可能还需要将输入法切换为英文&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果你需要也可以自行更改按键，具体参考官方文档
-&lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
-&lt;p&gt;效果
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C.png&#34;
-	width=&#34;1710&#34;
-	height=&#34;868&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;效果&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;197&#34;
-		data-flex-basis=&#34;472px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;pynput文档&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>视频字幕神器pyTranscriber</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/</link>
-        <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/</guid>
-        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
-&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
-&lt;p&gt;你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕&lt;/p&gt;
-&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;注意，你可能需要一定的Python cmd git知识&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;首先你需要下载项目(推荐使用git clone)
-&lt;a class=&#34;link&#34; href=&#34;https://github.com/raryelcostasouza/pyTranscriber&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/raryelcostasouza/pyTranscriber&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;你需要安装Python(勾选上 add to path)
-&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.python.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;请打开cmd，cd到项目的目录中&lt;/li&gt;
-&lt;li&gt;输入pip install -r requirement.txt安装依赖&lt;/li&gt;
-&lt;li&gt;输入python main.py打开项目&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;你也可以使用虚拟Python环境安装软件，如poetry&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
-&lt;h3 id=&#34;生成字幕文件&#34;&gt;生成字幕文件&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;首先打开软件是英文页面，点击标题栏上language按钮选择简体中文
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
-	width=&#34;1031&#34;
-	height=&#34;519&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;选择中文&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;198&#34;
-		data-flex-basis=&#34;476px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;再点击旁边的setting选项，设置好一个&lt;strong&gt;能连接上Google的代理&lt;/strong&gt;(点击test可以测试连接可用性)
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
-	width=&#34;1030&#34;
-	height=&#34;514&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;设置代理&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;200&#34;
-		data-flex-basis=&#34;480px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;之后选择文件和视频的语言(原视频是什么语言就选什么语言)
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
-	width=&#34;1034&#34;
-	height=&#34;519&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;导入&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;199&#34;
-		data-flex-basis=&#34;478px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;点击生成字幕之后耐心等待
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
-	width=&#34;1041&#34;
-	height=&#34;523&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;生成过程&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;199&#34;
-		data-flex-basis=&#34;477px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;最后你会得到srt和txt文件
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt.png&#34;
-	width=&#34;1172&#34;
-	height=&#34;297&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;srt&amp;#43;txt&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;394&#34;
-		data-flex-basis=&#34;947px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;到这里就已经结束了，请享用你的字幕吧&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;翻译&#34;&gt;翻译&lt;/h3&gt;
-&lt;h4 id=&#34;翻译网站&#34;&gt;翻译网站&lt;/h4&gt;
-&lt;p&gt;如果你还想翻译字幕，推荐你使用字幕翻译网站
-&lt;a class=&#34;link&#34; href=&#34;https://translatesubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://translatesubtitles.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;上传字幕文件，然后选择翻译然后下载下来
-&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
-	width=&#34;2560&#34;
-	height=&#34;988&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;翻译&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;259&#34;
-		data-flex-basis=&#34;621px&#34;
-	
-&gt;
-当然你也可以使用有道翻译等国内翻译软件
-（有道翻译有大学生免费翻译文档）&lt;/p&gt;
-&lt;h4 id=&#34;有道翻译&#34;&gt;有道翻译&lt;/h4&gt;
-&lt;p&gt;将srt以文本打开，复制一份到word文档&lt;/p&gt;
-&lt;p&gt;将word文档上传翻译，再复制内容回srt保存&lt;/p&gt;
-&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
-	width=&#34;1913&#34;
-	height=&#34;1201&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;效果&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;159&#34;
-		data-flex-basis=&#34;382px&#34;
-	
-&gt;
-(这是选择两份字幕的最终效果)&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我网站使用的一些东西</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/</link>
-        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/</guid>
-        <description>&lt;h1 id=&#34;网站涉及的相关&#34;&gt;网站涉及的相关&lt;/h1&gt;
-&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
-&lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;stack主题&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
-&lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
-&lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
-&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
-&lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
-&lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Visual Studio Code&lt;/a&gt; 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
-&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
-&lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
-&lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png&#34;
-	width=&#34;2536&#34;
-	height=&#34;1214&#34;
-	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;我的博客照片&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;208&#34;
-		data-flex-basis=&#34;501px&#34;
-	
-&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>维特根斯坦</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/</link>
-        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/</guid>
-        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/note.jpg" alt="Featured image of post 维特根斯坦" /&gt;&lt;h1 id=&#34;笔记&#34;&gt;笔记&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这些笔记是我阅读知乎上觉得重要的内容摘抄下来的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;世界是事实的总和而非物的总和&#34;&gt;世界是事实的总和，而非物的总和&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;我们观察的不可能是超越时间的、不变的“物”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;实无穷与潜无穷&#34;&gt;实无穷与潜无穷&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;排中律
-&lt;ul&gt;
-&lt;li&gt;世界是无限的
-&lt;ul&gt;
-&lt;li&gt;当用“非A”代替“B”时，其逻辑依然是“A或非A”为真的条件是“A为真”或“非A”为真，而不能说“A或非A”这个命题恒为真。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;世界是有限的
-&lt;ul&gt;
-&lt;li&gt;保证了A和非A构成一个整体&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;真的意义&#34;&gt;“真的意义”&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;当命题表达了实际情况时，命题就是“真”的；否则命题就是表达了非实际情况，也就是“假”的。维特根斯坦用这个命题将世界的“真”锁定在过去和当下中。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;两类逻辑&#34;&gt;两类逻辑&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;“逻辑必然的数学推理”和“逻辑不必然的力学推理”
-&lt;ul&gt;
-&lt;li&gt;维特根斯坦通过这个命题（1.13逻辑空间中的事实是世界）区分了“数学的逻辑”和“力学的逻辑”
-数学的每一个定理和推论都是公理的同义反复或者是公理的矛盾命题，这类命题要不是必然的，要不是不可能的，它们的“真、假”在逻辑上是必然的，但是也没有告诉人们新的知识。而力学的逻辑，或者说物理命题的“真假”是由它们是否与事实一致进行判断的。
-&lt;ul&gt;
-&lt;li&gt;逻辑空间中的“事实”是物理命题，而逻辑空间中的“非事实”则是纯形式化的逻辑命题。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;世界是可还原的&#34;&gt;世界是可还原的&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;使用还原论去认识世界
-&lt;ul&gt;
-&lt;li&gt;一个基本组成成分和另一个相互独立，互不影响&lt;/li&gt;
-&lt;li&gt;与还原论相对的是整体论或系统论，就是把复杂系统看着是一个整体&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;世界之内与世界之外&#34;&gt;世界之内与世界之外&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;世界是所有基本事态的存在
-&lt;ul&gt;
-&lt;li&gt;“物的可能状态”只有在实际发生后，才进入世界之内。而“物的可能状态”没有实际发生，那么就是在世界之外。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;参考链接&#34;&gt;参考链接&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/421567527&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;维特根斯坦《逻辑哲学论》解读&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/page/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/page/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/page/about/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/page/about/</guid>
-        <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
-&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
-&lt;p&gt;Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
-&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/javascript%E7%AC%94%E8%AE%B0/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/javascript%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;p&gt;p0+++
-author = &amp;ldquo;ohdmire&amp;rdquo;
-title = &amp;ldquo;JavaScript笔记&amp;rdquo;
-slug= &amp;ldquo;JavaScriptNote&amp;rdquo;
-description = &amp;ldquo;我觉得重要的部分&amp;rdquo;
-date = &amp;ldquo;2022-12-14&amp;rdquo;
-image = &amp;ldquo;封面.png&amp;rdquo;
-categories = [
-&amp;ldquo;笔记&amp;rdquo;
-]
-tags = [
-&amp;ldquo;JavaScript&amp;rdquo;
-]
-+++&lt;/p&gt;
-&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/javascriptnote/</guid>
+        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/javascriptnote/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post JavaScript笔记" /&gt;&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
 &lt;p&gt;内容参考来源&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/js/index.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;W3School&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;以下内容&lt;strong&gt;并不完整&lt;/strong&gt;，主要是我在我学过Python的基础上，在理解新的语言所&lt;strong&gt;需要留意的部分&lt;/strong&gt;。&lt;/p&gt;
@@ -1632,6 +1207,417 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fruits&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Banana&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Orange&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Apple&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Mango&amp;#34;&lt;/span&gt;];
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;delete&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fruits&lt;/span&gt;[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];           &lt;span style=&#34;color:#75715e&#34;&gt;// 把 fruits 中的首个元素改为 undefined
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>超级粘贴</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/</link>
+        <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/</guid>
+        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+&lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
+&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
+&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
+&lt;p&gt;毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;读取剪切板内容&lt;/li&gt;
+&lt;li&gt;将内容通过模拟键盘进行粘贴&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我只会Python所以我就用Python来写:)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;编写过程&#34;&gt;编写过程&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先采用的是&lt;code&gt;pyperclip&lt;/code&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
+&lt;li&gt;然后我采用&lt;code&gt;pyautogui&lt;/code&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库&lt;code&gt;pynput&lt;/code&gt;
+到这就终于能输入中文了。&lt;/li&gt;
+&lt;li&gt;最后再加上按键监听就完成了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pyperclip
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; pynput.keyboard &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Controller,Listener,Key
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; time
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;paste&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    time&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.2&lt;/span&gt;)     &lt;span style=&#34;color:#75715e&#34;&gt;#按下后间隔0.2s&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;pyperclip&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;paste()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keyboard &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Controller()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    keyboard&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;type(i)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;粘贴成功&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;on_release&lt;/span&gt;(key):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; key &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Key&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;esc:      &lt;span style=&#34;color:#75715e&#34;&gt;# 停止监听&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;False&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; key &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; Key&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;f2:       &lt;span style=&#34;color:#75715e&#34;&gt;# 这里是按f2调用粘贴函数&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        paste()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; Listener(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        on_release&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;on_release) &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; listener:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    listener&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我也会把exe文件发布在GitHub上&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/SuperPaste/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/ohdmire/SuperPaste/releases&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
+&lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能粘贴，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你可能还需要将输入法切换为英文&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你需要也可以自行更改按键，具体参考官方文档
+&lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
+&lt;p&gt;效果
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C.png&#34;
+	width=&#34;1710&#34;
+	height=&#34;868&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;效果&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;197&#34;
+		data-flex-basis=&#34;472px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;pynput文档&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>视频字幕神器pyTranscriber</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/</link>
+        <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/</guid>
+        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
+&lt;p&gt;你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕&lt;/p&gt;
+&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;注意，你可能需要一定的Python cmd git知识&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先你需要下载项目(推荐使用git clone)
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/raryelcostasouza/pyTranscriber&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/raryelcostasouza/pyTranscriber&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;你需要安装Python(勾选上 add to path)
+&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.python.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;请打开cmd，cd到项目的目录中&lt;/li&gt;
+&lt;li&gt;输入pip install -r requirement.txt安装依赖&lt;/li&gt;
+&lt;li&gt;输入python main.py打开项目&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你也可以使用虚拟Python环境安装软件，如poetry&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
+&lt;h3 id=&#34;生成字幕文件&#34;&gt;生成字幕文件&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先打开软件是英文页面，点击标题栏上language按钮选择简体中文
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
+	width=&#34;1031&#34;
+	height=&#34;519&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;选择中文&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;198&#34;
+		data-flex-basis=&#34;476px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再点击旁边的setting选项，设置好一个&lt;strong&gt;能连接上Google的代理&lt;/strong&gt;(点击test可以测试连接可用性)
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
+	width=&#34;1030&#34;
+	height=&#34;514&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;设置代理&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;之后选择文件和视频的语言(原视频是什么语言就选什么语言)
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
+	width=&#34;1034&#34;
+	height=&#34;519&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;导入&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;478px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击生成字幕之后耐心等待
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
+	width=&#34;1041&#34;
+	height=&#34;523&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;生成过程&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;477px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后你会得到srt和txt文件
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt.png&#34;
+	width=&#34;1172&#34;
+	height=&#34;297&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;srt&amp;#43;txt&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;394&#34;
+		data-flex-basis=&#34;947px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;到这里就已经结束了，请享用你的字幕吧&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;翻译&#34;&gt;翻译&lt;/h3&gt;
+&lt;h4 id=&#34;翻译网站&#34;&gt;翻译网站&lt;/h4&gt;
+&lt;p&gt;如果你还想翻译字幕，推荐你使用字幕翻译网站
+&lt;a class=&#34;link&#34; href=&#34;https://translatesubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://translatesubtitles.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上传字幕文件，然后选择翻译然后下载下来
+&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
+	width=&#34;2560&#34;
+	height=&#34;988&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;翻译&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;259&#34;
+		data-flex-basis=&#34;621px&#34;
+	
+&gt;
+当然你也可以使用有道翻译等国内翻译软件
+（有道翻译有大学生免费翻译文档）&lt;/p&gt;
+&lt;h4 id=&#34;有道翻译&#34;&gt;有道翻译&lt;/h4&gt;
+&lt;p&gt;将srt以文本打开，复制一份到word文档&lt;/p&gt;
+&lt;p&gt;将word文档上传翻译，再复制内容回srt保存&lt;/p&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
+	width=&#34;1913&#34;
+	height=&#34;1201&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;效果&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;
+(这是选择两份字幕的最终效果)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>我网站使用的一些东西</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/</link>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/</guid>
+        <description>&lt;h1 id=&#34;网站涉及的相关&#34;&gt;网站涉及的相关&lt;/h1&gt;
+&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
+&lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack主题&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
+&lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
+&lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
+&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
+&lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
+&lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Visual Studio Code&lt;/a&gt; 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
+&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
+&lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
+&lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png&#34;
+	width=&#34;2536&#34;
+	height=&#34;1214&#34;
+	srcset=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, https://thankful-water-038154a00.2.azurestaticapps.net/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;我的博客照片&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;208&#34;
+		data-flex-basis=&#34;501px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>维特根斯坦</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/</link>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/</guid>
+        <description>&lt;img src="https://thankful-water-038154a00.2.azurestaticapps.net/post/wittgenstein/note.jpg" alt="Featured image of post 维特根斯坦" /&gt;&lt;h1 id=&#34;笔记&#34;&gt;笔记&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这些笔记是我阅读知乎上觉得重要的内容摘抄下来的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;世界是事实的总和而非物的总和&#34;&gt;世界是事实的总和，而非物的总和&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;我们观察的不可能是超越时间的、不变的“物”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;实无穷与潜无穷&#34;&gt;实无穷与潜无穷&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;排中律
+&lt;ul&gt;
+&lt;li&gt;世界是无限的
+&lt;ul&gt;
+&lt;li&gt;当用“非A”代替“B”时，其逻辑依然是“A或非A”为真的条件是“A为真”或“非A”为真，而不能说“A或非A”这个命题恒为真。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;世界是有限的
+&lt;ul&gt;
+&lt;li&gt;保证了A和非A构成一个整体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;真的意义&#34;&gt;“真的意义”&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当命题表达了实际情况时，命题就是“真”的；否则命题就是表达了非实际情况，也就是“假”的。维特根斯坦用这个命题将世界的“真”锁定在过去和当下中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;两类逻辑&#34;&gt;两类逻辑&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;“逻辑必然的数学推理”和“逻辑不必然的力学推理”
+&lt;ul&gt;
+&lt;li&gt;维特根斯坦通过这个命题（1.13逻辑空间中的事实是世界）区分了“数学的逻辑”和“力学的逻辑”
+数学的每一个定理和推论都是公理的同义反复或者是公理的矛盾命题，这类命题要不是必然的，要不是不可能的，它们的“真、假”在逻辑上是必然的，但是也没有告诉人们新的知识。而力学的逻辑，或者说物理命题的“真假”是由它们是否与事实一致进行判断的。
+&lt;ul&gt;
+&lt;li&gt;逻辑空间中的“事实”是物理命题，而逻辑空间中的“非事实”则是纯形式化的逻辑命题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;世界是可还原的&#34;&gt;世界是可还原的&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用还原论去认识世界
+&lt;ul&gt;
+&lt;li&gt;一个基本组成成分和另一个相互独立，互不影响&lt;/li&gt;
+&lt;li&gt;与还原论相对的是整体论或系统论，就是把复杂系统看着是一个整体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;世界之内与世界之外&#34;&gt;世界之内与世界之外&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;世界是所有基本事态的存在
+&lt;ul&gt;
+&lt;li&gt;“物的可能状态”只有在实际发生后，才进入世界之内。而“物的可能状态”没有实际发生，那么就是在世界之外。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参考链接&#34;&gt;参考链接&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/421567527&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;维特根斯坦《逻辑哲学论》解读&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://thankful-water-038154a00.2.azurestaticapps.net/page/about/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/page/about/</guid>
+        <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
+&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuin/goldmark&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/alecthomas/chroma&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/muesli/smartcrop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/cobra&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/spf13/viper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;
+&lt;p&gt;Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.&lt;/p&gt;
+&lt;p&gt;Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.&lt;/p&gt;
+&lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Links</title>
