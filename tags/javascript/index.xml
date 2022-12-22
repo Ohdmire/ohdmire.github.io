@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>JavaScript on Ohdmire&#39;s博客</title>
-        <link>https://ohdmire.github.io/tags/javascript/</link>
+        <link>https://ohdmire.github.io/tags/JavaScript/</link>
         <description>Recent content in JavaScript on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/JavaScript/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>JavaScript笔记</title>
-        <link>https://ohdmire.github.io/post/javascriptnote/</link>
+        <link>https://ohdmire.github.io/post/JavaScriptNote/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://ohdmire.github.io/post/javascriptnote/</guid>
-        <description>&lt;img src="https://ohdmire.github.io/post/javascriptnote/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post JavaScript笔记" /&gt;&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/post/JavaScriptNote/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/post/JavaScriptNote/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post JavaScript笔记" /&gt;&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
 &lt;p&gt;内容参考来源&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/js/index.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;W3School&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;以下内容&lt;strong&gt;并不完整&lt;/strong&gt;，主要是我在我学过Python的基础上，在理解新的语言所&lt;strong&gt;需要留意的部分&lt;/strong&gt;。&lt;/p&gt;
