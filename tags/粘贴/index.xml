@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>粘贴 on Ohdmire&#39;s博客</title>
-        <link>https://github.com/ohdmire/tags/%E7%B2%98%E8%B4%B4/</link>
+        <link>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</link>
         <description>Recent content in 粘贴 on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/ohdmire/tags/%E7%B2%98%E8%B4%B4/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>超级粘贴</title>
-        <link>https://github.com/ohdmire/post/superpaste/</link>
+        <link>https://ohdmire.github.io/post/superpaste/</link>
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://github.com/ohdmire/post/superpaste/</guid>
-        <description>&lt;img src="https://github.com/ohdmire/post/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/post/superpaste/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/post/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -86,10 +86,10 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://github.com/ohdmire/ohdmire/post/superpaste/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/post/superpaste/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1710&#34;
 	height=&#34;868&#34;
-	srcset=&#34;https://github.com/ohdmire/ohdmire/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://github.com/ohdmire/ohdmire/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://ohdmire.github.io/post/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
