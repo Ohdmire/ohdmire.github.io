@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Ohdmire&#39;s博客</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/</link>
+        <link>https://github.com/ohdmire/tags/</link>
         <description>Recent content in Tags on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://thankful-water-038154a00.2.azurestaticapps.net/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/ohdmire/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>JavaScript</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/javascript/</link>
+        <link>https://github.com/ohdmire/tags/javascript/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/tags/javascript/</guid>
+        <guid>https://github.com/ohdmire/tags/javascript/</guid>
         <description></description>
         </item>
         <item>
         <title>粘贴</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E7%B2%98%E8%B4%B4/</link>
+        <link>https://github.com/ohdmire/tags/%E7%B2%98%E8%B4%B4/</link>
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E7%B2%98%E8%B4%B4/</guid>
+        <guid>https://github.com/ohdmire/tags/%E7%B2%98%E8%B4%B4/</guid>
         <description></description>
         </item>
         <item>
         <title>字幕</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E5%AD%97%E5%B9%95/</link>
+        <link>https://github.com/ohdmire/tags/%E5%AD%97%E5%B9%95/</link>
         <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E5%AD%97%E5%B9%95/</guid>
+        <guid>https://github.com/ohdmire/tags/%E5%AD%97%E5%B9%95/</guid>
         <description></description>
         </item>
         <item>
         <title>哲学</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E5%93%B2%E5%AD%A6/</link>
+        <link>https://github.com/ohdmire/tags/%E5%93%B2%E5%AD%A6/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E5%93%B2%E5%AD%A6/</guid>
+        <guid>https://github.com/ohdmire/tags/%E5%93%B2%E5%AD%A6/</guid>
         <description></description>
         </item>
         <item>
         <title>网站</title>
-        <link>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E7%BD%91%E7%AB%99/</link>
+        <link>https://github.com/ohdmire/tags/%E7%BD%91%E7%AB%99/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://thankful-water-038154a00.2.azurestaticapps.net/tags/%E7%BD%91%E7%AB%99/</guid>
+        <guid>https://github.com/ohdmire/tags/%E7%BD%91%E7%AB%99/</guid>
         <description></description>
         </item>
         
