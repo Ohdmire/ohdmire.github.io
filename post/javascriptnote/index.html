@@ -1417,7 +1417,26 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）</p>
 <p>使用 <code>delete</code> 会在数组留下未定义的空洞</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Orange&#34;</span>, <span style="color:#e6db74">&#34;Apple&#34;</span>, <span style="color:#e6db74">&#34;Mango&#34;</span>];
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">delete</span> <span style="color:#a6e22e">fruits</span>[<span style="color:#ae81ff">0</span>];           <span style="color:#75715e">// 把 fruits 中的首个元素改为 undefined
-</span></span></span></code></pre></div>
+</span></span></span></code></pre></div><h4 id="拼接数组">拼接数组</h4>
+<p><code>splice()</code> 方法可用于向数组添加新项</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Banana&#34;</span>, <span style="color:#e6db74">&#34;Orange&#34;</span>, <span style="color:#e6db74">&#34;Apple&#34;</span>, <span style="color:#e6db74">&#34;Mango&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Lemon&#34;</span>, <span style="color:#e6db74">&#34;Kiwi&#34;</span>);
+</span></span></code></pre></div><p>第一个参数（2）定义了应添加新元素的位置（拼接）。</p>
+<p>第二个参数（2）定义应删除多少元素。</p>
+<p>其余参数（“Lemon”，“Kiwi”）定义要添加的新元素。</p>
+<p><code>splice()</code> 方法返回一个包含已删除项的数组：</p>
+<p><code>splice()</code> 在数组中**不留“空洞”**的情况下移除元素</p>
+<h4 id="合并连接数组">合并（连接）数组</h4>
+<p><code>concat()</code> 方法通过合并（连接）现有数组来创建一个<strong>新</strong>数组</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr1</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Cecilie&#34;</span>, <span style="color:#e6db74">&#34;Lone&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr2</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Emil&#34;</span>, <span style="color:#e6db74">&#34;Tobias&#34;</span>, <span style="color:#e6db74">&#34;Linus&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arr3</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Robin&#34;</span>, <span style="color:#e6db74">&#34;Morgan&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">myChildren</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr1</span>.<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">arr2</span>, <span style="color:#a6e22e">arr3</span>);   <span style="color:#75715e">// 将arr1、arr2 与 arr3 连接在一起
+</span></span></span></code></pre></div><h4 id="裁剪数组">裁剪数组</h4>
+<p><code>slice()</code> 方法用数组的某个片段切出<strong>新</strong>数组</p>
+<p><code>slice()</code> 可接受两个参数，比如 (1, 3)。</p>
+<p>该方法会从开始参数选取元素，直到结束参数（不包括）为止。</p>
+
 </section>
 
 
