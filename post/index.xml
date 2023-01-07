@@ -7,13 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>https://thankful-water-038154a00.2.azurestaticapps.net/</title>
-        <link>https://ohdmire.github.io/post/top/</link>
+        <title>博客介绍 </title>
+        <link>https://ohdmire.github.io/post/introduce/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://ohdmire.github.io/post/top/</guid>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://ohdmire.github.io/post/introduce/</guid>
+        <description>&lt;h2 id=&#34;如有卡顿请访问&#34;&gt;如有卡顿请访问&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://thankful-water-038154a00.2.azurestaticapps.net/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;你好啊，欢迎来到我的博客，我的博客平时主要以分享技术类的内容为主，主要是一些踩过的坑🕳或是网上冲浪🏄‍♂️的时候遇到的痛点。&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;你可以在右侧使用搜索功能&lt;/li&gt;
+&lt;li&gt;你可以点击右侧的tags或是categories来快速找到你需要的内容&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -22,9 +30,9 @@
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://ohdmire.github.io/post/onepresskill/</guid>
-        <description>&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
+        <description>&lt;img src="https://ohdmire.github.io/post/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
-&lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭所有程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
+&lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
 &lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
 &lt;ol&gt;
@@ -43,7 +51,7 @@
 &lt;li&gt;加上按键监听&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;这个部分在我之前的博客&lt;a class=&#34;link&#34; href=&#34;../superpaste&#34; &gt;超级粘贴&lt;/a&gt;也有使用到，就是&lt;code&gt;pynput&lt;/code&gt;库&lt;/li&gt;
+&lt;li&gt;这个部分在我之前的博客&lt;a class=&#34;link&#34; href=&#34;../superpaste#%e7%bc%96%e5%86%99%e8%bf%87%e7%a8%8b&#34; &gt;超级粘贴&lt;/a&gt;也有使用到，就是&lt;code&gt;pynput&lt;/code&gt;库&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; win32.win32gui &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; win32gui
@@ -131,14 +139,18 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://ohdmire.github.io/%e6%95%88%e6%9e%9c.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://ohdmire.github.io/post/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
+	width=&#34;1730&#34;
+	height=&#34;954&#34;
+	srcset=&#34;https://ohdmire.github.io/post/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://ohdmire.github.io/post/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;435px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;参考链接&#34;&gt;参考链接&lt;/h3&gt;
