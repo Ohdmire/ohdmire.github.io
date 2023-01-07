@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='一些用到的软件'>
-<title>我网站使用的一些东西</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='一键结束进程'>
+<title>一键kill</title>
 
-<link rel='canonical' href='https://ohdmire.github.io/post/website-software/'>
+<link rel='canonical' href='https://ohdmire.github.io/post/onepresskill/'>
 
-<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='我网站使用的一些东西'>
-<meta property='og:description' content='一些用到的软件'>
-<meta property='og:url' content='https://ohdmire.github.io/post/website-software/'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='一键kill'>
+<meta property='og:description' content='一键结束进程'>
+<meta property='og:url' content='https://ohdmire.github.io/post/onepresskill/'>
 <meta property='og:site_name' content='Ohdmire&#39;s博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='网站' /><meta property='article:published_time' content='2022-11-24T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-11-24T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="我网站使用的一些东西">
-<meta name="twitter:description" content="一些用到的软件">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='taskkill' /><meta property='article:published_time' content='2023-01-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-07T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="一键kill">
+<meta name="twitter:description" content="一键结束进程">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z67FVW9FG3"></script>
 <script>
 var doNotTrack = false;
@@ -255,11 +255,20 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#网站设计">网站设计</a></li>
-    <li><a href="#网站搭建">网站搭建</a></li>
-    <li><a href="#网站编辑">网站编辑</a></li>
-    <li><a href="#网站更新">网站更新</a></li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#起因">起因</a></li>
+    <li><a href="#编写">编写</a>
+      <ul>
+        <li><a href="#思路">思路</a></li>
+        <li><a href="#代码">代码</a></li>
+        <li><a href="#小趣事">小趣事</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用教程">使用教程</a></li>
+    <li><a href="#最后">最后</a>
+      <ul>
+        <li><a href="#参考链接">参考链接</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         </div>
@@ -282,17 +291,21 @@ if (!doNotTrack) {
                 技巧
             </a>
         
+            <a href="/categories/%E8%BD%AF%E4%BB%B6/" >
+                软件
+            </a>
+        
     </header>
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/post/website-software/">我网站使用的一些东西</a>
+            <a href="/post/onepresskill/">一键kill</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            一些用到的软件
+            一键结束进程
         </h3>
         
     </div>
@@ -313,7 +326,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Nov 24, 2022</time>
+                <time class="article-time--published">Jan 07, 2023</time>
             </div>
         
 
@@ -343,44 +356,130 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <h1 id="网站涉及的相关">网站涉及的相关</h1>
-<h2 id="网站设计">网站设计</h2>
-<p>首先我使用了<a class="link" href="https://gohugo.io/"  target="_blank" rel="noopener"
-    >Hugo</a>这个网站框架并且配上了<a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >stack主题</a></p>
-<h2 id="网站搭建">网站搭建</h2>
-<p>将网站搭建在<a class="link" href="https://pages.github.com/"  target="_blank" rel="noopener"
-    >GitHub Pages</a>上</p>
-<p>还使用了<a class="link" href="https://azure.microsoft.com/"  target="_blank" rel="noopener"
-    >Azure</a>的静态web解析，相当于有两个域名了</p>
-<h2 id="网站编辑">网站编辑</h2>
-<p>我使用<a class="link" href="https://obsidian.md/"  target="_blank" rel="noopener"
-    >Obsidian</a>进行博客网站的编辑，他支持<a class="link" href="" >Markdown语言</a>，并且拥有模板。</p>
-<p>本来是向用<a class="link" href="https://code.visualstudio.com/"  target="_blank" rel="noopener"
-    >Visual Studio Code</a> 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了<a class="link" href="https://obsidian.md/"  target="_blank" rel="noopener"
-    >Obsidian</a></p>
-<p>同时我编辑的内容也通过<a class="link" href="https://onedrive.live.com/"  target="_blank" rel="noopener"
-    >OneDrive</a>同步到云端，这样也不用担心数据丢失的问题</p>
-<h2 id="网站更新">网站更新</h2>
-<p>使用<a class="link" href="https://gohugo.io/"  target="_blank" rel="noopener"
-    >Hugo</a>编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容</p>
-<h2 id="总结">总结</h2>
-<p>这次建设网站没有花我一分钱，域名啥的我也没有购买。</p>
-<p>我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。</p>
-<p><img src="/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png"
-	width="2536"
-	height="1214"
-	srcset="/post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, /post/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w"
+    <h1 id="一键结束进程">一键结束进程</h1>
+<h2 id="起因">起因</h2>
+<p>我真的绷不住了，<code>Alt+F4</code> 不能够关闭所有程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。</p>
+<h2 id="编写">编写</h2>
+<h3 id="思路">思路</h3>
+<ol>
+<li>需要获取当前正在运行的程序</li>
+</ol>
+<ul>
+<li>获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用<code>win32</code>库</li>
+</ul>
+<ol start="2">
+<li>需要能够调用<code>taskkill</code>指令</li>
+</ol>
+<ul>
+<li>Python中内置的<code>os.system()</code>代码就能够很好的执行，但是需要提升至管理员身份</li>
+</ul>
+<ol start="3">
+<li>加上按键监听</li>
+</ol>
+<ul>
+<li>这个部分在我之前的博客<a class="link" href="../superpaste" >超级粘贴</a>也有使用到，就是<code>pynput</code>库</li>
+</ul>
+<h3 id="代码">代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> win32.win32gui <span style="color:#66d9ef">as</span> win32gui
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> win32.win32process <span style="color:#66d9ef">as</span> win32process
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pynput.keyboard <span style="color:#f92672">import</span> Listener,Key
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> ctypes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#判断是否有管理员权限</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_admin</span>():
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ctypes<span style="color:#f92672">.</span>windll<span style="color:#f92672">.</span>shell32<span style="color:#f92672">.</span>IsUserAnAdmin()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#监听</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_release</span>(key):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>esc:      <span style="color:#75715e"># 停止监听</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>f2:       <span style="color:#75715e"># 这里是按f2调用kill函数</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        kill()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#杀死进程</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">kill</span>():
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    now_win <span style="color:#f92672">=</span> win32gui<span style="color:#f92672">.</span>GetForegroundWindow()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    now_process<span style="color:#f92672">=</span>win32process<span style="color:#f92672">.</span>GetWindowThreadProcessId(now_win)[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    target<span style="color:#f92672">=</span><span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;taskkill /pid </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> /F /T&#39;</span><span style="color:#f92672">.</span>format(now_process)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(target)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#开始判断管理员权限</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> is_admin()<span style="color:#f92672">==</span><span style="color:#66d9ef">False</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;警告:当前非管理员身份运行,可能导致kill失败&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#开始监听</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> Listener(
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        on_release<span style="color:#f92672">=</span>on_release) <span style="color:#66d9ef">as</span> listener:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    listener<span style="color:#f92672">.</span>join()
+</span></span></code></pre></div><p>我也会把exe文件发布在GitHub上</p>
+<p><a class="link" href="https://github.com/ohdmire/OnePressKill/releases/"  target="_blank" rel="noopener"
+    >https://github.com/ohdmire/OnePressKill/releases/</a></p>
+<h3 id="小趣事">小趣事</h3>
+<p><del>我真tmsb，把文件名称命名为taskkill，结果执行<code>os.system</code>的时候就又调用了一遍该程序，结果我看半天以为是<code>pyinstaller</code>编译出错了，我真的是服了。</del></p>
+<p>该问题已在v0.2得到修复</p>
+<h2 id="使用教程">使用教程</h2>
+<p>只要运行程序按下<code>F2</code>就能杀死当前窗口的程序，按<code>ESC</code>退出程序</p>
+<blockquote>
+<p>你可能还需要以<strong>管理员身份</strong>运行该程序</p>
+</blockquote>
+<p>如果你需要也可以自行更改按键，具体参考官方文档
+<a class="link" href="https://pynput.readthedocs.io/en/latest/keyboard.html"  target="_blank" rel="noopener"
+    >https://pynput.readthedocs.io/en/latest/keyboard.html</a></p>
+<h2 id="最后">最后</h2>
+<p>效果
+<img src="/%e6%95%88%e6%9e%9c.png"
+	
+	
+	
 	loading="lazy"
 	
-		alt="我的博客照片"
+		alt="效果"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="208"
-		data-flex-basis="501px"
 	
 ></p>
+<h3 id="参考链接">参考链接</h3>
+<p><a class="link" href="https://studygolang.com/articles/32337"  target="_blank" rel="noopener"
+    >python小工具&ndash;查看窗口程序进程</a>
+<a class="link" href="https://blog.csdn.net/MemoryD/article/details/83148305"  target="_blank" rel="noopener"
+    >Python 获取Windows管理员权限</a></p>
 
 </section>
 
@@ -389,7 +488,7 @@ if (!doNotTrack) {
     
     <section class="article-tags">
         
-            <a href="/tags/%E7%BD%91%E7%AB%99/">网站</a>
+            <a href="/tags/taskkill/">taskkill</a>
         
     </section>
 

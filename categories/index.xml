@@ -6,18 +6,10 @@
         <description>Recent content in Categories on Ohdmire&#39;s博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>笔记</title>
-        <link>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</link>
-        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>技巧</title>
         <link>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</link>
-        <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</guid>
         <description></description>
@@ -25,9 +17,17 @@
         <item>
         <title>软件</title>
         <link>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</link>
-        <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>笔记</title>
+        <link>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</guid>
         <description></description>
         </item>
         
