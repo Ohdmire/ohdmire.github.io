@@ -398,35 +398,35 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">paste</span>():
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)     <span style="color:#75715e">#按下后间隔0.2s</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>) <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#75715e">#按下后间隔0.2s</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    i<span style="color:#f92672">=</span>pyperclip<span style="color:#f92672">.</span>paste()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> i<span style="color:#f92672">=</span>pyperclip<span style="color:#f92672">.</span>paste()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    keyboard <span style="color:#f92672">=</span> Controller()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> keyboard <span style="color:#f92672">=</span> Controller()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    keyboard<span style="color:#f92672">.</span>type(i)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> keyboard<span style="color:#f92672">.</span>type(i)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;粘贴成功&#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">+</span>i<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> print(<span style="color:#e6db74">&#34;粘贴成功&#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">+</span>i<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_release</span>(key):
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>esc:      <span style="color:#75715e"># 停止监听</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>esc: <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span><span style="color:#75715e"># 停止监听</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>f2:       <span style="color:#75715e"># 这里是按f2调用粘贴函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>f2: <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#75715e"># 这里是按f2调用粘贴函数</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        paste()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> paste()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> Listener(
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        on_release<span style="color:#f92672">=</span>on_release) <span style="color:#66d9ef">as</span> listener:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> on_release<span style="color:#f92672">=</span>on_release) <span style="color:#66d9ef">as</span> listener:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    listener<span style="color:#f92672">.</span>join()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> listener<span style="color:#f92672">.</span>join()
 </span></span></code></pre></div><p>我也会把exe文件发布在GitHub上</p>
 <p><a class="link" href="https://github.com/ohdmire/SuperPaste/releases"  target="_blank" rel="noopener"
     >https://github.com/ohdmire/SuperPaste/releases</a></p>

@@ -409,13 +409,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">is_admin</span>():
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">try</span>:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ctypes<span style="color:#f92672">.</span>windll<span style="color:#f92672">.</span>shell32<span style="color:#f92672">.</span>IsUserAnAdmin()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">return</span> ctypes<span style="color:#f92672">.</span>windll<span style="color:#f92672">.</span>shell32<span style="color:#f92672">.</span>IsUserAnAdmin()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span>:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">except</span>:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
@@ -423,13 +423,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_release</span>(key):
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>esc:      <span style="color:#75715e"># 停止监听</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>esc: <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span><span style="color:#75715e"># 停止监听</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>f2:       <span style="color:#75715e"># 这里是按f2调用kill函数</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> Key<span style="color:#f92672">.</span>f2: <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#75715e"># 这里是按f2调用kill函数</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        kill()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> kill()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
@@ -437,13 +437,13 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">kill</span>():
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    now_win <span style="color:#f92672">=</span> win32gui<span style="color:#f92672">.</span>GetForegroundWindow()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> now_win <span style="color:#f92672">=</span> win32gui<span style="color:#f92672">.</span>GetForegroundWindow()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    now_process <span style="color:#f92672">=</span> win32process<span style="color:#f92672">.</span>GetWindowThreadProcessId(now_win)[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> now_process <span style="color:#f92672">=</span> win32process<span style="color:#f92672">.</span>GetWindowThreadProcessId(now_win)[<span style="color:#ae81ff">1</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    target <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;taskkill /pid </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> /F /T&#39;</span><span style="color:#f92672">.</span>format(now_process)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> target <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;taskkill /pid </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> /F /T&#39;</span><span style="color:#f92672">.</span>format(now_process)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(target)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> os<span style="color:#f92672">.</span>system(target)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
@@ -451,7 +451,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> is_admin() <span style="color:#f92672">==</span> <span style="color:#66d9ef">False</span>:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;警告:当前非管理员身份运行,可能导致kill失败&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> print(<span style="color:#e6db74">&#34;警告:当前非管理员身份运行,可能导致kill失败&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>
@@ -459,9 +459,9 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> Listener(
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        on_release<span style="color:#f92672">=</span>on_release) <span style="color:#66d9ef">as</span> listener:
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> on_release<span style="color:#f92672">=</span>on_release) <span style="color:#66d9ef">as</span> listener:
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    listener<span style="color:#f92672">.</span>join()
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span> <span style="color:#960050;background-color:#1e0010"> </span> listener<span style="color:#f92672">.</span>join()
 </span></span></code></pre></div><p>我也会把exe文件发布在GitHub上</p>
 <p><a class="link" href="https://github.com/ohdmire/OnePressKill/releases/"  target="_blank" rel="noopener"
     >https://github.com/ohdmire/OnePressKill/releases/</a></p>
