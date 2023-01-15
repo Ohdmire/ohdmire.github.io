@@ -393,9 +393,9 @@ if (!doNotTrack) {
 <li>这个部分在我之前的博客<a class="link" href="../superpaste#%e7%bc%96%e5%86%99%e8%bf%87%e7%a8%8b" >超级粘贴</a>也有使用到，就是<code>pynput</code>库</li>
 </ul>
 <h3 id="代码">代码</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> win32.win32gui <span style="color:#66d9ef">as</span> win32gui
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> win32gui
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> win32.win32process <span style="color:#66d9ef">as</span> win32process
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> win32process
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span>
@@ -439,9 +439,9 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    now_win <span style="color:#f92672">=</span> win32gui<span style="color:#f92672">.</span>GetForegroundWindow()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    now_process<span style="color:#f92672">=</span>win32process<span style="color:#f92672">.</span>GetWindowThreadProcessId(now_win)[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    now_process <span style="color:#f92672">=</span> win32process<span style="color:#f92672">.</span>GetWindowThreadProcessId(now_win)[<span style="color:#ae81ff">1</span>]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    target<span style="color:#f92672">=</span><span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;taskkill /pid </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> /F /T&#39;</span><span style="color:#f92672">.</span>format(now_process)
+</span></span><span style="display:flex;"><span>    target <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;taskkill /pid </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> /F /T&#39;</span><span style="color:#f92672">.</span>format(now_process)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>system(target)
 </span></span><span style="display:flex;"><span>
@@ -449,7 +449,7 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#开始判断管理员权限</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> is_admin()<span style="color:#f92672">==</span><span style="color:#66d9ef">False</span>:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> is_admin() <span style="color:#f92672">==</span> <span style="color:#66d9ef">False</span>:
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;警告:当前非管理员身份运行,可能导致kill失败&#34;</span>)
 </span></span><span style="display:flex;"><span>
