@@ -222,11 +222,10 @@
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/superpaste/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
-&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
 &lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
-&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
-&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
+&lt;h1 id=&#34;编写&#34;&gt;编写&lt;/h1&gt;
+&lt;h2 id=&#34;思路&#34;&gt;思路&lt;/h2&gt;
 &lt;p&gt;毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;读取剪切板内容&lt;/li&gt;
@@ -235,7 +234,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;我只会Python所以我就用Python来写:)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;编写过程&#34;&gt;编写过程&lt;/h3&gt;
+&lt;h2 id=&#34;编写过程&#34;&gt;编写过程&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;首先采用的是&lt;code&gt;pyperclip&lt;/code&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
 &lt;li&gt;然后我采用&lt;code&gt;pyautogui&lt;/code&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
@@ -243,7 +242,7 @@
 到这就终于能输入中文了。&lt;/li&gt;
 &lt;li&gt;最后再加上按键监听就完成了&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -331,7 +330,7 @@
 &lt;/div&gt;&lt;p&gt;我也会把exe文件发布在GitHub上&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/SuperPaste/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohdmire/SuperPaste/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
+&lt;h1 id=&#34;使用教程&#34;&gt;使用教程&lt;/h1&gt;
 &lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能粘贴，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你可能还需要将输入法切换为英文&lt;/p&gt;
@@ -339,7 +338,7 @@
 &lt;p&gt;如果你需要也可以自行更改按键，具体参考官方文档
 &lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
+&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
 &lt;p&gt;效果
 &lt;img src=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1710&#34;
