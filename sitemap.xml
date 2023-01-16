@@ -2,77 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ohdmire.github.io/post/introduce/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/introduce/</loc>
     <lastmod>2022-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/</loc>
+    <loc>https://demo.stack.jimmycai.com/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/categories/</loc>
+    <loc>https://demo.stack.jimmycai.com/categories/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/</loc>
+    <loc>https://demo.stack.jimmycai.com/post/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/taskkill/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/taskkill/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/onepresskill/</loc>
+    <loc>https://demo.stack.jimmycai.com/categories/%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://demo.stack.jimmycai.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/onepresskill/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/javascript/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/javascript/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/javascriptnote/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/javascriptnote/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://demo.stack.jimmycai.com/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/superpaste/</loc>
     <lastmod>2022-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/superpaste/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/%E7%B2%98%E8%B4%B4/</loc>
     <lastmod>2022-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/%E5%AD%97%E5%B9%95/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/pytranscriber/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/pytranscriber/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/%E5%AD%97%E5%B9%95/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2022-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/website-software/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/wittgenstein/</loc>
     <lastmod>2022-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/post/wittgenstein/</loc>
+    <loc>https://demo.stack.jimmycai.com/p/website-software/</loc>
     <lastmod>2022-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://demo.stack.jimmycai.com/tags/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2022-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/page/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>https://demo.stack.jimmycai.com/archives/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <loc>https://demo.stack.jimmycai.com/page/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ohdmire.github.io/page/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <loc>https://demo.stack.jimmycai.com/p/</loc>
   </url><url>
-    <loc>https://ohdmire.github.io/page/links/</loc>
+    <loc>https://demo.stack.jimmycai.com/categories/example-category/</loc>
   </url><url>
-    <loc>https://ohdmire.github.io/page/search/</loc>
+    <loc>https://demo.stack.jimmycai.com/links/</loc>
+  </url><url>
+    <loc>https://demo.stack.jimmycai.com/search/</loc>
   </url>
 </urlset>

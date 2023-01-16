@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='我觉得重要的部分'>
+<title>JavaScript笔记</title>
+
+<link rel='canonical' href='https://demo.stack.jimmycai.com/p/javascriptnote/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='JavaScript笔记'>
+<meta property='og:description' content='我觉得重要的部分'>
+<meta property='og:url' content='https://demo.stack.jimmycai.com/p/javascriptnote/'>
+<meta property='og:site_name' content='Ohdmire&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='JavaScript' /><meta property='article:published_time' content='2022-12-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-12-14T00:00:00&#43;00:00'/><meta property='og:image' content='https://demo.stack.jimmycai.com/p/javascriptnote/%E5%B0%81%E9%9D%A2.png' />
+<meta name="twitter:title" content="JavaScript笔记">
+<meta name="twitter:description" content="我觉得重要的部分"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://demo.stack.jimmycai.com/p/javascriptnote/%E5%B0%81%E9%9D%A2.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z67FVW9FG3"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-Z67FVW9FG3', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu44626b0713f57603a42a56efb183250d_132092_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😄</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ohdmire&#39;s blog</a></h1>
+            <h2 class="site-description">我的语言的界限意味着我的世界的界限.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/ohdmire/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/ohdmire'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#显示方案">显示方案</a></li>
+    <li><a href="#语法">语法</a></li>
+    <li><a href="#块作用域">块作用域</a></li>
+    <li><a href="#重新声明变量">重新声明变量</a></li>
+    <li><a href="#不是真正的常数">不是真正的常数</a>
+      <ol>
+        <li><a href="#特性">特性</a></li>
+      </ol>
+    </li>
+    <li><a href="#运算符">运算符</a>
+      <ol>
+        <li><a href="#算数">算数</a></li>
+        <li><a href="#赋值">赋值</a></li>
+        <li><a href="#比较">比较</a></li>
+        <li><a href="#逻辑">逻辑</a></li>
+        <li><a href="#类型">类型</a></li>
+        <li><a href="#位运算符">？位运算符</a></li>
+        <li><a href="#优先级">优先级</a></li>
+      </ol>
+    </li>
+    <li><a href="#数据类型">数据类型</a>
+      <ol>
+        <li><a href="#undefined-与-null-的区别">Undefined 与 Null 的区别</a></li>
+        <li><a href="#复杂数据">复杂数据</a></li>
+      </ol>
+    </li>
+    <li><a href="#函数">函数</a></li>
+    <li><a href="#对象">对象</a>
+      <ol>
+        <li><a href="#this-关键词">this 关键词</a></li>
+        <li><a href="#访问对象属性">访问对象属性</a></li>
+        <li><a href="#访问对象方法">访问对象方法</a></li>
+        <li><a href="#通过new声明对象">通过<code>new</code>声明对象</a></li>
+      </ol>
+    </li>
+    <li><a href="#html事件">HTML事件</a></li>
+    <li><a href="#字符串">字符串</a>
+      <ol>
+        <li><a href="#转义字符">转义字符</a></li>
+        <li><a href="#字符串方法和属性">字符串方法和属性</a></li>
+        <li><a href="#字符串位置">字符串位置</a></li>
+        <li><a href="#提取部分字符串">提取部分字符串</a>
+          <ol>
+            <li><a href="#普通方法">普通方法</a></li>
+            <li><a href="#安全方法">安全方法</a></li>
+            <li><a href="#属性访问法">属性访问法</a></li>
+            <li><a href="#其他方法">其他方法</a></li>
+          </ol>
+        </li>
+        <li><a href="#替换字符串内容">替换字符串内容</a></li>
+        <li><a href="#转换为大写和小写">转换为大写和小写</a></li>
+        <li><a href="#其他">其他</a></li>
+        <li><a href="#把字符串转换为数组">把字符串转换为数组</a></li>
+        <li><a href="#字符串模板">字符串模板</a>
+          <ol>
+            <li><a href="#插值">插值</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#数字">数字</a>
+      <ol>
+        <li><a href="#特殊">特殊</a></li>
+        <li><a href="#十六进制">十六进制</a></li>
+        <li><a href="#数字方法">数字方法</a></li>
+        <li><a href="#全局方法">全局方法</a></li>
+        <li><a href="#数值属性">数值属性</a></li>
+      </ol>
+    </li>
+    <li><a href="#数组">数组</a>
+      <ol>
+        <li><a href="#读写数组元素">读写数组元素</a></li>
+        <li><a href="#数组元素可以是对象">数组元素可以是对象</a></li>
+        <li><a href="#数组属性和方法">数组属性和方法</a></li>
+        <li><a href="#添加数组元素">添加数组元素</a></li>
+        <li><a href="#关联数组">关联数组</a></li>
+        <li><a href="#识别数组">识别数组</a></li>
+        <li><a href="#把数组转换为字符串">把数组转换为字符串</a></li>
+        <li><a href="#删除元素和添加新元素">删除元素和添加新元素</a>
+          <ol>
+            <li><a href="#转移">转移</a></li>
+            <li><a href="#添加">添加</a></li>
+            <li><a href="#删除">删除</a></li>
+            <li><a href="#拼接数组">拼接数组</a></li>
+            <li><a href="#合并连接数组">合并（连接）数组</a></li>
+            <li><a href="#裁剪数组">裁剪数组</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/javascriptnote/">
+                <img src="/p/javascriptnote/%E5%B0%81%E9%9D%A2_hu6a9e9f830e372fdd12adb83365e5115c_54079_800x0_resize_box_3.png"
+                        srcset="/p/javascriptnote/%E5%B0%81%E9%9D%A2_hu6a9e9f830e372fdd12adb83365e5115c_54079_800x0_resize_box_3.png 800w, /p/javascriptnote/%E5%B0%81%E9%9D%A2_hu6a9e9f830e372fdd12adb83365e5115c_54079_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="906" 
+                        loading="lazy"
+                        alt="Featured image of post JavaScript笔记" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%AC%94%E8%AE%B0/" >
+                笔记
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/javascriptnote/">JavaScript笔记</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            我觉得重要的部分
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 14, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 9 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="javascript笔记">JavaScript笔记</h1>
+<p>内容参考来源<a class="link" href="https://www.w3school.com.cn/js/index.asp"  target="_blank" rel="noopener"
+    >W3School</a></p>
+<p>以下内容<strong>并不完整</strong>，主要是我在我学过Python的基础上，在理解新的语言所<strong>需要留意的部分</strong>。</p>
+<h2 id="显示方案">显示方案</h2>
+<p>JavaScript 能够以不同方式“显示”数据：</p>
+<ul>
+<li>使用 <code>window.alert()</code> 写入警告框</li>
+<li>使用 <code>document.write()</code> 写入 HTML 输出</li>
+<li>使用 <code>innerHTML</code> 写入 HTML 元素</li>
+<li>使用 <code>console.log()</code> 写入浏览器控制台</li>
+</ul>
+<h2 id="语法">语法</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">;</span>	<span class="c1">// 如何声明变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>	<span class="c1">// 如何赋值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">z</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>	<span class="c1">// 如何计算值
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="块作用域">块作用域</h2>
+<p>通过 <code>var</code> 关键词声明的变量没有块<strong>作用域</strong>。
+在块 <em>{}</em> 内声明的变量<em>可以从块之外进行访问</em>。</p>
+<p>可以使用 <code>let</code> 关键词声明拥有块作用域的变量。
+在块 <em>{}</em> 内声明的变量<em>无法从块外访问</em>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="p">{</span> 
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 此处可以使用 x
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span> 
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 此处不可以使用 x
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>在第一个例子中，在循环中使用的变量使用 <code>var</code> 重新声明了循环之外的变量。</li>
+<li>在第二个例子中，在循环中使用的变量使用 <code>let</code> 并没有重新声明循环外的变量。</li>
+<li>如果在循环中用 <code>let</code> 声明了变量 i，那么只有在循环内，变量 i 才是可见的。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 一些语句
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 此处，i 为 10
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 一些语句
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 此处 i 为 7
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="重新声明变量">重新声明变量</h2>
+<ul>
+<li>允许在程序的任何位置使用 <code>var</code> 重新声明 JavaScript 变量</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 现在，x 为 10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 现在，x 为 6
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>在不同的作用域或块中，通过 <code>let</code> 重新声明变量是允许的</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>       <span class="c1">// 允许
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>   <span class="c1">// 允许
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>   <span class="c1">// 允许
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>其余情况不可以重新声明</strong></li>
+</ul>
+<h2 id="不是真正的常数">不是真正的常数</h2>
+<p>关键字 <code>const</code> 有一定的误导性。
+它没有定义常量值。它定义了对值的常量引用。
+因此，我们<strong>不能更改常量原始值</strong>，但我们<strong>可以更改常量对象的属性</strong>。</p>
+<h3 id="特性">特性</h3>
+<ul>
+<li><strong>不能改变原始值</strong></li>
+<li><strong>可以更改常量对象的属性</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="c1">// 您可以创建 const 对象：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span><span class="nx">type</span><span class="o">:</span><span class="s2">&#34;porsche&#34;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span><span class="s2">&#34;911&#34;</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span><span class="s2">&#34;Black&#34;</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 您可以更改属性：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">car</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s2">&#34;White&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 您可以添加属性：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">car</span><span class="p">.</span><span class="nx">owner</span> <span class="o">=</span> <span class="s2">&#34;Bill&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>但是您无法重新为常量对象赋值</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span><span class="nx">type</span><span class="o">:</span><span class="s2">&#34;porsche&#34;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span><span class="s2">&#34;911&#34;</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span><span class="s2">&#34;Black&#34;</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="nx">car</span> <span class="o">=</span> <span class="p">{</span><span class="nx">type</span><span class="o">:</span><span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="nx">model</span><span class="o">:</span><span class="s2">&#34;XC60&#34;</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span><span class="s2">&#34;White&#34;</span><span class="p">};</span>    <span class="c1">// ERROR
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>常量数组可以更改</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="c1">// 您可以创建常量数组：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Audi&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">,</span> <span class="s2">&#34;porsche&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 您可以更改元素：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Honda&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 您可以添加元素：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">cars</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;Volvo&#34;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>但是您无法重新为常量数组赋值</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Audi&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">,</span> <span class="s2">&#34;porsche&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Honda&#34;</span><span class="p">,</span> <span class="s2">&#34;Toyota&#34;</span><span class="p">,</span> <span class="s2">&#34;Volvo&#34;</span><span class="p">];</span>    <span class="c1">// ERROR
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="运算符">运算符</h2>
+<h3 id="算数">算数</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>加法</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除法</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模（余数）</td>
+</tr>
+<tr>
+<td>++</td>
+<td>递加</td>
+</tr>
+<tr>
+<td>&ndash;</td>
+<td>递减</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="赋值">赋值</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>例子</th>
+<th>等同于</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>x = y</td>
+<td>x = y</td>
+</tr>
+<tr>
+<td>+=</td>
+<td>x += y</td>
+<td>x = x + y</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>x -= y</td>
+<td>x = x - y</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>x *= y</td>
+<td>x = x * y</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>x /= y</td>
+<td>x = x / y</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>x %= y</td>
+<td>x = x % y</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="比较">比较</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>===</td>
+<td>等值等型</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不相等</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>不等值或不等型</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于或等于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于或等于</td>
+</tr>
+<tr>
+<td>?</td>
+<td>三元运算符</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="逻辑">逻辑</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;&amp;</td>
+<td>逻辑与</td>
+</tr>
+<tr>
+<td>||</td>
+<td>逻辑或</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑非</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="类型">类型</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typeof</td>
+<td>返回变量的类型。</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td>返回 true，如果对象是对象类型的实例。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="位运算符">？位运算符</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+<th>等同于</th>
+<th>结果</th>
+<th>十进制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>与</td>
+<td>5 &amp; 1</td>
+<td>0101 &amp; 0001</td>
+<td>0001</td>
+<td>1</td>
+</tr>
+<tr>
+<td>|</td>
+<td>或</td>
+<td>5 | 1</td>
+<td>0101 | 0001</td>
+<td>0101</td>
+<td>5</td>
+</tr>
+<tr>
+<td>~</td>
+<td>非</td>
+<td>~ 5</td>
+<td>~0101</td>
+<td>1010</td>
+<td>10</td>
+</tr>
+<tr>
+<td>^</td>
+<td>异或</td>
+<td>5 ^ 1</td>
+<td>0101 ^ 0001</td>
+<td>0100</td>
+<td>4</td>
+</tr>
+<tr>
+<td>&laquo;</td>
+<td>零填充左位移</td>
+<td>5 &laquo; 1</td>
+<td>0101 &laquo; 1</td>
+<td>1010</td>
+<td>10</td>
+</tr>
+<tr>
+<td>&raquo;</td>
+<td>有符号右位移</td>
+<td>5 &raquo; 1</td>
+<td>0101 &raquo; 1</td>
+<td>0010</td>
+<td>2</td>
+</tr>
+<tr>
+<td>&raquo;&gt;</td>
+<td>零填充右位移</td>
+<td>5 &raquo;&gt; 1</td>
+<td>0101 &raquo;&gt; 1</td>
+<td>0010</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="优先级">优先级</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>20</th>
+<th>( )</th>
+<th>表达式分组</th>
+<th>(3 + 4)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>.</td>
+<td>成员</td>
+<td>person.name</td>
+</tr>
+<tr>
+<td>19</td>
+<td>[]</td>
+<td>成员</td>
+<td>person[&ldquo;name&rdquo;]</td>
+</tr>
+<tr>
+<td>19</td>
+<td>()</td>
+<td>函数调用</td>
+<td>myFunction()</td>
+</tr>
+<tr>
+<td>19</td>
+<td>new</td>
+<td>创建</td>
+<td>new Date()</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>++</td>
+<td>后缀递增</td>
+<td>i++</td>
+</tr>
+<tr>
+<td>17</td>
+<td>&ndash;</td>
+<td>后缀递减</td>
+<td>i&ndash;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>++</td>
+<td>前缀递增</td>
+<td>++i</td>
+</tr>
+<tr>
+<td>16</td>
+<td>&ndash;</td>
+<td>前缀递减</td>
+<td>&ndash;i</td>
+</tr>
+<tr>
+<td>16</td>
+<td>!</td>
+<td>逻辑否</td>
+<td>!(x==y)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>typeof</td>
+<td>类型</td>
+<td>typeof x</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>**</td>
+<td>求幂 (ES7)</td>
+<td>10 ** 2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>*</td>
+<td>乘</td>
+<td>10 * 5</td>
+</tr>
+<tr>
+<td>14</td>
+<td>/</td>
+<td>除</td>
+<td>10 / 5</td>
+</tr>
+<tr>
+<td>14</td>
+<td>%</td>
+<td>模数除法</td>
+<td>10 % 5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>+</td>
+<td>加</td>
+<td>10 + 5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>-</td>
+<td>减</td>
+<td>10 - 5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>&laquo;</td>
+<td>左位移</td>
+<td>x &laquo; 2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>&raquo;</td>
+<td>右位移</td>
+<td>x &raquo; 2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>&raquo;&gt;</td>
+<td>右位移（无符号）</td>
+<td>x &raquo;&gt; 2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>&lt;</td>
+<td>小于</td>
+<td>x &lt; y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&lt;=</td>
+<td>小于或等于</td>
+<td>x &lt;= y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&gt;</td>
+<td>大于</td>
+<td>x &gt; y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&gt;=</td>
+<td>大于或等于</td>
+<td>x &gt;= y</td>
+</tr>
+<tr>
+<td>11</td>
+<td>in</td>
+<td>对象中的属性</td>
+<td>&ldquo;PI&rdquo; in Math</td>
+</tr>
+<tr>
+<td>11</td>
+<td>instanceof</td>
+<td>对象的实例</td>
+<td>instanceof Array</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>==</td>
+<td>相等</td>
+<td>x == y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>===</td>
+<td>严格相等</td>
+<td>x === y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>!=</td>
+<td>不相等</td>
+<td>x != y</td>
+</tr>
+<tr>
+<td>10</td>
+<td>!==</td>
+<td>严格不相等</td>
+<td>x !== y</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>&amp;</td>
+<td>按位与</td>
+<td>x &amp; y</td>
+</tr>
+<tr>
+<td>8</td>
+<td>^</td>
+<td>按位 XOR</td>
+<td>x ^ y</td>
+</tr>
+<tr>
+<td>7</td>
+<td>|</td>
+<td>按位或</td>
+<td>x | y</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&amp;&amp;</td>
+<td>逻辑与</td>
+<td>x &amp;&amp; y</td>
+</tr>
+<tr>
+<td>5</td>
+<td>||</td>
+<td>逻辑否</td>
+<td>x || y</td>
+</tr>
+<tr>
+<td>4</td>
+<td>? :</td>
+<td>条件</td>
+<td>? &ldquo;Yes&rdquo; : &ldquo;No&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>=</td>
+<td>赋值</td>
+<td>x = y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>+=</td>
+<td>赋值</td>
+<td>x += y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>-=</td>
+<td>赋值</td>
+<td>x -= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>*=</td>
+<td>赋值</td>
+<td>x *= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>%=</td>
+<td>赋值</td>
+<td>x %= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&laquo;=</td>
+<td>赋值</td>
+<td>x &laquo;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&raquo;=</td>
+<td>赋值</td>
+<td>x &raquo;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&raquo;&gt;=</td>
+<td>赋值</td>
+<td>x &raquo;&gt;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&amp;=</td>
+<td>赋值</td>
+<td>x &amp;= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>^=</td>
+<td>赋值</td>
+<td>x ^= y</td>
+</tr>
+<tr>
+<td>3</td>
+<td>|=</td>
+<td>赋值</td>
+<td>x |= y</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>yield</td>
+<td>暂停函数</td>
+<td>yield x</td>
+</tr>
+<tr>
+<td>1</td>
+<td>,</td>
+<td>逗号</td>
+<td>7 , 8</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="数据类型">数据类型</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">length</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>                             <span class="c1">// 数字
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;Gates&#34;</span><span class="p">;</span>                      <span class="c1">// 字符串
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Porsche&#34;</span><span class="p">,</span> <span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">];</span>         <span class="c1">// 数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span><span class="nx">firstName</span><span class="o">:</span><span class="s2">&#34;Bill&#34;</span><span class="p">,</span> <span class="nx">lastName</span><span class="o">:</span><span class="s2">&#34;Gates&#34;</span><span class="p">};</span>    <span class="c1">// 对象
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>在第一个例子中，JavaScript 把 911 和 7 视作数值，直到遇见 &ldquo;Porsche&rdquo;。</li>
+<li>在第二个例子中，<strong>由于第一个操作数是字符串，因此所有操作数都被视为字符串</strong>。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">911</span> <span class="o">+</span> <span class="mi">7</span> <span class="o">+</span> <span class="s2">&#34;Porsche&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>x= 918Porsche</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s2">&#34;Porsche&#34;</span> <span class="o">+</span> <span class="mi">911</span> <span class="o">+</span> <span class="mi">7</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>x = Porsche9117</p>
+</blockquote>
+<h3 id="undefined-与-null-的区别">Undefined 与 Null 的区别</h3>
+<p><code>Undefined</code> 与 <code>null</code> 的值相等，但类型不相等：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="k">typeof</span> <span class="kc">undefined</span>              <span class="c1">// undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typeof</span> <span class="kc">null</span>                   <span class="c1">// object
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kc">null</span> <span class="o">===</span> <span class="kc">undefined</span>            <span class="c1">// false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kc">null</span> <span class="o">==</span> <span class="kc">undefined</span>             <span class="c1">// true
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="复杂数据">复杂数据</h3>
+<p><code>typeof</code> 运算符可返回以下两种类型之一：</p>
+<ul>
+<li>function</li>
+<li>object</li>
+</ul>
+<p><code>typeof</code> 运算符把对象、数组或 <code>null</code> 返回 <code>object</code>。</p>
+<p><code>typeof</code> 运算符不会把函数返回 <code>object</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="k">typeof</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;Bill&#39;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span><span class="mi">62</span><span class="p">}</span> <span class="c1">// 返回 &#34;object&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typeof</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>             <span class="c1">// 返回 &#34;object&#34; (并非 &#34;array&#34;，参见下面的注释)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typeof</span> <span class="kc">null</span>                  <span class="c1">// 返回 &#34;object&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typeof</span> <span class="kd">function</span> <span class="nx">myFunc</span><span class="p">(){}</span>   <span class="c1">// 返回 &#34;function&#34;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="函数">函数</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myFunction</span><span class="p">(</span><span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">p1</span> <span class="o">*</span> <span class="nx">p2</span><span class="p">;</span>              <span class="c1">// 该函数返回 p1 和 p2 的乘积
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 JavaScript 函数中声明的变量，会成为函数的*<strong>局部变量</strong></p>
+<h2 id="对象">对象</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">firstName</span><span class="o">:</span> <span class="s2">&#34;Bill&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">lastName</span> <span class="o">:</span> <span class="s2">&#34;Gates&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">id</span>       <span class="o">:</span> <span class="mi">678</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">fullName</span> <span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>属性和方法in对象</p>
+</blockquote>
+<h3 id="this-关键词">this 关键词</h3>
+<p>在函数定义中，<code>this</code> 引用该函数的“拥有者”。</p>
+<p>在上面的例子中，<code>this</code> 指的是“拥有” fullName 函数的 <strong>person 对象</strong>。</p>
+<p>换言之，<code>this.firstName</code> 的意思是 <strong>this 对象</strong>的 firstName 属性。</p>
+<h3 id="访问对象属性">访问对象属性</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">objectName</span><span class="p">.</span><span class="nx">propertyName</span> <span class="c1">//方法1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">objectName</span><span class="p">[</span><span class="s2">&#34;propertyName&#34;</span><span class="p">]</span> <span class="c1">//方法2
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="访问对象方法">访问对象方法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">objectName</span><span class="p">.</span><span class="nx">methodName</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果您<strong>不使用 ()</strong> 访问 fullName 方法，则将返回<strong>函数定义</strong>(就是怎么写怎么出)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">name</span> <span class="o">=</span> <span class="nx">person</span><span class="p">.</span><span class="nx">fullName</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="通过new声明对象">通过<code>new</code>声明对象</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">();</span>        <span class="c1">// 把 x 声明为 String 对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">();</span>        <span class="c1">// 把 y 声明为 Number 对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">();</span>       <span class="c1">//	把 z 声明为 Boolean 对象
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>请在JavaScript的编写中<strong>避免使用</strong><code>new</code> 关键词</p>
+</blockquote>
+<h2 id="html事件">HTML事件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">element</span> <span class="nx">event</span><span class="o">=</span><span class="s1">&#39;一些 JavaScript&#39;</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onchange</td>
+<td>HTML 元素已被改变</td>
+</tr>
+<tr>
+<td>onclick</td>
+<td>用户点击了 HTML 元素</td>
+</tr>
+<tr>
+<td>onmouseover</td>
+<td>用户把鼠标移动到 HTML 元素上</td>
+</tr>
+<tr>
+<td>onmouseout</td>
+<td>用户把鼠标移开 HTML 元素</td>
+</tr>
+<tr>
+<td>onkeydown</td>
+<td>用户按下键盘按键</td>
+</tr>
+<tr>
+<td>onload</td>
+<td>浏览器已经完成页面加载</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="字符串">字符串</h2>
+<h3 id="转义字符">转义字符</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代码</th>
+<th>结果</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\'</td>
+<td>'</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>\&quot;</td>
+<td>&quot;</td>
+<td>双引号</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>\</td>
+<td>反斜杠</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代码</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\b</td>
+<td>退格键</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>新行</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>水平制表符</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直制表符</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="字符串方法和属性">字符串方法和属性</h3>
+<p>JavaScript会将字符串视为对象</p>
+<h3 id="字符串位置">字符串位置</h3>
+<ul>
+<li><code>length</code> 属性返回字符串的长度</li>
+<li><code>indexOf()</code> 方法返回字符串中指定文本**首次出现的索引（位置）</li>
+<li><code>lastIndexOf()</code> 方法返回指定文本在字符串中<strong>最后</strong>一次出现的索引
+<ul>
+<li>如果未找到文本， <code>indexOf()</code> 和 <code>lastIndexOf()</code> 均返回 -1</li>
+<li>两种方法都接受作为检索<strong>起始位置</strong>的第二个参数</li>
+</ul>
+</li>
+<li><code>search()</code> 方法搜索特定值的字符串，并返回匹配的位置</li>
+</ul>
+<blockquote>
+<p>search() 方法无法设置第二个开始位置参数。
+indexOf() 方法无法设置更强大的搜索值（正则表达式）</p>
+</blockquote>
+<h3 id="提取部分字符串">提取部分字符串</h3>
+<h4 id="普通方法">普通方法</h4>
+<ul>
+<li>slice(<em>start</em>, <em>end</em>)</li>
+<li>substring(<em>start</em>, <em>end</em>)</li>
+</ul>
+<blockquote>
+<p> <code>substring()</code> 无法接受负的索引</p>
+</blockquote>
+<ul>
+<li>substr(<em>start</em>, <em>length</em>)</li>
+</ul>
+<h4 id="安全方法">安全方法</h4>
+<ul>
+<li>
+<p>charAt(<em>position</em>)
+<code>charAt()</code> 方法返回字符串中指定下标（位置）的字符串</p>
+</li>
+<li>
+<p>charCodeAt(<em>position</em>)
+<code>charCodeAt()</code> 方法返回字符串中指定索引的字符 unicode 编码</p>
+</li>
+</ul>
+<h4 id="属性访问法">属性访问法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&#34;HELLO WORLD&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">str</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>                   <span class="c1">// 返回 H
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="其他方法">其他方法</h4>
+<ul>
+<li><code>match()</code> 根据正则表达式在字符串中搜索匹配项，并将匹配项作为<strong>Array对象</strong>返回</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regexp</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>includes()</code>如果字符串包含指定值，<code>includes()</code> 方法返回 true</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">string</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="nx">searchvalue</span><span class="p">,</span> <span class="nx">start</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>startsWith()</code>如果字符串以指定值开头，则 <code>startsWith()</code> 方法返回 <code>true</code>，否则返回 <code>false</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">string</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="nx">searchvalue</span><span class="p">,</span> <span class="nx">start</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>endsWith()</code>如果字符串以指定值结尾，则 <code>endsWith()</code> 方法返回 <code>true</code>，否则返回 <code>false</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">string</span><span class="p">.</span><span class="nx">endsWith</span><span class="p">(</span><span class="nx">searchvalue</span><span class="p">,</span> <span class="nx">length</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="替换字符串内容">替换字符串内容</h3>
+<p><code>replace()</code> 方法不会改变调用它的字符串。它返回的是新字符串。
+默认地，<code>replace()</code> <strong>只替换首个匹配</strong></p>
+<blockquote>
+<p>需要掌握正则表达式</p>
+</blockquote>
+<h3 id="转换为大写和小写">转换为大写和小写</h3>
+<ul>
+<li>通过 <code>toUpperCase()</code> 把字符串转换为大写</li>
+<li>通过 <code>toLowerCase()</code> 把字符串转换为小写</li>
+</ul>
+<h3 id="其他">其他</h3>
+<ul>
+<li><code>concat()</code> 连接两个或多个字符串：</li>
+<li><code>trim()</code> 方法删除字符串两端的空白符：</li>
+</ul>
+<h3 id="把字符串转换为数组">把字符串转换为数组</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">txt</span> <span class="o">=</span> <span class="s2">&#34;a,b,c,d,e&#34;</span><span class="p">;</span>   <span class="c1">// 字符串
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">txt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&#34;,&#34;</span><span class="p">);</span>          <span class="c1">// 用逗号分隔
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">txt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">);</span>          <span class="c1">// 用空格分隔
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">txt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&#34;|&#34;</span><span class="p">);</span>          <span class="c1">// 用竖线分隔
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>如果分隔符是 &ldquo;&quot;，被返回的数组将是间隔单个字符的数组</p>
+</blockquote>
+<h3 id="字符串模板">字符串模板</h3>
+<p><strong>模板字面量</strong>使用反引号 (``) 而不是引号 (&rdquo;&quot;) 来定义字符串</p>
+<h4 id="插值">插值</h4>
+<p><strong>模板字面量</strong>提供了一种将变量和表达式插入字符串的简单方法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">{...}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s2">&#34;Bill&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;Gates&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="sb">`Welcome </span><span class="si">${</span><span class="nx">firstName</span><span class="si">}</span><span class="sb">, </span><span class="si">${</span><span class="nx">lastName</span><span class="si">}</span><span class="sb">!`</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>模板字面量</strong>允许字符串中的表达式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">price</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">VAT</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="sb">`Total: </span><span class="si">${</span><span class="p">(</span><span class="nx">price</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="nx">VAT</span><span class="p">)).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="数字">数字</h2>
+<blockquote>
+<p>JavaScript 数值始终是 64 位的浮点数</p>
+</blockquote>
+<h3 id="特殊">特殊</h3>
+<ul>
+<li>
+<p><code>NaN</code> 属于 JavaScript 保留词，指示某个数不是合法数</p>
+<ul>
+<li><code>isNaN()</code> 来确定某个值是否是数</li>
+</ul>
+</li>
+<li>
+<p><code>Infinity</code> （或 <code>-Infinity</code>）是 JavaScript 在计算数时超出最大可能数范围时返回的值</p>
+</li>
+</ul>
+<h3 id="十六进制">十六进制</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">myNumber</span> <span class="o">=</span> <span class="mi">128</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">myNumber</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>     <span class="c1">// 返回 80
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">myNumber</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>      <span class="c1">// 返回 200
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">myNumber</span><span class="p">.</span><span class="nx">toString</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>      <span class="c1">// 返回 10000000
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="数字方法">数字方法</h3>
+<ul>
+<li><code>toString()</code> 以字符串返回数值。</li>
+<li><code>toExponential()</code> 返回字符串值，它包含已被四舍五入并使用指数计数法的数字。</li>
+<li><code>toFixed()</code> 返回字符串值，它包含了指定位数小数的数字</li>
+<li><code>toPrecision()</code> 返回字符串值，它包含了指定长度的数字</li>
+<li><code>valueOf()</code> 以数值返回数值</li>
+</ul>
+<blockquote>
+<p>在 JavaScript 中，数字可以是原始值（typeof = number）或对象（typeof = object）。</p>
+</blockquote>
+<p>在 JavaScript 内部使用 <code>valueOf()</code> 方法可将 Number 对象转换为原始值。</p>
+<p>没有理由在代码中使用它。</p>
+<p>所有 JavaScript 数据类型都有 <code>valueOf()</code> 和 <code>toString()</code> 方法。</p>
+<h3 id="全局方法">全局方法</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number()</td>
+<td>返回数字，由其参数转换而来。</td>
+</tr>
+<tr>
+<td>parseFloat()</td>
+<td>解析其参数并返回浮点数。</td>
+</tr>
+<tr>
+<td>parseInt()</td>
+<td>解析其参数并返回整数。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="数值属性">数值属性</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAX_VALUE</td>
+<td>返回 JavaScript 中可能的最大数。</td>
+</tr>
+<tr>
+<td>MIN_VALUE</td>
+<td>返回 JavaScript 中可能的最小数。</td>
+</tr>
+<tr>
+<td>NEGATIVE_INFINITY</td>
+<td>表示负的无穷大（溢出返回）。</td>
+</tr>
+<tr>
+<td>NaN</td>
+<td>表示非数字值（&ldquo;Not-a-Number&rdquo;）。</td>
+</tr>
+<tr>
+<td>POSITIVE_INFINITY</td>
+<td>表示无穷大（溢出返回）。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">.</span><span class="nx">MAX_VALUE</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>数字属性不可用于变量</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">x</span><span class="p">.</span><span class="nx">MAX_VALUE</span><span class="p">;</span>    <span class="c1">// y 成为 undefined
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="数组">数组</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">cars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Saab&#34;</span><span class="p">,</span> <span class="s2">&#34;Volvo&#34;</span><span class="p">,</span> <span class="s2">&#34;BMW&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">array</span><span class="o">-</span><span class="nx">name</span> <span class="o">=</span> <span class="p">[</span><span class="nx">item1</span><span class="p">,</span> <span class="nx">item2</span><span class="p">,</span> <span class="p">...];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="读写数组元素">读写数组元素</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">//访问
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Opel&#34;</span><span class="p">;</span> <span class="c1">//修改
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="数组元素可以是对象">数组元素可以是对象</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nx">myArray</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">myArray</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">myFunction</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">myArray</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nx">myCars</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="数组属性和方法">数组属性和方法</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>   <span class="c1">// length 属性返回元素的数量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">cars</span><span class="p">.</span><span class="nx">sort</span><span class="p">();</span>   <span class="c1">// sort() 方法对数组进行排序
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>length</code> 属性返回数组的长度（数组元素的数目）</p>
+</li>
+<li>
+<p>遍历数组的最安全方法是使用 &ldquo;<code>for</code>&rdquo; 循环：</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span><span class="p">,</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">fLen</span><span class="p">,</span> <span class="nx">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fLen</span> <span class="o">=</span> <span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">text</span> <span class="o">=</span> <span class="s2">&#34;&lt;ul&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">fLen</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="nx">text</span> <span class="o">+=</span> <span class="s2">&#34;&lt;li&gt;&#34;</span> <span class="o">+</span> <span class="nx">fruits</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&#34;&lt;/li&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>Array.foreach()</code> 函数</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span><span class="p">,</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">text</span> <span class="o">=</span> <span class="s2">&#34;&lt;ul&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">myFunction</span><span class="p">);</span> <span class="c1">//调用数组的每个元素，并将元素传递给回调函数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">text</span> <span class="o">+=</span> <span class="s2">&#34;&lt;/ul&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myFunction</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">text</span> <span class="o">+=</span> <span class="s2">&#34;&lt;li&gt;&#34;</span> <span class="o">+</span> <span class="nx">value</span> <span class="o">+</span> <span class="s2">&#34;&lt;/li&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="添加数组元素">添加数组元素</h3>
+<p><code>push()</code> 方法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;Lemon&#34;</span><span class="p">);</span>                <span class="c1">// 向 fruits 添加一个新元素 (Lemon)
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>或者指定</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Lemon&#34;</span><span class="p">;</span>                 <span class="c1">// 向 fruits 添加一个新元素 (Lemon)
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>添加最高索引的元素可在数组中创建&quot;未定义&quot;</strong></p>
+<h3 id="关联数组">关联数组</h3>
+<p>数组只能使用<strong>数字索引</strong></p>
+<p>以下内容属于<strong>命名索引</strong></p>
+<blockquote>
+<p>JavaScript 会把数组重定义为标准对象，所有数组的方法和属性将产生非正确结果。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">person</span><span class="p">[</span><span class="s2">&#34;firstName&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Bill&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">person</span><span class="p">[</span><span class="s2">&#34;lastName&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Gates&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">person</span><span class="p">[</span><span class="s2">&#34;age&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">62</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">person</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>         <span class="c1">// person.length 将返回 0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">person</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>              <span class="c1">// person[0] 将返回 undefined
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="识别数组">识别数组</h3>
+<ul>
+<li><code>typeof</code> 返回 &ldquo;<code>object</code>&rdquo;</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typeof</span> <span class="nx">fruits</span><span class="p">;</span>             <span class="c1">// 返回 object
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>Array.isArray()</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">fruits</span><span class="p">);</span>     <span class="c1">// 返回 true
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>其他&hellip;&hellip;.</li>
+</ul>
+<h3 id="把数组转换为字符串">把数组转换为字符串</h3>
+<ul>
+<li><code>toString()</code> 把数组转换为数组值（逗号分隔）的字符串</li>
+<li></li>
+<li><code>join()</code> 方法也可将可以规定分隔符</li>
+</ul>
+<h3 id="删除元素和添加新元素">删除元素和添加新元素</h3>
+<h4 id="转移">转移</h4>
+<ul>
+<li><code>pop()</code> 方法从数组中删除最后一个元素</li>
+<li><code>shift()</code> 方法会删除首个数组元素，并把所有其他元素“位移”到更低的索引</li>
+</ul>
+<h4 id="添加">添加</h4>
+<ul>
+<li><code>push()</code> 方法（在数组结尾处）向数组添加一个新的元素</li>
+<li><code>unshift()</code> 方法（在开头）向数组添加新元素，并把所有其他元素“位移”到更高的索引</li>
+</ul>
+<p><code>push()</code>和<code>unshift()</code>方法<strong>返回新数组的长度</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="s2">&#34;Lemon&#34;</span><span class="p">);</span>    <span class="c1">// 返回 5
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="删除">删除</h4>
+<p>使用 <code>delete</code> 会在数组留下未定义的空洞</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="k">delete</span> <span class="nx">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>           <span class="c1">// 把 fruits 中的首个元素改为 undefined
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="拼接数组">拼接数组</h4>
+<p><code>splice()</code> 方法可用于向数组添加新项</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Banana&#34;</span><span class="p">,</span> <span class="s2">&#34;Orange&#34;</span><span class="p">,</span> <span class="s2">&#34;Apple&#34;</span><span class="p">,</span> <span class="s2">&#34;Mango&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fruits</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;Lemon&#34;</span><span class="p">,</span> <span class="s2">&#34;Kiwi&#34;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>第一个参数（2）定义了应添加新元素的位置（拼接）。</p>
+<p>第二个参数（2）定义应删除多少元素。</p>
+<p>其余参数（“Lemon”，“Kiwi”）定义要添加的新元素。</p>
+<p><code>splice()</code> 方法返回一个包含已删除项的数组：</p>
+<p><code>splice()</code> 在数组中**不留“空洞”**的情况下移除元素</p>
+<h4 id="合并连接数组">合并（连接）数组</h4>
+<p><code>concat()</code> 方法通过合并（连接）现有数组来创建一个<strong>新</strong>数组</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-JavaScript" data-lang="JavaScript"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Cecilie&#34;</span><span class="p">,</span> <span class="s2">&#34;Lone&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Emil&#34;</span><span class="p">,</span> <span class="s2">&#34;Tobias&#34;</span><span class="p">,</span> <span class="s2">&#34;Linus&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">arr3</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Robin&#34;</span><span class="p">,</span> <span class="s2">&#34;Morgan&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">myChildren</span> <span class="o">=</span> <span class="nx">arr1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">arr2</span><span class="p">,</span> <span class="nx">arr3</span><span class="p">);</span>   <span class="c1">// 将arr1、arr2 与 arr3 连接在一起
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="裁剪数组">裁剪数组</h4>
+<p><code>slice()</code> 方法用数组的某个片段切出<strong>新</strong>数组</p>
+<p><code>slice()</code> 可接受两个参数，比如 (1, 3)。</p>
+<p>该方法会从开始参数选取元素，直到结束参数（不包括）为止。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/javascript/">JavaScript</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/wittgenstein/">
+        
+        
+            <div class="article-image">
+                <img src="/p/wittgenstein/note.98e42fa136cbbcb0876a73c07c6f1f15_hub3861a2fc8a714cba5025c698d818fe3_288583_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 维特根斯坦"
+                        data-key="Wittgenstein" 
+                        data-hash="md5-mOQvoTbLvLCHanPAfG8fFQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">维特根斯坦</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: "66203c75b3329f29c131",
+        clientSecret: "a2f226176efd732f9072621d1990f7d7d2a55c87",
+        repo: "gitalk",
+        owner: "ohdmire",
+        admin: ["ohdmire"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+    });
+    (function () {
+        if (
+            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
+        ) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
+        }
+        gitalk.render("gitalk-container");
+    })();
+</script>
+
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Ohdmire&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
