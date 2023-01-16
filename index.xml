@@ -12,12 +12,12 @@
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/introduce/</guid>
-        <description>&lt;h1 id=&#34;如有卡顿请访问&#34;&gt;如有卡顿请访问&lt;/h1&gt;
+        <description>&lt;h2 id=&#34;如有卡顿请访问&#34;&gt;如有卡顿请访问&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://thankful-water-038154a00.2.azurestaticapps.net/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
 &lt;p&gt;你好啊，欢迎来到我的博客，我的博客平时主要以分享技术类的内容为主，主要是一些踩过的坑🕳或是网上冲浪🏄‍♂️的时候遇到的痛点。&lt;/p&gt;
-&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;你可以在右侧使用搜索功能&lt;/li&gt;
 &lt;li&gt;你可以点击右侧的tags或是categories来快速找到你需要的内容&lt;/li&gt;
@@ -30,10 +30,11 @@
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/onepresskill/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
+        <description>&lt;img src="https://demo.stack.jimmycai.com/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
-&lt;h1 id=&#34;编写&#34;&gt;编写&lt;/h1&gt;
-&lt;h2 id=&#34;思路&#34;&gt;思路&lt;/h2&gt;
+&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
+&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;需要获取当前正在运行的程序&lt;/li&gt;
 &lt;/ol&gt;
@@ -52,7 +53,7 @@
 &lt;ul&gt;
 &lt;li&gt;这个部分在我之前的博客&lt;a class=&#34;link&#34; href=&#34;../superpaste#%e7%bc%96%e5%86%99%e8%bf%87%e7%a8%8b&#34; &gt;超级粘贴&lt;/a&gt;也有使用到，就是&lt;code&gt;pynput&lt;/code&gt;库&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -200,10 +201,10 @@
 &lt;/div&gt;&lt;p&gt;我也会把exe文件发布在GitHub上&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/OnePressKill/releases/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohdmire/OnePressKill/releases/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;小趣事&#34;&gt;小趣事&lt;/h2&gt;
+&lt;h3 id=&#34;小趣事&#34;&gt;小趣事&lt;/h3&gt;
 &lt;p&gt;&lt;del&gt;我真tmsb，把文件名称命名为taskkill，结果执行&lt;code&gt;os.system&lt;/code&gt;的时候就又调用了一遍该程序，结果我看半天以为是&lt;code&gt;pyinstaller&lt;/code&gt;编译出错了，我真的是服了。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;该问题已在v0.2得到修复&lt;/p&gt;
-&lt;h1 id=&#34;使用教程&#34;&gt;使用教程&lt;/h1&gt;
+&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
 &lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能杀死当前窗口的程序，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你可能还需要以&lt;strong&gt;管理员身份&lt;/strong&gt;运行该程序&lt;/p&gt;
@@ -211,7 +212,7 @@
 &lt;p&gt;如果你需要也可以自行更改按键，具体参考官方文档
 &lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
+&lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
 &lt;img src=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1730&#34;
@@ -227,7 +228,7 @@
 		data-flex-basis=&#34;435px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;参考链接&#34;&gt;参考链接&lt;/h3&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://studygolang.com/articles/32337&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;python小工具&amp;ndash;查看窗口程序进程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/MemoryD/article/details/83148305&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1911,10 +1912,11 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/superpaste/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
+        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
-&lt;h1 id=&#34;编写&#34;&gt;编写&lt;/h1&gt;
-&lt;h2 id=&#34;思路&#34;&gt;思路&lt;/h2&gt;
+&lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
+&lt;h3 id=&#34;思路&#34;&gt;思路&lt;/h3&gt;
 &lt;p&gt;毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;读取剪切板内容&lt;/li&gt;
@@ -1923,7 +1925,7 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我只会Python所以我就用Python来写:)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;编写过程&#34;&gt;编写过程&lt;/h2&gt;
+&lt;h3 id=&#34;编写过程&#34;&gt;编写过程&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;首先采用的是&lt;code&gt;pyperclip&lt;/code&gt;进行剪切板读取，这一步没有什么问题。&lt;/li&gt;
 &lt;li&gt;然后我采用&lt;code&gt;pyautogui&lt;/code&gt;模拟输入，然后重点是它&lt;strong&gt;不能输入中文&lt;/strong&gt;&lt;/li&gt;
@@ -1931,7 +1933,7 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 到这就终于能输入中文了。&lt;/li&gt;
 &lt;li&gt;最后再加上按键监听就完成了&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -2019,7 +2021,7 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;我也会把exe文件发布在GitHub上&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ohdmire/SuperPaste/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/ohdmire/SuperPaste/releases&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;使用教程&#34;&gt;使用教程&lt;/h1&gt;
+&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
 &lt;p&gt;只要运行程序按下&lt;code&gt;F2&lt;/code&gt;就能粘贴，按&lt;code&gt;ESC&lt;/code&gt;退出程序&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你可能还需要将输入法切换为英文&lt;/p&gt;
@@ -2027,7 +2029,7 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;p&gt;如果你需要也可以自行更改按键，具体参考官方文档
 &lt;a class=&#34;link&#34; href=&#34;https://pynput.readthedocs.io/en/latest/keyboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;最后&#34;&gt;最后&lt;/h1&gt;
+&lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
 &lt;img src=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1710&#34;
@@ -2054,9 +2056,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/pytranscriber/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;引言&#34;&gt;引言&lt;/h1&gt;
+        <description>&lt;img src="https://demo.stack.jimmycai.com/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕&lt;/p&gt;
-&lt;h1 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h1&gt;
+&lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;注意，你可能需要一定的Python cmd git知识&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;首先你需要下载项目(推荐使用git clone)
@@ -2072,8 +2075,8 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你也可以使用虚拟Python环境安装软件，如poetry&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&#34;使用教程&#34;&gt;使用教程&lt;/h1&gt;
-&lt;h2 id=&#34;生成字幕文件&#34;&gt;生成字幕文件&lt;/h2&gt;
+&lt;h2 id=&#34;使用教程&#34;&gt;使用教程&lt;/h2&gt;
+&lt;h3 id=&#34;生成字幕文件&#34;&gt;生成字幕文件&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;首先打开软件是英文页面，点击标题栏上language按钮选择简体中文
@@ -2164,8 +2167,8 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;p&gt;到这里就已经结束了，请享用你的字幕吧&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;翻译&#34;&gt;翻译&lt;/h2&gt;
-&lt;h3 id=&#34;翻译网站&#34;&gt;翻译网站&lt;/h3&gt;
+&lt;h3 id=&#34;翻译&#34;&gt;翻译&lt;/h3&gt;
+&lt;h4 id=&#34;翻译网站&#34;&gt;翻译网站&lt;/h4&gt;
 &lt;p&gt;如果你还想翻译字幕，推荐你使用字幕翻译网站
 &lt;a class=&#34;link&#34; href=&#34;https://translatesubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://translatesubtitles.com/&lt;/a&gt;&lt;/p&gt;
@@ -2186,10 +2189,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &gt;
 当然你也可以使用有道翻译等国内翻译软件
 （有道翻译有大学生免费翻译文档）&lt;/p&gt;
-&lt;h3 id=&#34;有道翻译&#34;&gt;有道翻译&lt;/h3&gt;
+&lt;h4 id=&#34;有道翻译&#34;&gt;有道翻译&lt;/h4&gt;
 &lt;p&gt;将srt以文本打开，复制一份到word文档&lt;/p&gt;
 &lt;p&gt;将word文档上传翻译，再复制内容回srt保存&lt;/p&gt;
-&lt;h1 id=&#34;结果&#34;&gt;结果&lt;/h1&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1913&#34;
 	height=&#34;1201&#34;
@@ -2283,16 +2286,17 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/website-software/</guid>
-        <description>&lt;h1 id=&#34;网站设计&#34;&gt;网站设计&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;网站涉及相关&#34;&gt;网站涉及相关&lt;/h1&gt;
+&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
 &lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stack主题&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h1&gt;
+&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
 &lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
 &lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
-&lt;h1 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h1&gt;
+&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
 &lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
 &lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2300,9 +2304,9 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
     &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
-&lt;h1 id=&#34;网站更新&#34;&gt;网站更新&lt;/h1&gt;
+&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
 &lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;编译好网站之后用&lt;code&gt;git&lt;/code&gt;将写好的内容&lt;code&gt;push&lt;/code&gt;到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
+    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
 &lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;

@@ -261,12 +261,16 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#思路">思路</a></li>
-    <li><a href="#编写过程">编写过程</a></li>
-    <li><a href="#代码">代码</a></li>
-  </ol>
-
-  <ol>
+    <li><a href="#起因">起因</a></li>
+    <li><a href="#编写">编写</a>
+      <ol>
+        <li><a href="#思路">思路</a></li>
+        <li><a href="#编写过程">编写过程</a></li>
+        <li><a href="#代码">代码</a></li>
+      </ol>
+    </li>
+    <li><a href="#使用教程">使用教程</a></li>
+    <li><a href="#最后">最后</a></li>
     <li><a href="#参考链接">参考链接</a></li>
   </ol>
 </nav>
@@ -367,10 +371,11 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <h1 id="起因">起因</h1>
+    <h1 id="超级粘贴">超级粘贴</h1>
+<h2 id="起因">起因</h2>
 <p>最近发现一些平台是<strong>不能直接粘贴内容</strong>的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序</p>
-<h1 id="编写">编写</h1>
-<h2 id="思路">思路</h2>
+<h2 id="编写">编写</h2>
+<h3 id="思路">思路</h3>
 <p>毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了</p>
 <ol>
 <li>读取剪切板内容</li>
@@ -379,7 +384,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>我只会Python所以我就用Python来写:)</p>
 </blockquote>
-<h2 id="编写过程">编写过程</h2>
+<h3 id="编写过程">编写过程</h3>
 <ul>
 <li>首先采用的是<code>pyperclip</code>进行剪切板读取，这一步没有什么问题。</li>
 <li>然后我采用<code>pyautogui</code>模拟输入，然后重点是它<strong>不能输入中文</strong></li>
@@ -387,7 +392,7 @@ if (!doNotTrack) {
 到这就终于能输入中文了。</li>
 <li>最后再加上按键监听就完成了</li>
 </ul>
-<h2 id="代码">代码</h2>
+<h3 id="代码">代码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -475,7 +480,7 @@ if (!doNotTrack) {
 </div><p>我也会把exe文件发布在GitHub上</p>
 <p><a class="link" href="https://github.com/ohdmire/SuperPaste/releases"  target="_blank" rel="noopener"
     >https://github.com/ohdmire/SuperPaste/releases</a></p>
-<h1 id="使用教程">使用教程</h1>
+<h2 id="使用教程">使用教程</h2>
 <p>只要运行程序按下<code>F2</code>就能粘贴，按<code>ESC</code>退出程序</p>
 <blockquote>
 <p>你可能还需要将输入法切换为英文</p>
@@ -483,7 +488,7 @@ if (!doNotTrack) {
 <p>如果你需要也可以自行更改按键，具体参考官方文档
 <a class="link" href="https://pynput.readthedocs.io/en/latest/keyboard.html"  target="_blank" rel="noopener"
     >https://pynput.readthedocs.io/en/latest/keyboard.html</a></p>
-<h1 id="最后">最后</h1>
+<h2 id="最后">最后</h2>
 <p>效果
 <img src="/p/superpaste/%E6%95%88%E6%9E%9C.png"
 	width="1710"

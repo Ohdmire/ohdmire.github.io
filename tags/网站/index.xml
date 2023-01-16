@@ -12,16 +12,17 @@
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/p/website-software/</guid>
-        <description>&lt;h1 id=&#34;网站设计&#34;&gt;网站设计&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;网站涉及相关&#34;&gt;网站涉及相关&lt;/h1&gt;
+&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
 &lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stack主题&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h1&gt;
+&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
 &lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
 &lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
-&lt;h1 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h1&gt;
+&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
 &lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
 &lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -29,9 +30,9 @@
     &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
-&lt;h1 id=&#34;网站更新&#34;&gt;网站更新&lt;/h1&gt;
+&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
 &lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;编译好网站之后用&lt;code&gt;git&lt;/code&gt;将写好的内容&lt;code&gt;push&lt;/code&gt;到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
+    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
 &lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
