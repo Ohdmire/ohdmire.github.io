@@ -267,6 +267,7 @@ if (!doNotTrack) {
         <li><a href="#思路">思路</a></li>
         <li><a href="#代码">代码</a></li>
         <li><a href="#小趣事">小趣事</a></li>
+        <li><a href="#更新日志">更新日志</a></li>
       </ol>
     </li>
     <li><a href="#使用教程">使用教程</a></li>
@@ -432,13 +433,23 @@ if (!doNotTrack) {
 </span><span class="lnt">33
 </span><span class="lnt">34
 </span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">win32gui</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">win32process</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">psutil</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pynput.keyboard</span> <span class="kn">import</span> <span class="n">Listener</span><span class="p">,</span><span class="n">Key</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ctypes</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 排除列表</span>
+</span></span><span class="line"><span class="cl"><span class="n">whitelist</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;explorer.exe&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#判断是否有管理员权限</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">is_admin</span><span class="p">():</span>
@@ -458,8 +469,10 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">kill</span><span class="p">():</span>
 </span></span><span class="line"><span class="cl">    <span class="n">now_win</span> <span class="o">=</span> <span class="n">win32gui</span><span class="o">.</span><span class="n">GetForegroundWindow</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="n">now_process</span> <span class="o">=</span> <span class="n">win32process</span><span class="o">.</span><span class="n">GetWindowThreadProcessId</span><span class="p">(</span><span class="n">now_win</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">target</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;taskkill /pid </span><span class="si">{}</span><span class="s1"> /F /T&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">now_process</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tprocess</span><span class="o">=</span><span class="n">psutil</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span><span class="n">pid</span><span class="o">=</span><span class="n">now_process</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">whitelist</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">tprocess</span><span class="o">.</span><span class="n">name</span><span class="p">())</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>    <span class="c1">##判断是否白名单进程</span>
+</span></span><span class="line"><span class="cl">        <span class="n">target</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;taskkill /pid </span><span class="si">{}</span><span class="s1"> /F /T&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">now_process</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#开始判断管理员权限</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">is_admin</span><span class="p">()</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
@@ -477,6 +490,11 @@ if (!doNotTrack) {
 <h3 id="小趣事">小趣事</h3>
 <p><del>我真tmsb，把文件名称命名为taskkill，结果执行<code>os.system</code>的时候就又调用了一遍该程序，结果我看半天以为是<code>pyinstaller</code>编译出错了，我真的是服了。</del></p>
 <p>该问题已在v0.2得到修复</p>
+<h3 id="更新日志">更新日志</h3>
+<ul>
+<li>v0.2修复了编译后致命bug</li>
+<li>v0.3增加了白名单功能，默认<code>explorer.exe</code>为白名单程序。同时增加了<code>psutil</code>库获取进程名称</li>
+</ul>
 <h2 id="使用教程">使用教程</h2>
 <p>只要运行程序按下<code>F2</code>就能杀死当前窗口的程序，按<code>ESC</code>退出程序</p>
 <blockquote>
