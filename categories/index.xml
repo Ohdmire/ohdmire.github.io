@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Ohdmire&#39;s blog</title>
-        <link>https://demo.stack.jimmycai.com/categories/</link>
+        <link>https://ohdmire.github.io/categories/</link>
         <description>Recent content in Categories on Ohdmire&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>评测</title>
-        <link>https://demo.stack.jimmycai.com/categories/%E8%AF%84%E6%B5%8B/</link>
+        <link>https://ohdmire.github.io/categories/%E8%AF%84%E6%B5%8B/</link>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/categories/%E8%AF%84%E6%B5%8B/</guid>
+        <guid>https://ohdmire.github.io/categories/%E8%AF%84%E6%B5%8B/</guid>
         <description></description>
         </item>
         <item>
         <title>技巧</title>
-        <link>https://demo.stack.jimmycai.com/categories/%E6%8A%80%E5%B7%A7/</link>
+        <link>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/categories/%E6%8A%80%E5%B7%A7/</guid>
+        <guid>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</guid>
         <description></description>
         </item>
         <item>
         <title>软件</title>
-        <link>https://demo.stack.jimmycai.com/categories/%E8%BD%AF%E4%BB%B6/</link>
+        <link>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/categories/%E8%BD%AF%E4%BB%B6/</guid>
+        <guid>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>笔记</title>
-        <link>https://demo.stack.jimmycai.com/categories/%E7%AC%94%E8%AE%B0/</link>
+        <link>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/categories/%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://ohdmire.github.io/categories/%E7%AC%94%E8%AE%B0/</guid>
         <description></description>
         </item>
         <item>
         <title>Example Category</title>
-        <link>https://demo.stack.jimmycai.com/categories/example-category/</link>
+        <link>https://ohdmire.github.io/categories/example-category/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/categories/example-category/</guid>
+        <guid>https://ohdmire.github.io/categories/example-category/</guid>
         <description></description>
         </item>
         

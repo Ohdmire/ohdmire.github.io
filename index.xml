@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Ohdmire&#39;s blog</title>
-        <link>https://demo.stack.jimmycai.com/</link>
+        <link>https://ohdmire.github.io/</link>
         <description>Recent content on Ohdmire&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>博客介绍 </title>
-        <link>https://demo.stack.jimmycai.com/p/introduce/</link>
+        <link>https://ohdmire.github.io/p/introduce/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/introduce/</guid>
+        <guid>https://ohdmire.github.io/p/introduce/</guid>
         <description>&lt;h2 id=&#34;如有卡顿请访问&#34;&gt;如有卡顿请访问&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://thankful-water-038154a00.2.azurestaticapps.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://thankful-water-038154a00.2.azurestaticapps.net/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -26,11 +26,11 @@
         </item>
         <item>
         <title>Sony XM5 耳机使用感受</title>
-        <link>https://demo.stack.jimmycai.com/p/xm5/</link>
+        <link>https://ohdmire.github.io/p/xm5/</link>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/xm5/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/xm5/xm5%E5%A4%96%E8%A7%82.jpg" alt="Featured image of post Sony XM5 耳机使用感受" /&gt;&lt;h1 id=&#34;xm5使用体验&#34;&gt;XM5使用体验&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/xm5/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/xm5/xm5%E5%A4%96%E8%A7%82.jpg" alt="Featured image of post Sony XM5 耳机使用感受" /&gt;&lt;h1 id=&#34;xm5使用体验&#34;&gt;XM5使用体验&lt;/h1&gt;
 &lt;p&gt;本篇文章只是分享个人的使用感受，可能描述得有些偏颇，请见谅&lt;/p&gt;
 &lt;h2 id=&#34;个人状况&#34;&gt;个人状况&lt;/h2&gt;
 &lt;h3 id=&#34;需求&#34;&gt;需求&lt;/h3&gt;
@@ -48,10 +48,10 @@
 &lt;ul&gt;
 &lt;li&gt;我之前也用过Sony MDR-EX155AP，是个塞子(耳塞套我更换过)。质量非常不错，初中开始用到现在，至少有4年了感觉非常不错。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/MDR-EX155AP.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/MDR-EX155AP.jpg&#34;
 	width=&#34;8000&#34;
 	height=&#34;6000&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/MDR-EX155AP_hu6d7f80a789f0fcd576e66bfe8133799b_5049115_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/p/xm5/MDR-EX155AP_hu6d7f80a789f0fcd576e66bfe8133799b_5049115_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/MDR-EX155AP_hu6d7f80a789f0fcd576e66bfe8133799b_5049115_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/xm5/MDR-EX155AP_hu6d7f80a789f0fcd576e66bfe8133799b_5049115_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;MDR-EX155AP&#34;
@@ -65,10 +65,10 @@
 &lt;ul&gt;
 &lt;li&gt;去年高考完暑假我买了漫步者的W800BTPlus体验上感觉比入耳式的舒服，声音比较塞子开阔一些&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/W800BTPlus.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/W800BTPlus.jpg&#34;
 	width=&#34;8000&#34;
 	height=&#34;6000&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/W800BTPlus_hu5cfff50077b81ea0577e8a6b0b425ab0_5210221_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/p/xm5/W800BTPlus_hu5cfff50077b81ea0577e8a6b0b425ab0_5210221_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/W800BTPlus_hu5cfff50077b81ea0577e8a6b0b425ab0_5210221_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/xm5/W800BTPlus_hu5cfff50077b81ea0577e8a6b0b425ab0_5210221_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;W800BTPlus&#34;
@@ -82,10 +82,10 @@
 &lt;h2 id=&#34;xm5的使用&#34;&gt;XM5的使用&lt;/h2&gt;
 &lt;h3 id=&#34;购买&#34;&gt;购买&lt;/h3&gt;
 &lt;p&gt;我是在JD领取优惠卷以后以1958的价格购入的，当时PDD百亿补贴还是2000出头，感觉已经非常赚了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/xm5%E4%BB%B7%E6%A0%BC.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/xm5%E4%BB%B7%E6%A0%BC.png&#34;
 	width=&#34;520&#34;
 	height=&#34;381&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/xm5%E4%BB%B7%E6%A0%BC_hub4cc307f9d3e0a75408cbba1e082cdb9_595813_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/xm5/xm5%E4%BB%B7%E6%A0%BC_hub4cc307f9d3e0a75408cbba1e082cdb9_595813_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/xm5%E4%BB%B7%E6%A0%BC_hub4cc307f9d3e0a75408cbba1e082cdb9_595813_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/xm5/xm5%E4%BB%B7%E6%A0%BC_hub4cc307f9d3e0a75408cbba1e082cdb9_595813_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;xm5价格&#34;
@@ -98,10 +98,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;外观&#34;&gt;外观&lt;/h3&gt;
 &lt;p&gt;我买的是黑色的，虽然感觉白色更好看一些，但是考虑到比较容易脏我还是选择了黑色。我个人是比较喜欢这个外观的，给我一种现代简约的感觉。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/xm5%E5%A4%96%E8%A7%82.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/xm5%E5%A4%96%E8%A7%82.jpg&#34;
 	width=&#34;6000&#34;
 	height=&#34;8000&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/xm5%E5%A4%96%E8%A7%82_hu6089344d1affe282770be0a5bec12910_4882170_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/p/xm5/xm5%E5%A4%96%E8%A7%82_hu6089344d1affe282770be0a5bec12910_4882170_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/xm5%E5%A4%96%E8%A7%82_hu6089344d1affe282770be0a5bec12910_4882170_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/xm5/xm5%E5%A4%96%E8%A7%82_hu6089344d1affe282770be0a5bec12910_4882170_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;xm5外观&#34;
@@ -124,10 +124,10 @@
 &lt;p&gt;这个耳罩的材质也十分柔软，而且十分的平滑，看起来舒服戴起来也舒服。缺点就是平时就只能耳罩朝下放，挂脖子的时候也是只能耳罩朝外面，不能完全转过来，看起来有点傻。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6.jpg&#34;
 	width=&#34;8000&#34;
 	height=&#34;6000&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6_hua1957990f4badfb11586004ab7a30442_3840356_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6_hua1957990f4badfb11586004ab7a30442_3840356_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6_hua1957990f4badfb11586004ab7a30442_3840356_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/xm5/%E6%9C%80%E5%A4%A7%E5%BC%80%E5%90%88%E8%A7%92%E5%BA%A6_hua1957990f4badfb11586004ab7a30442_3840356_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;xm5耳罩&#34;
@@ -164,10 +164,10 @@
 &lt;h4 id=&#34;auto-eq&#34;&gt;Auto EQ&lt;/h4&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/jaakkopasanen/AutoEq/tree/master/results&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AutoEq&lt;/a&gt; 可以比较好的还原出标准的eq，所以我也试了一下，发现真的就是白开水。整个低频被拉下去了，然后中高频提了上来，特别是1khz左右提上来，感觉是那种打电话时候的那种有点空灵的声音，整个声音的饱满度都下来了。高频拉高了会清脆很多 ，但我还是更偏向于Sony的调音，非常饱满。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/GraphicEQ.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/xm5/GraphicEQ.png&#34;
 	width=&#34;1344&#34;
 	height=&#34;225&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/GraphicEQ_hu4560f8fd28ae401a948a036bf3a127f1_908993_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/xm5/GraphicEQ_hu4560f8fd28ae401a948a036bf3a127f1_908993_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/GraphicEQ_hu4560f8fd28ae401a948a036bf3a127f1_908993_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/xm5/GraphicEQ_hu4560f8fd28ae401a948a036bf3a127f1_908993_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;GraphicEQ&#34;
@@ -205,10 +205,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;黑色耳机平时确实容易粘上一些指纹，轻轻用眼镜布擦一下就可以了，不怎么影响外观
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/xm5/%E8%84%8F.jpg&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/xm5/%E8%84%8F.jpg&#34;
 	width=&#34;8000&#34;
 	height=&#34;6000&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/xm5/%E8%84%8F_huf76c34a453cbdbcc28648c77c463fd1b_3587854_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/p/xm5/%E8%84%8F_huf76c34a453cbdbcc28648c77c463fd1b_3587854_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/xm5/%E8%84%8F_huf76c34a453cbdbcc28648c77c463fd1b_3587854_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/xm5/%E8%84%8F_huf76c34a453cbdbcc28648c77c463fd1b_3587854_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;容易脏&#34;
@@ -232,11 +232,11 @@
         </item>
         <item>
         <title>一键kill</title>
-        <link>https://demo.stack.jimmycai.com/p/onepresskill/</link>
+        <link>https://ohdmire.github.io/p/onepresskill/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/onepresskill/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/onepresskill/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -369,10 +369,10 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1730&#34;
 	height=&#34;954&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
@@ -392,11 +392,11 @@
         </item>
         <item>
         <title>JavaScript笔记</title>
-        <link>https://demo.stack.jimmycai.com/p/javascriptnote/</link>
+        <link>https://ohdmire.github.io/p/javascriptnote/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/javascriptnote/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/javascriptnote/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post JavaScript笔记" /&gt;&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/javascriptnote/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/javascriptnote/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post JavaScript笔记" /&gt;&lt;h1 id=&#34;javascript笔记&#34;&gt;JavaScript笔记&lt;/h1&gt;
 &lt;p&gt;内容参考来源&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/js/index.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;W3School&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;以下内容&lt;strong&gt;并不完整&lt;/strong&gt;，主要是我在我学过Python的基础上，在理解新的语言所&lt;strong&gt;需要留意的部分&lt;/strong&gt;。&lt;/p&gt;
@@ -2063,11 +2063,11 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>超级粘贴</title>
-        <link>https://demo.stack.jimmycai.com/p/superpaste/</link>
+        <link>https://ohdmire.github.io/p/superpaste/</link>
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/superpaste/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/superpaste/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -2148,10 +2148,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1710&#34;
 	height=&#34;868&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
@@ -2169,11 +2169,11 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>视频字幕神器pyTranscriber</title>
-        <link>https://demo.stack.jimmycai.com/p/pytranscriber/</link>
+        <link>https://ohdmire.github.io/p/pytranscriber/</link>
         <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/pytranscriber/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/pytranscriber/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
 &lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕&lt;/p&gt;
 &lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;
@@ -2197,10 +2197,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;首先打开软件是英文页面，点击标题栏上language按钮选择简体中文
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
 	width=&#34;1031&#34;
 	height=&#34;519&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;选择中文&#34;
@@ -2214,10 +2214,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;再点击旁边的setting选项，设置好一个&lt;strong&gt;能连接上Google的代理&lt;/strong&gt;(点击test可以测试连接可用性)
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
 	width=&#34;1030&#34;
 	height=&#34;514&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;设置代理&#34;
@@ -2231,10 +2231,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;之后选择文件和视频的语言(原视频是什么语言就选什么语言)
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
 	width=&#34;1034&#34;
 	height=&#34;519&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;导入&#34;
@@ -2248,10 +2248,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;点击生成字幕之后耐心等待
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
 	width=&#34;1041&#34;
 	height=&#34;523&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;生成过程&#34;
@@ -2265,10 +2265,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;最后你会得到srt和txt文件
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt.png&#34;
 	width=&#34;1172&#34;
 	height=&#34;297&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;srt&amp;#43;txt&#34;
@@ -2290,10 +2290,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://translatesubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://translatesubtitles.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;上传字幕文件，然后选择翻译然后下载下来
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;988&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;翻译&#34;
@@ -2310,10 +2310,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;p&gt;将srt以文本打开，复制一份到word文档&lt;/p&gt;
 &lt;p&gt;将word文档上传翻译，再复制内容回srt保存&lt;/p&gt;
 &lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1913&#34;
 	height=&#34;1201&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
@@ -2329,11 +2329,11 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>维特根斯坦</title>
-        <link>https://demo.stack.jimmycai.com/p/wittgenstein/</link>
+        <link>https://ohdmire.github.io/p/wittgenstein/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/wittgenstein/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/wittgenstein/note.jpg" alt="Featured image of post 维特根斯坦" /&gt;&lt;h1 id=&#34;笔记&#34;&gt;笔记&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/wittgenstein/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/wittgenstein/note.jpg" alt="Featured image of post 维特根斯坦" /&gt;&lt;h1 id=&#34;笔记&#34;&gt;笔记&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这些笔记是我阅读知乎上觉得重要的内容摘抄下来的&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2399,10 +2399,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>我网站使用的一些东西</title>
-        <link>https://demo.stack.jimmycai.com/p/website-software/</link>
+        <link>https://ohdmire.github.io/p/website-software/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/website-software/</guid>
+        <guid>https://ohdmire.github.io/p/website-software/</guid>
         <description>&lt;h1 id=&#34;网站涉及相关&#34;&gt;网站涉及相关&lt;/h1&gt;
 &lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
 &lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2427,10 +2427,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
 &lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png&#34;
 	width=&#34;2536&#34;
 	height=&#34;1214&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;我的博客照片&#34;
@@ -2445,18 +2445,18 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>Archives</title>
-        <link>https://demo.stack.jimmycai.com/archives/</link>
+        <link>https://ohdmire.github.io/archives/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/archives/</guid>
+        <guid>https://ohdmire.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>https://demo.stack.jimmycai.com/links/</link>
+        <link>https://ohdmire.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/links/</guid>
+        <guid>https://ohdmire.github.io/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -2488,10 +2488,10 @@ indexOf() 方法无法设置更强大的搜索值（正则表达式）&lt;/p&gt;
         </item>
         <item>
         <title>Search</title>
-        <link>https://demo.stack.jimmycai.com/search/</link>
+        <link>https://ohdmire.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/search/</guid>
+        <guid>https://ohdmire.github.io/search/</guid>
         <description></description>
         </item>
         

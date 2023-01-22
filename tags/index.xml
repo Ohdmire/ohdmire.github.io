@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Ohdmire&#39;s blog</title>
-        <link>https://demo.stack.jimmycai.com/tags/</link>
+        <link>https://ohdmire.github.io/tags/</link>
         <description>Recent content in Tags on Ohdmire&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Sony</title>
-        <link>https://demo.stack.jimmycai.com/tags/sony/</link>
+        <link>https://ohdmire.github.io/tags/sony/</link>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/sony/</guid>
+        <guid>https://ohdmire.github.io/tags/sony/</guid>
         <description></description>
         </item>
         <item>
         <title>耳机</title>
-        <link>https://demo.stack.jimmycai.com/tags/%E8%80%B3%E6%9C%BA/</link>
+        <link>https://ohdmire.github.io/tags/%E8%80%B3%E6%9C%BA/</link>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/%E8%80%B3%E6%9C%BA/</guid>
+        <guid>https://ohdmire.github.io/tags/%E8%80%B3%E6%9C%BA/</guid>
         <description></description>
         </item>
         <item>
         <title>taskkill</title>
-        <link>https://demo.stack.jimmycai.com/tags/taskkill/</link>
+        <link>https://ohdmire.github.io/tags/taskkill/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/taskkill/</guid>
+        <guid>https://ohdmire.github.io/tags/taskkill/</guid>
         <description></description>
         </item>
         <item>
         <title>JavaScript</title>
-        <link>https://demo.stack.jimmycai.com/tags/javascript/</link>
+        <link>https://ohdmire.github.io/tags/javascript/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/javascript/</guid>
+        <guid>https://ohdmire.github.io/tags/javascript/</guid>
         <description></description>
         </item>
         <item>
         <title>粘贴</title>
-        <link>https://demo.stack.jimmycai.com/tags/%E7%B2%98%E8%B4%B4/</link>
+        <link>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</link>
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/%E7%B2%98%E8%B4%B4/</guid>
+        <guid>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</guid>
         <description></description>
         </item>
         <item>
         <title>字幕</title>
-        <link>https://demo.stack.jimmycai.com/tags/%E5%AD%97%E5%B9%95/</link>
+        <link>https://ohdmire.github.io/tags/%E5%AD%97%E5%B9%95/</link>
         <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/%E5%AD%97%E5%B9%95/</guid>
+        <guid>https://ohdmire.github.io/tags/%E5%AD%97%E5%B9%95/</guid>
         <description></description>
         </item>
         <item>
         <title>网站</title>
-        <link>https://demo.stack.jimmycai.com/tags/%E7%BD%91%E7%AB%99/</link>
+        <link>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/%E7%BD%91%E7%AB%99/</guid>
+        <guid>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</guid>
         <description></description>
         </item>
         <item>
         <title>哲学</title>
-        <link>https://demo.stack.jimmycai.com/tags/%E5%93%B2%E5%AD%A6/</link>
+        <link>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</link>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/tags/%E5%93%B2%E5%AD%A6/</guid>
+        <guid>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</guid>
         <description></description>
         </item>
         

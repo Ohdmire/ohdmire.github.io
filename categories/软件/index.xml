@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>软件 on Ohdmire&#39;s blog</title>
-        <link>https://demo.stack.jimmycai.com/categories/%E8%BD%AF%E4%BB%B6/</link>
+        <link>https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/</link>
         <description>Recent content in 软件 on Ohdmire&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>一键kill</title>
-        <link>https://demo.stack.jimmycai.com/p/onepresskill/</link>
+        <link>https://ohdmire.github.io/p/onepresskill/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/onepresskill/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/onepresskill/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -145,10 +145,10 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1730&#34;
 	height=&#34;954&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
@@ -168,11 +168,11 @@
         </item>
         <item>
         <title>超级粘贴</title>
-        <link>https://demo.stack.jimmycai.com/p/superpaste/</link>
+        <link>https://ohdmire.github.io/p/superpaste/</link>
         <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/superpaste/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/superpaste/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/superpaste/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 超级粘贴" /&gt;&lt;h1 id=&#34;超级粘贴&#34;&gt;超级粘贴&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;最近发现一些平台是&lt;strong&gt;不能直接粘贴内容&lt;/strong&gt;的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -253,10 +253,10 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1710&#34;
 	height=&#34;868&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/superpaste/%E6%95%88%E6%9E%9C_hu5a6ae574fd9ce59ac149513bb8a44c9f_4461012_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
@@ -274,11 +274,11 @@
         </item>
         <item>
         <title>视频字幕神器pyTranscriber</title>
-        <link>https://demo.stack.jimmycai.com/p/pytranscriber/</link>
+        <link>https://ohdmire.github.io/p/pytranscriber/</link>
         <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/pytranscriber/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/pytranscriber/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/pytranscriber/%E4%B8%BB%E9%A1%B5%E9%9D%A2.png" alt="Featured image of post 视频字幕神器pyTranscriber" /&gt;&lt;h1 id=&#34;pytranscriber&#34;&gt;pyTranscriber&lt;/h1&gt;
 &lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕&lt;/p&gt;
 &lt;h2 id=&#34;安装步骤&#34;&gt;安装步骤&lt;/h2&gt;
@@ -302,10 +302,10 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;首先打开软件是英文页面，点击标题栏上language按钮选择简体中文
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87.png&#34;
 	width=&#34;1031&#34;
 	height=&#34;519&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E9%80%89%E6%8B%A9%E4%B8%AD%E6%96%87_hu9a837d76087f7de4d043e3350ad1c740_1608496_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;选择中文&#34;
@@ -319,10 +319,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;再点击旁边的setting选项，设置好一个&lt;strong&gt;能连接上Google的代理&lt;/strong&gt;(点击test可以测试连接可用性)
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86.png&#34;
 	width=&#34;1030&#34;
 	height=&#34;514&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E4%BB%A3%E7%90%86_hu7a853043987903ac08dbf95fdccfda2e_1591443_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;设置代理&#34;
@@ -336,10 +336,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;之后选择文件和视频的语言(原视频是什么语言就选什么语言)
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5.png&#34;
 	width=&#34;1034&#34;
 	height=&#34;519&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E5%AF%BC%E5%85%A5_hu75858db25280018802100087e06f2a99_1613167_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;导入&#34;
@@ -353,10 +353,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;点击生成字幕之后耐心等待
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B.png&#34;
 	width=&#34;1041&#34;
 	height=&#34;523&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E7%94%9F%E6%88%90%E8%BF%87%E7%A8%8B_hu40543a2e1ac10b1c2558eb4b04e31765_1636598_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;生成过程&#34;
@@ -370,10 +370,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;最后你会得到srt和txt文件
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt.png&#34;
 	width=&#34;1172&#34;
 	height=&#34;297&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/srt&amp;#43;txt_hu0aa98eaf987dfceb6c58ebd5663b959d_1046341_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;srt&amp;#43;txt&#34;
@@ -395,10 +395,10 @@
 &lt;a class=&#34;link&#34; href=&#34;https://translatesubtitles.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://translatesubtitles.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;上传字幕文件，然后选择翻译然后下载下来
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;988&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E7%BF%BB%E8%AF%91_hu9b90b1ef2c5c888a23de9c8a2b6ec84c_7601208_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;翻译&#34;
@@ -415,10 +415,10 @@
 &lt;p&gt;将srt以文本打开，复制一份到word文档&lt;/p&gt;
 &lt;p&gt;将word文档上传翻译，再复制内容回srt保存&lt;/p&gt;
 &lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1913&#34;
 	height=&#34;1201&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/pytranscriber/%E6%95%88%E6%9E%9C_hu9ffc06bbce043c0b455dc14b23958dda_6904995_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;

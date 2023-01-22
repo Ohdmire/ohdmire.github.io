@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>taskkill on Ohdmire&#39;s blog</title>
-        <link>https://demo.stack.jimmycai.com/tags/taskkill/</link>
+        <link>https://ohdmire.github.io/tags/taskkill/</link>
         <description>Recent content in taskkill on Ohdmire&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/taskkill/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/taskkill/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>一键kill</title>
-        <link>https://demo.stack.jimmycai.com/p/onepresskill/</link>
+        <link>https://ohdmire.github.io/p/onepresskill/</link>
         <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.jimmycai.com/p/onepresskill/</guid>
-        <description>&lt;img src="https://demo.stack.jimmycai.com/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
+        <guid>https://ohdmire.github.io/p/onepresskill/</guid>
+        <description>&lt;img src="https://ohdmire.github.io/p/onepresskill/%E5%B0%81%E9%9D%A2.png" alt="Featured image of post 一键kill" /&gt;&lt;h1 id=&#34;一键结束进程&#34;&gt;一键结束进程&lt;/h1&gt;
 &lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
 &lt;p&gt;我真的绷不住了，&lt;code&gt;Alt+F4&lt;/code&gt; 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。&lt;/p&gt;
 &lt;h2 id=&#34;编写&#34;&gt;编写&lt;/h2&gt;
@@ -145,10 +145,10 @@
     &gt;https://pynput.readthedocs.io/en/latest/keyboard.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后&lt;/h2&gt;
 &lt;p&gt;效果
-&lt;img src=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
+&lt;img src=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C.png&#34;
 	width=&#34;1730&#34;
 	height=&#34;954&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/onepresskill/%E6%95%88%E6%9E%9C_huf9b2eff9976cd64542994c40523b4695_4960330_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;效果&#34;
