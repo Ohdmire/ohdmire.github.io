@@ -439,6 +439,13 @@ if (!doNotTrack) {
 </span><span class="lnt">39
 </span><span class="lnt">40
 </span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">win32gui</span>
@@ -467,8 +474,15 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#杀死进程</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">kill</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 方案1 指哪打哪</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># point =win32gui.GetCursorPos()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># now_point=win32gui.WindowFromPoint(point)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># now_process = win32process.GetWindowThreadProcessId(now_point)[1]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">#方案2 获取当前激活的窗口</span>
 </span></span><span class="line"><span class="cl">    <span class="n">now_win</span> <span class="o">=</span> <span class="n">win32gui</span><span class="o">.</span><span class="n">GetForegroundWindow</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="n">now_process</span> <span class="o">=</span> <span class="n">win32process</span><span class="o">.</span><span class="n">GetWindowThreadProcessId</span><span class="p">(</span><span class="n">now_win</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">tprocess</span><span class="o">=</span><span class="n">psutil</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span><span class="n">pid</span><span class="o">=</span><span class="n">now_process</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">whitelist</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">tprocess</span><span class="o">.</span><span class="n">name</span><span class="p">())</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>    <span class="c1">##判断是否白名单进程</span>
 </span></span><span class="line"><span class="cl">        <span class="n">target</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;taskkill /pid </span><span class="si">{}</span><span class="s1"> /F /T&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">now_process</span><span class="p">)</span>
@@ -494,6 +508,7 @@ if (!doNotTrack) {
 <ul>
 <li>v0.2修复了编译后致命bug</li>
 <li>v0.3增加了白名单功能，默认<code>explorer.exe</code>为白名单程序。同时增加了<code>psutil</code>库获取进程名称</li>
+<li>v0.4增加了指哪打哪的选择</li>
 </ul>
 <h2 id="使用教程">使用教程</h2>
 <p>只要运行程序按下<code>F2</code>就能杀死当前窗口的程序，按<code>ESC</code>退出程序</p>
