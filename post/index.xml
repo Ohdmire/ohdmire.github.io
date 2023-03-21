@@ -125,25 +125,6 @@ dns.alidns.com
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title></title>
-        <link>https://ohdmire.github.io/p/</link>
-        <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://ohdmire.github.io/p/</guid>
-        <description>&lt;h1 id=&#34;红米k40s编译kernelsu内核指南&#34;&gt;红米k40s编译KernelSu内核指南&lt;/h1&gt;
-&lt;h3 id=&#34;准备内容&#34;&gt;准备内容&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;android12-stable&lt;/li&gt;
-&lt;li&gt;munch_defconfig&lt;/li&gt;
-&lt;li&gt;Image&lt;/li&gt;
-&lt;li&gt;r450784d&lt;/li&gt;
-&lt;li&gt;LD=ld.lld&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
         <title>Sony XM5 耳机使用感受</title>
         <link>https://ohdmire.github.io/p/xm5/</link>
         <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
