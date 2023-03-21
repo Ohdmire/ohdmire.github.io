@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>k40s on Ohdmire&#39;s blog</title>
+        <link>https://ohdmire.github.io/tags/k40s/</link>
+        <description>Recent content in k40s on Ohdmire&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/k40s/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://ohdmire.github.io/p/</link>
+        <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://ohdmire.github.io/p/</guid>
+        <description>&lt;h1 id=&#34;红米k40s编译kernelsu内核指南&#34;&gt;红米k40s编译KernelSu内核指南&lt;/h1&gt;
+&lt;h3 id=&#34;准备内容&#34;&gt;准备内容&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;android12-stable&lt;/li&gt;
+&lt;li&gt;munch_defconfig&lt;/li&gt;
+&lt;li&gt;Image&lt;/li&gt;
+&lt;li&gt;r450784d&lt;/li&gt;
+&lt;li&gt;LD=ld.lld&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
