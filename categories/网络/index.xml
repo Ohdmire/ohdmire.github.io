@@ -12,7 +12,7 @@
         <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
         
         <guid>https://ohdmire.github.io/p/zerotier/</guid>
-        <description>&lt;h1 id=&#34;zerotier简明教程&#34;&gt;ZeroTier简明教程&lt;/h1&gt;
+        <description>&lt;img src="https://ohdmire.github.io/p/zerotier/zerotier.png" alt="Featured image of post 异地组网-ZeroTier简明教程" /&gt;&lt;h1 id=&#34;zerotier简明教程&#34;&gt;ZeroTier简明教程&lt;/h1&gt;
 &lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
 &lt;p&gt;对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier&lt;/p&gt;
 &lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
