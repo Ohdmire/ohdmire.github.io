@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='E5 前言 本文大部分内容来自以下链接 2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程 E5 调用API续订服务：Microsoft 365 E5 Renew X E5简介'>
+<title>Microsoft 365 E5开发者使用指南</title>
+
+<link rel='canonical' href='https://ohdmire.github.io/p/e5/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Microsoft 365 E5开发者使用指南'>
+<meta property='og:description' content='E5 前言 本文大部分内容来自以下链接 2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程 E5 调用API续订服务：Microsoft 365 E5 Renew X E5简介'>
+<meta property='og:url' content='https://ohdmire.github.io/p/e5/'>
+<meta property='og:site_name' content='Ohdmire&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='E5' /><meta property='article:tag' content='OneDrive' /><meta property='article:tag' content='Office365' /><meta property='article:tag' content='微软' /><meta property='article:published_time' content='2023-06-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-06-12T00:00:00&#43;00:00'/><meta property='og:image' content='https://ohdmire.github.io/p/e5/E5.png' />
+<meta name="twitter:title" content="Microsoft 365 E5开发者使用指南">
+<meta name="twitter:description" content="E5 前言 本文大部分内容来自以下链接 2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程 E5 调用API续订服务：Microsoft 365 E5 Renew X E5简介"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://ohdmire.github.io/p/e5/E5.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z67FVW9FG3"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-Z67FVW9FG3', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu44626b0713f57603a42a56efb183250d_132092_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😄</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Ohdmire&#39;s blog</a></h1>
+            <h2 class="site-description">我的语言的界限意味着我的世界的界限.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/ohdmire/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/ohdmire'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#e5简介">E5简介</a></li>
+    <li><a href="#e5注册">E5注册</a>
+      <ol>
+        <li><a href="#推荐去除登录验证">（推荐）去除登录验证</a></li>
+        <li><a href="#创建新的e5子账户">创建新的E5子账户</a>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#e5续订">E5续订</a>
+      <ol>
+        <li><a href="#microsoft-365-e5-renew-x续订">Microsoft 365 E5 Renew X续订</a>
+          <ol>
+            <li><a href="#部署步骤">部署步骤</a></li>
+            <li><a href="#获取必要信息">获取必要信息</a></li>
+            <li><a href="#填写必要信息">填写必要信息</a></li>
+            <li><a href="#验证成功">验证成功</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#最后">最后</a>
+      <ol>
+        <li><a href="#数据转移">数据转移</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/e5/">
+                <img src="/p/e5/E5_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_800x0_resize_box_3.png"
+                        srcset="/p/e5/E5_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_800x0_resize_box_3.png 800w, /p/e5/E5_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="300" 
+                        loading="lazy"
+                        alt="Featured image of post Microsoft 365 E5开发者使用指南" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/e5/">Microsoft 365 E5开发者使用指南</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 12, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="e5">E5</h1>
+<h2 id="前言">前言</h2>
+<p>本文大部分内容来自以下链接</p>
+<p><a class="link" href="https://blog.xcnya.cn/archives/175/"  target="_blank" rel="noopener"
+    >2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程</a></p>
+<p><a class="link" href="https://blog.csdn.net/qq_33212020/article/details/119747634"  target="_blank" rel="noopener"
+    >E5 调用API续订服务：Microsoft 365 E5 Renew X</a></p>
+<h2 id="e5简介">E5简介</h2>
+<p>Office365开发版E5是为开发人员提供的，是微软的官方活动，申请Office 365开发者计划可以获得为期3个月的免费Office365 E5。 而E5计划就包含了25个用于所有Office 365 应用的许可证</p>
+<p>E5的使用大体分为<strong>注册</strong>和<strong>续订</strong>两个部分</p>
+<h2 id="e5注册">E5注册</h2>
+<ol>
+<li>
+<p>首先最好新注册一个Outlook的邮箱账号
+这个账号将作为开发者</p>
+</li>
+<li>
+<p>进入<a class="link" href="https://developer.microsoft.com/zh-cn/microsoft-365/dev-program"  target="_blank" rel="noopener"
+    >Microsoft 365 Developer Program</a>
+点击join now
+<img src="/p/e5/%E5%8A%A0%E5%85%A5%E5%BC%80%E5%8F%91%E8%80%85.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/%E5%8A%A0%E5%85%A5%E5%BC%80%E5%8F%91%E8%80%85_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/%E5%8A%A0%E5%85%A5%E5%BC%80%E5%8F%91%E8%80%85_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></p>
+</li>
+<li>
+<p>按照模板填写下面信息</p>
+</li>
+</ol>
+<ul>
+<li>Company可以随意填写
+<img src="/p/e5/Snipaste_2023-06-11_17-01-25.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/Snipaste_2023-06-11_17-01-25_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-01-25_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></li>
+<li>选择个人项目
+<img src="/p/e5/Snipaste_2023-06-11_17-01-36.png"
+	width="2535"
+	height="1220"
+	srcset="/p/e5/Snipaste_2023-06-11_17-01-36_hu33ff4ce6c371049c64ed90b9dabb03c5_9294432_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-01-36_hu33ff4ce6c371049c64ed90b9dabb03c5_9294432_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="207"
+		data-flex-basis="498px"
+	
+></li>
+<li>全部勾上
+<img src="/p/e5/Snipaste_2023-06-11_17-01-43.png"
+	width="2535"
+	height="1222"
+	srcset="/p/e5/Snipaste_2023-06-11_17-01-43_hudf26117848d414d85d136a6a920e0dda_9309668_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-01-43_hudf26117848d414d85d136a6a920e0dda_9309668_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="207"
+		data-flex-basis="497px"
+	
+></li>
+<li>这里选择自定义沙盘
+<img src="/p/e5/Snipaste_2023-06-11_17-02-06.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/Snipaste_2023-06-11_17-02-06_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-02-06_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></li>
+<li>这里填写注意一下，username是<strong>管理员账号的名字</strong>，domain是<strong>域名的名字</strong>
+<img src="/p/e5/Snipaste_2023-06-11_17-03-25.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/Snipaste_2023-06-11_17-03-25_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-03-25_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></li>
+<li>填写手机号码然后接收短信
+<img src="/p/e5/Snipaste_2023-06-11_17-03-48.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/Snipaste_2023-06-11_17-03-48_hu2718dc67f488caf31e7b831cef5e0ddc_299269_480x0_resize_box_3.png 480w, /p/e5/Snipaste_2023-06-11_17-03-48_hu2718dc67f488caf31e7b831cef5e0ddc_299269_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></li>
+</ul>
+<ol start="4">
+<li>到此，你已经成为了e5计划的开发者，现在你可以使用刚刚创建的邮箱和密码登录微软的相关产品(OneDrive和Office365)
+<img src="/p/e5/e5%E5%88%9B%E5%BB%BA.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/e5%E5%88%9B%E5%BB%BA_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/e5%E5%88%9B%E5%BB%BA_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></li>
+</ol>
+<h3 id="推荐去除登录验证">（推荐）去除登录验证</h3>
+<ol>
+<li>
+<p>打开<a class="link" href="https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview"  target="_blank" rel="noopener"
+    >管理中心</a></p>
+</li>
+<li>
+<p>禁用安全默认值
+<img src="/p/e5/%E7%A6%81%E7%94%A8%E5%AE%89%E5%85%A8.png"
+	width="2560"
+	height="1142"
+	srcset="/p/e5/%E7%A6%81%E7%94%A8%E5%AE%89%E5%85%A8_hu62348c6e7c3e2d317800ce74036b3a14_8785990_480x0_resize_box_3.png 480w, /p/e5/%E7%A6%81%E7%94%A8%E5%AE%89%E5%85%A8_hu62348c6e7c3e2d317800ce74036b3a14_8785990_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="224"
+		data-flex-basis="538px"
+	
+></p>
+</li>
+</ol>
+<h3 id="创建新的e5子账户">创建新的E5子账户</h3>
+<p>刚刚注册的是管理员的账户<code>XXXX@YYYY.onmicrosoft.com</code>（大概是这个格式），当然，我们还可以往下注册15个用户，以用户的身份使用，这些用户都能享受Office365和OneDrive。所以我们也可以分享给其他人一起使用</p>
+<ol>
+<li>
+<p>以管理员账户登录管理网址<a class="link" href="https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users"  target="_blank" rel="noopener"
+    >链接</a></p>
+</li>
+<li>
+<p>添加用户
+<img src="/p/e5/%E6%B7%BB%E5%8A%A0user.png"
+	width="2559"
+	height="1210"
+	srcset="/p/e5/%E6%B7%BB%E5%8A%A0user_hubc987d399e8a1a9f4ed39f2f1b86df8c_9305516_480x0_resize_box_3.png 480w, /p/e5/%E6%B7%BB%E5%8A%A0user_hubc987d399e8a1a9f4ed39f2f1b86df8c_9305516_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="507px"
+	
+></p>
+</li>
+<li>
+<p>填写相关信息，名字随意
+<img src="/p/e5/%E5%A1%AB%E5%86%99%E5%90%8D%E7%A7%B0.png"
+	width="2560"
+	height="1138"
+	srcset="/p/e5/%E5%A1%AB%E5%86%99%E5%90%8D%E7%A7%B0_huee90d09497e07bdb12467d29998c0c2d_8755225_480x0_resize_box_3.png 480w, /p/e5/%E5%A1%AB%E5%86%99%E5%90%8D%E7%A7%B0_huee90d09497e07bdb12467d29998c0c2d_8755225_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="224"
+		data-flex-basis="539px"
+	
+></p>
+</li>
+<li>
+<p><strong>必须</strong>授予许可证（这样才有激活的Office365）
+<img src="/p/e5/%E6%8E%88%E4%BA%88%E8%AE%B8%E5%8F%AF%E8%AF%81.png"
+	width="2560"
+	height="1137"
+	srcset="/p/e5/%E6%8E%88%E4%BA%88%E8%AE%B8%E5%8F%AF%E8%AF%81_hu95d4924960faba77ad021fe1aa1516d5_8747532_480x0_resize_box_3.png 480w, /p/e5/%E6%8E%88%E4%BA%88%E8%AE%B8%E5%8F%AF%E8%AF%81_hu95d4924960faba77ad021fe1aa1516d5_8747532_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="225"
+		data-flex-basis="540px"
+	
+></p>
+</li>
+<li>
+<p>其他的默认即可</p>
+</li>
+<li>
+<p>这样你就有了一个子账号，这个账号第一次登录的时候会要求你重置默认密码，你可以将该账号分享给你的朋友
+<img src="/p/e5/%E5%88%86%E4%BA%AB%E8%B4%A6%E5%8F%B7.png"
+	width="2560"
+	height="1140"
+	srcset="/p/e5/%E5%88%86%E4%BA%AB%E8%B4%A6%E5%8F%B7_hu12d6ed0e8f078d1043d95d04a8ba3cbe_8770616_480x0_resize_box_3.png 480w, /p/e5/%E5%88%86%E4%BA%AB%E8%B4%A6%E5%8F%B7_hu12d6ed0e8f078d1043d95d04a8ba3cbe_8770616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="224"
+		data-flex-basis="538px"
+	
+></p>
+</li>
+</ol>
+<h5 id="修改onedrive空间">修改OneDrive空间</h5>
+<ol>
+<li>
+<p>选择该用户点击OneDrive并Edit
+<img src="/p/e5/%E4%BF%AE%E6%94%B9OneDrive%E7%A9%BA%E9%97%B4.png"
+	width="2560"
+	height="1140"
+	srcset="/p/e5/%E4%BF%AE%E6%94%B9OneDrive%E7%A9%BA%E9%97%B4_hucb0d6933633d0ff2474bb0db6b994f6d_8770616_480x0_resize_box_3.png 480w, /p/e5/%E4%BF%AE%E6%94%B9OneDrive%E7%A9%BA%E9%97%B4_hucb0d6933633d0ff2474bb0db6b994f6d_8770616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="224"
+		data-flex-basis="538px"
+	
+></p>
+</li>
+<li>
+<p>修改为5TB
+<img src="/p/e5/%E4%BF%AE%E6%94%B95TB.png"
+	width="2560"
+	height="1136"
+	srcset="/p/e5/%E4%BF%AE%E6%94%B95TB_hu9daea1dea12598c5bbd1da32b20cf087_8739839_480x0_resize_box_3.png 480w, /p/e5/%E4%BF%AE%E6%94%B95TB_hu9daea1dea12598c5bbd1da32b20cf087_8739839_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="225"
+		data-flex-basis="540px"
+	
+></p>
+</li>
+</ol>
+<h2 id="e5续订">E5续订</h2>
+<ul>
+<li>E5续订的规则是你要在有效期内进行开发，大体也就是通过API的调用，这样你才会在大概到期前20-30天内获得续订的邮件</li>
+<li>对于自动续订，可以使用Microsoft 365 E5 Renew Plus</li>
+<li>如果你有一台服务器，你也可以使用Microsoft 365 E5 Renew X结合Docker在服务器上部署</li>
+<li>我正好有GitHub学生包，拥有免费的Azure服务器，所以我打算使用Microsoft 365 E5 Renew X来续订。</li>
+</ul>
+<h3 id="microsoft-365-e5-renew-x续订">Microsoft 365 E5 Renew X续订</h3>
+<p>部署十分简单，按照文档进行即可
+<a class="link" href="https://github.com/hongyonghan/Docker_Microsoft365_E5_Renew_X"  target="_blank" rel="noopener"
+    >Docker_Microsoft365_E5_Renew_X</a></p>
+<h4 id="部署步骤">部署步骤</h4>
+<ol>
+<li>运行MS365 E5 Renew X镜像，得到容器。
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run -d -p 1066:1066 -e TZ=Asia/Shanghai -e sender=&#34;by123@163.com&#34; -e pwd=&#34;UNxxxxxxxxN&#34; -e receiver=&#34;4dddqqq9dd6@qq.com&#34;  -e adminpwd=&#34;123456&#34; hanhongyong/ms365-e5-renew-x:pubemail
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>修改-e后面的内容，其中 sender = &lsquo;<a class="link" href="mailto:123456@163.com" >123456@163.com</a>&lsquo;为发送邮件的邮箱。 receiver = &lsquo;<a class="link" href="mailto:789456@qq.com" >789456@qq.com</a>&lsquo;为接收邮件的邮箱。其中pwd为发送邮箱的授权码。授权码获取方式为，进入网页版163邮箱，点击设置，点击POP3/SMTP/IMAP，点击授权密码管理，新增授权码即可。 adminpwd为web界面的登录密码。</p>
+<ol start="2">
+<li>
+<p>服务访问：输入ip:1066.</p>
+</li>
+<li>
+<p>登录后选择添加账号后我们会获得下面页面，下面页面的填写首先要获取必要信息
+<img src="/p/e5/%E5%A1%AB%E5%86%99.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/%E5%A1%AB%E5%86%99_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/%E5%A1%AB%E5%86%99_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></p>
+</li>
+</ol>
+<h4 id="获取必要信息">获取必要信息</h4>
+<h5 id="应用注册">应用注册</h5>
+<ol>
+<li>
+<p>登录<a class="link" href="https://portal.azure.com/#home"  target="_blank" rel="noopener"
+    >Azure</a>,以管理员账号登录<code>XXXX@YYYY.onmicrosoft.com</code>（大概是这个格式）</p>
+</li>
+<li>
+<p>登录完成后点击右上角的“门户”按钮进入Azure管理中心，在搜索栏内输入“应用注册”，点击进入
+<img src="/p/e5/%E5%BA%94%E7%94%A8%E6%B3%A8%E5%86%8C.png"
+	width="2560"
+	height="1213"
+	srcset="/p/e5/%E5%BA%94%E7%94%A8%E6%B3%A8%E5%86%8C_hue6e06909d36eb01e53bdff6ab791c5b1_9332230_480x0_resize_box_3.png 480w, /p/e5/%E5%BA%94%E7%94%A8%E6%B3%A8%E5%86%8C_hue6e06909d36eb01e53bdff6ab791c5b1_9332230_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="506px"
+	
+></p>
+</li>
+<li>
+<p>单击“新注册”按钮
+<img src="/p/e5/%E6%96%B0%E6%B3%A8%E5%86%8C.png"
+	width="2560"
+	height="1204"
+	srcset="/p/e5/%E6%96%B0%E6%B3%A8%E5%86%8C_hu94fca211f662a01be5d62cfdedf5a31e_9262995_480x0_resize_box_3.png 480w, /p/e5/%E6%96%B0%E6%B3%A8%E5%86%8C_hu94fca211f662a01be5d62cfdedf5a31e_9262995_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="510px"
+	
+></p>
+</li>
+<li>
+<p>配置应用 应用名称随意写、注意可访问性选项选择最后一项、重定向URL暂时不填 、完成后点击注册
+<img src="/p/e5/%E6%B3%A8%E5%86%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F.png"
+	width="2560"
+	height="1214"
+	srcset="/p/e5/%E6%B3%A8%E5%86%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F_hu036092a11abeb0531373142f8bfd4ead_9339923_480x0_resize_box_3.png 480w, /p/e5/%E6%B3%A8%E5%86%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F_hu036092a11abeb0531373142f8bfd4ead_9339923_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="506px"
+	
+></p>
+</li>
+</ol>
+<h5 id="配置应用重定向url身份验证">配置应用重定向URL（身份验证）</h5>
+<ol>
+<li>
+<p>先点击“概述”，然后点击“添加重定向URL”，进入重定向URL配置界面，<strong>下图中的应用程序(客户端)ID即为&quot;客户端ID&quot;</strong>
+<img src="/p/e5/%E9%87%8D%E5%AE%9A%E5%90%91.png"
+	width="2560"
+	height="1153"
+	srcset="/p/e5/%E9%87%8D%E5%AE%9A%E5%90%91_hude3868571c142e6ec663a993a070ed6f_285516_480x0_resize_box_3.png 480w, /p/e5/%E9%87%8D%E5%AE%9A%E5%90%91_hude3868571c142e6ec663a993a070ed6f_285516_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="532px"
+	
+></p>
+</li>
+<li>
+<p>点击“添加平台”，再点击“移动和桌面应用程序”
+<img src="/p/e5/%E6%B7%BB%E5%8A%A0%E5%B9%B3%E5%8F%B0.png"
+	width="2560"
+	height="1153"
+	srcset="/p/e5/%E6%B7%BB%E5%8A%A0%E5%B9%B3%E5%8F%B0_hu33aa2292991bd18e0e7a26eaab9b274d_8870628_480x0_resize_box_3.png 480w, /p/e5/%E6%B7%BB%E5%8A%A0%E5%B9%B3%E5%8F%B0_hu33aa2292991bd18e0e7a26eaab9b274d_8870628_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="532px"
+	
+></p>
+</li>
+<li>
+<p>继续勾选中第一个URL，最后点击底部的“配置”，该URL为<code>https://login.microsoftonline.com/common/oauth2/nativeclient</code>也可手动添加。
+<img src="/p/e5/URI.png"
+	width="2560"
+	height="1153"
+	srcset="/p/e5/URI_hu33aa2292991bd18e0e7a26eaab9b274d_8870628_480x0_resize_box_3.png 480w, /p/e5/URI_hu33aa2292991bd18e0e7a26eaab9b274d_8870628_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="532px"
+	
+></p>
+</li>
+<li>
+<p>配置默认客户端类型将应用程序视为公共客户端 点击切换按钮为“是” ，最后点击“保存”按钮保存。
+<img src="/p/e5/%E5%85%AC%E5%85%B1%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%B5%81.png"
+	width="2560"
+	height="1217"
+	srcset="/p/e5/%E5%85%AC%E5%85%B1%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%B5%81_hu266cf42f0e13e7795321f4080bf21367_9363007_480x0_resize_box_3.png 480w, /p/e5/%E5%85%AC%E5%85%B1%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%B5%81_hu266cf42f0e13e7795321f4080bf21367_9363007_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="504px"
+	
+></p>
+</li>
+</ol>
+<h5 id="两种api调用方式">两种API调用方式</h5>
+<p><strong>小白提示：建议选择“委托的权限(用户登录)”该权限类型，调用API较多，操作步骤较少简单粗暴，调用成功几率高</strong></p>
+<p>注册的应用程序API权限类型有两种，其主要区别如下表所示：</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>权限类型</th>
+<th><strong>委托的权限(用户登录)</strong></th>
+<th><strong>应用程序权限(非用户登录)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>官方释义</td>
+<td>应用程序必须以登录用户身份访问API</td>
+<td>应用程序在用户未登录的情况下作为后台服务或守护程序运行</td>
+</tr>
+<tr>
+<td>需要的信息</td>
+<td>账户名称+账户密码+应用程序(客户端)ID</td>
+<td>账户名称+客户端机密+应用程序(客户端)ID</td>
+</tr>
+<tr>
+<td>功能影响</td>
+<td>程序中所有API均可调用</td>
+<td>部分API权限受限无法调用(官方限制)</td>
+</tr>
+<tr>
+<td>API权限配置</td>
+<td>可由PC版程序自动配置添加API权限</td>
+<td>必须手动配置API权限</td>
+</tr>
+<tr>
+<td>显示颜色标识</td>
+<td>蓝色</td>
+<td>深青色</td>
+</tr>
+<tr>
+<td><img src="/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F.png"
+	width="2170"
+	height="727"
+	srcset="/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F_hu501441b66c84c90ce59c9375aea1c985_4741254_480x0_resize_box_3.png 480w, /p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F_hu501441b66c84c90ce59c9375aea1c985_4741254_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="298"
+		data-flex-basis="716px"
+	
+></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>本文使用委托的权限</li>
+</ul>
+<h5 id="委托的权限">委托的权限</h5>
+<ol>
+<li>
+<p>点击“API权限”-“添加权限”-“Microsoft Graph”
+<img src="/p/e5/API%E6%9D%83%E9%99%90.png"
+	width="2560"
+	height="1217"
+	srcset="/p/e5/API%E6%9D%83%E9%99%90_hu266cf42f0e13e7795321f4080bf21367_9363007_480x0_resize_box_3.png 480w, /p/e5/API%E6%9D%83%E9%99%90_hu266cf42f0e13e7795321f4080bf21367_9363007_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="504px"
+	
+></p>
+</li>
+<li>
+<p>选择“委托的权限”
+<img src="/p/e5/%E5%A7%94%E6%89%98.png"
+	width="2560"
+	height="1211"
+	srcset="/p/e5/%E5%A7%94%E6%89%98_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_480x0_resize_box_3.png 480w, /p/e5/%E5%A7%94%E6%89%98_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="507px"
+	
+></p>
+</li>
+<li>
+<p>根据编辑页面中列出的API权限需求表（注意在程序中切换为&quot;<strong>登录</strong>“）来勾选所对应的API权限，全部选择完成后点击&quot;添加权限”。
+<img src="/p/e5/%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90%E4%BE%8B%E5%AD%90.png"
+	width="2560"
+	height="1203"
+	srcset="/p/e5/%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90%E4%BE%8B%E5%AD%90_hu5cf7d1ba6ce92cd1a1bd827ea3796086_9255297_480x0_resize_box_3.png 480w, /p/e5/%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90%E4%BE%8B%E5%AD%90_hu5cf7d1ba6ce92cd1a1bd827ea3796086_9255297_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="510px"
+	
+></p>
+</li>
+<li>
+<p>最后点击代表XXX授予管理员同意,对话框选择“是”（该图包含了当前程序“委托的权限(用户登录)”全部API所需要的权限）。
+<img src="/p/e5/%E4%BB%A3%E8%A1%A8%E5%90%8C%E6%84%8F.png"
+	width="2560"
+	height="1206"
+	srcset="/p/e5/%E4%BB%A3%E8%A1%A8%E5%90%8C%E6%84%8F_hu682a329ff93a7592afa9a3b8d7e11217_9278369_480x0_resize_box_3.png 480w, /p/e5/%E4%BB%A3%E8%A1%A8%E5%90%8C%E6%84%8F_hu682a329ff93a7592afa9a3b8d7e11217_9278369_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="509px"
+	
+></p>
+</li>
+</ol>
+<ul>
+<li>同理如果使用<strong>应用程序权限(非用户登录)</strong>，那么在第三步的勾选权限的时候，请按照图片的勾选</li>
+</ul>
+<h5 id="创建客户端密码">创建客户端密码</h5>
+<ol>
+<li>
+<p>点击“证书密码”-“新客户端密码”-“24个月”-“添加”
+<img src="/p/e5/%E5%AF%86%E7%A0%81.png"
+	width="2560"
+	height="1197"
+	srcset="/p/e5/%E5%AF%86%E7%A0%81_hu7cba6c85e41a9e35b580015c7acb01e3_9209134_480x0_resize_box_3.png 480w, /p/e5/%E5%AF%86%E7%A0%81_hu7cba6c85e41a9e35b580015c7acb01e3_9209134_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="213"
+		data-flex-basis="513px"
+	
+></p>
+</li>
+<li>
+<p>点击“值”该列中的“复制”（不要复制&quot;ID&quot;列中的值），并立即将该密码保存至电脑，<strong>保存的值即为“客户端密码”</strong>， 注：该值必须立即保存，退出该页面后将永远无法查看。
+<img src="/p/e5/%E5%AF%86%E7%A0%81%E5%80%BC.png"
+	width="2560"
+	height="1213"
+	srcset="/p/e5/%E5%AF%86%E7%A0%81%E5%80%BC_hu162fefe4942a90c730cd5fe1c8ae2a61_191977_480x0_resize_box_3.png 480w, /p/e5/%E5%AF%86%E7%A0%81%E5%80%BC_hu162fefe4942a90c730cd5fe1c8ae2a61_191977_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="506px"
+	
+></p>
+</li>
+</ol>
+<h5 id="创建一个新的e5子账户可选步骤">创建一个新的E5子账户(可选步骤)</h5>
+<p>登入E5管理员账户进入管理员界面，创建一个新的子账户，使用这个子账户登录程序调用API。<br>
+为什么建议这样做：Microsoft 365 E5 Renew中的部分API包含了写操作，例如邮件和Onedrive的API，这些API在随机模式下会生成大量垃圾邮件和文件（虽然单独为此设立了一个文件夹），部分人可能会对此行为非常介意，而且程序频繁的读写可能会对您正常使用账户造成影响，因此不建议使用管理员账户登录。</p>
+<ul>
+<li>前文已经教过如何创建子账户了</li>
+</ul>
+<h4 id="填写必要信息">填写必要信息</h4>
+<p>在账户运行配置页面中填写账户信息，<strong>且登录调用填写账户密码、非登录调用填写客户端密码，并选择自己选定的调用方式，注意调用方式不要选错了！！！</strong> 最后点击“添加运行账号”按钮完成配置。</p>
+<ul>
+<li>也就是说登录模式中 填账号密码</li>
+<li>非登录模式 填机密</li>
+<li>客户端ID在Azure中的概述里
+<img src="/p/e5/%E5%AE%A2%E6%88%B7%E7%AB%AFID.png"
+	width="2560"
+	height="1114"
+	srcset="/p/e5/%E5%AE%A2%E6%88%B7%E7%AB%AFID_hucf8b6855efdb211c2ed93bd1e260048d_291698_480x0_resize_box_3.png 480w, /p/e5/%E5%AE%A2%E6%88%B7%E7%AB%AFID_hucf8b6855efdb211c2ed93bd1e260048d_291698_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="229"
+		data-flex-basis="551px"
+	
+></li>
+</ul>
+<p><img src="/p/e5/%E6%B7%BB%E5%8A%A0%E8%B4%A6%E6%88%B7.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/%E6%B7%BB%E5%8A%A0%E8%B4%A6%E6%88%B7_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/%E6%B7%BB%E5%8A%A0%E8%B4%A6%E6%88%B7_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></p>
+<h4 id="验证成功">验证成功</h4>
+<p><img src="/p/e5/%E7%BB%AD%E8%AE%A2%E5%88%97%E8%A1%A8.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/%E7%BB%AD%E8%AE%A2%E5%88%97%E8%A1%A8_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/%E7%BB%AD%E8%AE%A2%E5%88%97%E8%A1%A8_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+>
+<img src="/p/e5/%E7%BB%AD%E8%AE%A2%E6%88%90%E5%8A%9F.png"
+	width="2560"
+	height="1215"
+	srcset="/p/e5/%E7%BB%AD%E8%AE%A2%E6%88%90%E5%8A%9F_hu41b91c278f339702765aaa0daf916740_9347616_480x0_resize_box_3.png 480w, /p/e5/%E7%BB%AD%E8%AE%A2%E6%88%90%E5%8A%9F_hu41b91c278f339702765aaa0daf916740_9347616_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="505px"
+	
+></p>
+<h2 id="最后">最后</h2>
+<p><strong>一定不要把重要数据储存在e5上</strong>
+<strong>一定不要把重要数据储存在e5上</strong>
+<strong>一定不要把重要数据储存在e5上</strong></p>
+<h3 id="数据转移">数据转移</h3>
+<p>可以使用mover进行数据转移<img src="/p/e5/mover%E8%BF%81%E7%A7%BB.png"
+	width="2560"
+	height="1211"
+	srcset="/p/e5/mover%E8%BF%81%E7%A7%BB_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_480x0_resize_box_3.png 480w, /p/e5/mover%E8%BF%81%E7%A7%BB_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="507px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/e5/">E5</a>
+        
+            <a href="/tags/onedrive/">OneDrive</a>
+        
+            <a href="/tags/office365/">Office365</a>
+        
+            <a href="/tags/%E5%BE%AE%E8%BD%AF/">微软</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/zerotier/">
+        
+        
+            <div class="article-image">
+                <img src="/p/zerotier/zerotier.e49e72182c3c7fbd7d15b3cf7d8b51f7_hu3ef3a945ed30fde8b0c6b3b239861d99_8739729_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 异地组网-ZeroTier简明教程"
+                        data-key="zerotier" 
+                        data-hash="md5-5J5yGCw8f719FbPPfYtR9w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">异地组网-ZeroTier简明教程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/downloadsave/">
+        
+        
+            <div class="article-image">
+                <img src="/p/downloadsave/%E5%B0%81%E9%9D%A2.84b97d55ac649a1f4eb9930ca64a94e6_hu0efe790cc80c5fa11dbef893210319c4_503545_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 关于一些外服游戏下载节省流量"
+                        data-key="downloadsave" 
+                        data-hash="md5-hLl9Vaxkmh9OuZMMpkqU5g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于一些外服游戏下载节省流量</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: "66203c75b3329f29c131",
+        clientSecret: "a2f226176efd732f9072621d1990f7d7d2a55c87",
+        repo: "gitalk",
+        owner: "ohdmire",
+        admin: ["ohdmire"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+    });
+    (function () {
+        if (
+            ["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1
+        ) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
+        }
+        gitalk.render("gitalk-container");
+    })();
+</script>
+
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 Ohdmire&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
