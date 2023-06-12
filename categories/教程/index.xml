@@ -167,10 +167,10 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;创建新的e5子账户&#34;&gt;创建新的E5子账户&lt;/h3&gt;
-&lt;p&gt;刚刚注册的是管理员的账户&lt;code&gt;XXXX@YYYY.onmicrosoft.com&lt;/code&gt;（大概是这个格式），当然，我们还可以往下注册15个用户，以用户的身份使用，这些用户都能享受Office365和OneDrive。所以我们也可以分享给其他人一起使用&lt;/p&gt;
+&lt;p&gt;刚刚注册的是&lt;strong&gt;管理员的账户&lt;/strong&gt;&lt;code&gt;XXXX@YYYY.onmicrosoft.com&lt;/code&gt;（大概是这个格式），当然，我们还可以往下注册15个用户，以用户的身份使用，这些用户都能享受Office365和OneDrive。所以我们也可以分享给其他人一起使用&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;以管理员账户登录管理网址&lt;a class=&#34;link&#34; href=&#34;https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;以&lt;strong&gt;管理员账户&lt;/strong&gt;登录管理网址&lt;a class=&#34;link&#34; href=&#34;https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;链接&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -320,7 +320,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;登录&lt;a class=&#34;link&#34; href=&#34;https://portal.azure.com/#home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Azure&lt;/a&gt;,以管理员账号登录&lt;code&gt;XXXX@YYYY.onmicrosoft.com&lt;/code&gt;（大概是这个格式）&lt;/p&gt;
+    &gt;Azure&lt;/a&gt;,以&lt;strong&gt;管理员账号&lt;/strong&gt;登录&lt;code&gt;XXXX@YYYY.onmicrosoft.com&lt;/code&gt;（大概是这个格式）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;登录完成后点击右上角的“门户”按钮进入Azure管理中心，在搜索栏内输入“应用注册”，点击进入
@@ -655,7 +655,8 @@
 &lt;strong&gt;一定不要把重要数据储存在e5上&lt;/strong&gt;
 &lt;strong&gt;一定不要把重要数据储存在e5上&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;数据转移&#34;&gt;数据转移&lt;/h3&gt;
-&lt;p&gt;可以使用mover进行数据转移&lt;img src=&#34;https://ohdmire.github.io/p/e5/mover%E8%BF%81%E7%A7%BB.png&#34;
+&lt;p&gt;可以使用&lt;a class=&#34;link&#34; href=&#34;https://mover.io/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mover&lt;/a&gt;进行数据转移&lt;img src=&#34;https://ohdmire.github.io/p/e5/mover%E8%BF%81%E7%A7%BB.png&#34;
 	width=&#34;2560&#34;
 	height=&#34;1211&#34;
 	srcset=&#34;https://ohdmire.github.io/p/e5/mover%E8%BF%81%E7%A7%BB_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/e5/mover%E8%BF%81%E7%A7%BB_hu11321bec8b77bec7774d5a3b99c45e2c_9316839_1024x0_resize_box_3.png 1024w&#34;
