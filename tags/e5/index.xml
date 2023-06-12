@@ -468,8 +468,9 @@
 &lt;td&gt;蓝色&lt;/td&gt;
 &lt;td&gt;深青色&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img src=&#34;https://ohdmire.github.io/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F.png&#34;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F.png&#34;
 	width=&#34;2170&#34;
 	height=&#34;727&#34;
 	srcset=&#34;https://ohdmire.github.io/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F_hu501441b66c84c90ce59c9375aea1c985_4741254_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/e5/API%E8%B0%83%E7%94%A8%E6%96%B9%E5%BC%8F_hu501441b66c84c90ce59c9375aea1c985_4741254_1024x0_resize_box_3.png 1024w&#34;
@@ -480,12 +481,7 @@
 		data-flex-grow=&#34;298&#34;
 		data-flex-basis=&#34;716px&#34;
 	
-&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;本文使用委托的权限&lt;/li&gt;
 &lt;/ul&gt;
