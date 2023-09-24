@@ -1,57 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>网站 on Ohdmire&#39;s blog</title>
-        <link>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</link>
-        <description>Recent content in 网站 on Ohdmire&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>我网站使用的一些东西</title>
-        <link>https://ohdmire.github.io/p/website-software/</link>
-        <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://ohdmire.github.io/p/website-software/</guid>
-        <description>&lt;h1 id=&#34;网站涉及相关&#34;&gt;网站涉及相关&lt;/h1&gt;
-&lt;h2 id=&#34;网站设计&#34;&gt;网站设计&lt;/h2&gt;
-&lt;p&gt;首先我使用了&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;这个网站框架并且配上了&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;stack主题&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;网站搭建&#34;&gt;网站搭建&lt;/h2&gt;
-&lt;p&gt;将网站搭建在&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub Pages&lt;/a&gt;上&lt;/p&gt;
-&lt;p&gt;还使用了&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Azure&lt;/a&gt;的静态web解析，相当于有两个域名了&lt;/p&gt;
-&lt;h2 id=&#34;网站编辑&#34;&gt;网站编辑&lt;/h2&gt;
-&lt;p&gt;我使用&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Obsidian&lt;/a&gt;进行博客网站的编辑，他支持&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Markdown语言&lt;/a&gt;，并且拥有模板。&lt;/p&gt;
-&lt;p&gt;本来是向用&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Visual Studio Code&lt;/a&gt; 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了&lt;a class=&#34;link&#34; href=&#34;https://obsidian.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Obsidian&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;同时我编辑的内容也通过&lt;a class=&#34;link&#34; href=&#34;https://onedrive.live.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;OneDrive&lt;/a&gt;同步到云端，这样也不用担心数据丢失的问题&lt;/p&gt;
-&lt;h2 id=&#34;网站更新&#34;&gt;网站更新&lt;/h2&gt;
-&lt;p&gt;使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;编译好网站之后用git将写好的内容push到远程仓库里，这样就能够实现更新博客内容&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;这次建设网站没有花我一分钱，域名啥的我也没有购买。&lt;/p&gt;
-&lt;p&gt;我觉得这是非常适合我这穷学生的建设网站的方式。如果有兴趣的话我也可以出一篇详细的建设教程。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2.png&#34;
-	width=&#34;2536&#34;
-	height=&#34;1214&#34;
-	srcset=&#34;https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/website-software/%E7%A9%BA%E7%A9%BA%E7%9A%84%E5%8D%9A%E5%AE%A2_hu411fbe7342e601014b2a4021a25f94bd_9252368_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;我的博客照片&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;208&#34;
-		data-flex-basis=&#34;501px&#34;
-	
-&gt;&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>网站 on Ohdmire</title>
+    <link>https://example.org/tags/%E7%BD%91%E7%AB%99/</link>
+    <description>Recent content in 网站 on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我网站使用的一些东西</title>
+      <link>https://example.org/posts/website-software/</link>
+      <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/posts/website-software/</guid>
+      <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
+网站搭建 # 将网站搭建在GitHub Pages上
+还使用了Azure的静态web解析，相当于有两个域名了
+网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
+本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
+同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
+      
+    </item>
+    
+  </channel>
 </rss>

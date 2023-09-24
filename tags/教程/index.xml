@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>教程 on Ohdmire</title>
+    <link>https://example.org/tags/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Thu, 04 Mar 2021 11:25:03 +0800</lastBuildDate><atom:link href="https://example.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 静态博客搭建</title>
+      <link>https://example.org/posts/test/</link>
+      <pubDate>Thu, 04 Mar 2021 11:25:03 +0800</pubDate>
+      
+      <guid>https://example.org/posts/test/</guid>
+      <description>E5 # 前言 # 本文大部分内容来自以下链接
+2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程
+E5 调用API续订服务：Microsoft 365 E5 Renew X
+E5简介 # Office365开发版E5是为开发人员提供的，是微软的官方活动，申请Office 365开发者计划可以获得为期3个月的免费Office365 E5。 而E5计划就包含了25个用于所有Office 365 应用的许可证
+E5的使用大体分为注册和续订两个部分
+E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作为开发者</description>
+      
+    </item>
+    
+  </channel>
+</rss>

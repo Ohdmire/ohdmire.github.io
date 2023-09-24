@@ -1,116 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>网络 on Ohdmire&#39;s blog</title>
-        <link>https://ohdmire.github.io/categories/%E7%BD%91%E7%BB%9C/</link>
-        <description>Recent content in 网络 on Ohdmire&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>异地组网-ZeroTier简明教程</title>
-        <link>https://ohdmire.github.io/p/zerotier/</link>
-        <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://ohdmire.github.io/p/zerotier/</guid>
-        <description>&lt;img src="https://ohdmire.github.io/p/zerotier/zerotier.png" alt="Featured image of post 异地组网-ZeroTier简明教程" /&gt;&lt;h1 id=&#34;zerotier简明教程&#34;&gt;ZeroTier简明教程&lt;/h1&gt;
-&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;
-&lt;p&gt;对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier&lt;/p&gt;
-&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;
-&lt;p&gt;ZeroTier的优点&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;采用P2P技术，去中心化&lt;/li&gt;
-&lt;li&gt;无限创建网络&lt;/li&gt;
-&lt;li&gt;最高支持25个设备&lt;/li&gt;
-&lt;li&gt;开源支持自建&lt;/li&gt;
-&lt;li&gt;相比公网IP安全性高，加入网络需要认证&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;教程&#34;&gt;教程&lt;/h2&gt;
-&lt;h3 id=&#34;注册账号&#34;&gt;注册账号&lt;/h3&gt;
-&lt;p&gt;官网：&lt;a class=&#34;link&#34; href=&#34;https://www.zerotier.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ZeroTier&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;推荐直接使用Google账号登录，方便快捷&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/zerotier/zerotier%E6%B3%A8%E5%86%8C.png&#34;
-	width=&#34;2560&#34;
-	height=&#34;1243&#34;
-	srcset=&#34;https://ohdmire.github.io/p/zerotier/zerotier%E6%B3%A8%E5%86%8C_hu6e0266e36f7fbf9a1e7415ab089a18ed_9563031_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/zerotier/zerotier%E6%B3%A8%E5%86%8C_hu6e0266e36f7fbf9a1e7415ab089a18ed_9563031_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;205&#34;
-		data-flex-basis=&#34;494px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;创建network&#34;&gt;创建Network&lt;/h3&gt;
-&lt;p&gt;点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住&lt;strong&gt;Network ID&lt;/strong&gt;，你之后要靠该ID加入使用设备。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/zerotier/%E5%88%9B%E5%BB%BAnetwork.png&#34;
-	width=&#34;2560&#34;
-	height=&#34;1236&#34;
-	srcset=&#34;https://ohdmire.github.io/p/zerotier/%E5%88%9B%E5%BB%BAnetwork_hud82d041807bfc5026223d5f532d76787_9509182_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/zerotier/%E5%88%9B%E5%BB%BAnetwork_hud82d041807bfc5026223d5f532d76787_9509182_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;207&#34;
-		data-flex-basis=&#34;497px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;加入设备&#34;&gt;加入设备&lt;/h3&gt;
-&lt;p&gt;下载对应操作系统的&lt;a class=&#34;link&#34; href=&#34;https://www.zerotier.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;客户端&lt;/a&gt;，以Windows和AndroID为例子，打开软件后输入&lt;strong&gt;Network ID&lt;/strong&gt;以加入网络&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/zerotier/window%E5%8A%A0%E5%85%A5.png&#34;
-	width=&#34;528&#34;
-	height=&#34;354&#34;
-	srcset=&#34;https://ohdmire.github.io/p/zerotier/window%E5%8A%A0%E5%85%A5_huebed820a82e927247f9e497315f406ea_562104_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/zerotier/window%E5%8A%A0%E5%85%A5_huebed820a82e927247f9e497315f406ea_562104_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;149&#34;
-		data-flex-basis=&#34;357px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/zerotier/Android%E5%8A%A0%E5%85%A5.jpg&#34;
-	width=&#34;1080&#34;
-	height=&#34;2400&#34;
-	srcset=&#34;https://ohdmire.github.io/p/zerotier/Android%E5%8A%A0%E5%85%A5_hude3541574fbc4681a4803b55d07b4cf0_283318_480x0_resize_q75_box.jpg 480w, https://ohdmire.github.io/p/zerotier/Android%E5%8A%A0%E5%85%A5_hude3541574fbc4681a4803b55d07b4cf0_283318_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;45&#34;
-		data-flex-basis=&#34;108px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;设备认证&#34;&gt;设备认证&lt;/h3&gt;
-&lt;p&gt;加入网络后不能马上生效，需要在网页中认证。请在网页中点击该Network进入设置页面，下滑至Members选项，然后你可以看到你的设备，&lt;strong&gt;点击左侧的Auth方框完成认证&lt;/strong&gt;，这样就可以连接了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ohdmire.github.io/p/zerotier/%E8%AE%A4%E8%AF%81.png&#34;
-	width=&#34;1850&#34;
-	height=&#34;739&#34;
-	srcset=&#34;https://ohdmire.github.io/p/zerotier/%E8%AE%A4%E8%AF%81_hud3444965211695051e91c85cb0905e05_4108927_480x0_resize_box_3.png 480w, https://ohdmire.github.io/p/zerotier/%E8%AE%A4%E8%AF%81_hud3444965211695051e91c85cb0905e05_4108927_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;250&#34;
-		data-flex-basis=&#34;600px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h3 id=&#34;moon节点&#34;&gt;moon节点？&lt;/h3&gt;
-&lt;p&gt;这个是解决连接稳定问题的，需要一台能够直接访问的服务器。我的连接还算稳定，这个我暂时没有用到。需要的自行查阅相关资料&lt;/p&gt;
-&lt;h2 id=&#34;结合使用&#34;&gt;结合使用&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;spacedesk配合可实现远程控制电脑&lt;/li&gt;
-&lt;li&gt;scrcpy配合可实现远程控制手机&lt;/li&gt;
-&lt;li&gt;moonlight配合可实现串流&lt;/li&gt;
-&lt;li&gt;弹弹play配合可实现远程媒体库&lt;/li&gt;
-&lt;li&gt;localsend配合可实现远程传输文件&lt;/li&gt;
-&lt;li&gt;局域网游戏联机（延迟未知）&lt;/li&gt;
-&lt;li&gt;&amp;hellip;&amp;hellip;
-等等软件配合起来使用可以达到很好的效果&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>网络 on Ohdmire</title>
+    <link>https://example.org/categories/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>异地组网-ZeroTier简明教程</title>
+      <link>https://example.org/posts/zerotier/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/posts/zerotier/</guid>
+      <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
+介绍 # ZeroTier的优点
+采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网：ZeroTier
+推荐直接使用Google账号登录，方便快捷
+创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
+加入设备 # 下载对应操作系统的客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
+      
+    </item>
+    
+  </channel>
 </rss>
