@@ -10,17 +10,17 @@
     <lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我网站使用的一些东西</title>
-      <link>https://example.org/posts/website-software/</link>
+      <link>https://example.org/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/website-software/</guid>
+      <guid>https://example.org/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</guid>
       <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
 网站搭建 # 将网站搭建在GitHub Pages上
 还使用了Azure的静态web解析，相当于有两个域名了
 网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
 本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
 同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/feature.png" />
     </item>
     
   </channel>

@@ -10,13 +10,13 @@
     <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/taskkill/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一键kill</title>
-      <link>https://example.org/posts/onepresskill/</link>
+      <link>https://example.org/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/onepresskill/</guid>
+      <guid>https://example.org/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</guid>
       <description>一键结束进程 # 起因 # 我真的绷不住了，Alt+F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
 编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/feature.png" />
     </item>
     
   </channel>

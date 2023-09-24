@@ -10,15 +10,15 @@
     <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/%E5%AD%97%E5%B9%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>视频字幕神器pyTranscriber</title>
-      <link>https://example.org/posts/pytranscriber/</link>
+      <link>https://example.org/posts/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%AD%97%E5%B9%95%E7%A5%9E%E5%99%A8pytranscriber/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/pytranscriber/</guid>
+      <guid>https://example.org/posts/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%AD%97%E5%B9%95%E7%A5%9E%E5%99%A8pytranscriber/</guid>
       <description>pyTranscriber # 引言 # 你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕
 安装步骤 # 注意，你可能需要一定的Python cmd git知识
 首先你需要下载项目(推荐使用git clone) https://github.com/raryelcostasouza/pyTranscriber 你需要安装Python(勾选上 add to path) https://www.python.org/ 请打开cmd，cd到项目的目录中 输入pip install -r requirement.txt安装依赖 输入python main.py打开项目 你也可以使用虚拟Python环境安装软件，如poetry
 使用教程 # 生成字幕文件 # 首先打开软件是英文页面，点击标题栏上language按钮选择简体中文 再点击旁边的setting选项，设置好一个能连接上Google的代理(点击test可以测试连接可用性) 之后选择文件和视频的语言(原视频是什么语言就选什么语言) 点击生成字幕之后耐心等待 最后你会得到srt和txt文件 到这里就已经结束了，请享用你的字幕吧</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%AD%97%E5%B9%95%E7%A5%9E%E5%99%A8pytranscriber/feature.png" />
     </item>
     
   </channel>
