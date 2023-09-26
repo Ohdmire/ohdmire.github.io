@@ -10,15 +10,15 @@
     <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/%E7%B2%98%E8%B4%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>超级粘贴</title>
-      <link>https://example.org/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/</link>
+      <link>https://example.org/posts/superpaste/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/</guid>
+      <guid>https://example.org/posts/superpaste/</guid>
       <description>超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序
 编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了
 读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)
 编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/superpaste/feature.png" />
     </item>
     
   </channel>

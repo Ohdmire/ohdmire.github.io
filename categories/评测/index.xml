@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 17 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/categories/%E8%AF%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sony XM5 耳机使用感受</title>
-      <link>https://example.org/posts/xm5%E8%AF%84%E6%B5%8B/</link>
+      <link>https://example.org/posts/xm5/</link>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/xm5%E8%AF%84%E6%B5%8B/</guid>
+      <guid>https://example.org/posts/xm5/</guid>
       <description>XM5使用体验 # 本篇文章只是分享个人的使用感受，可能描述得有些偏颇，请见谅
 个人状况 # 需求 # 我是一名学生党，平时在自习室的时候，特别是在教室晚自习，总是有很多细细碎碎的杂音干扰我学习。所以我想有一个耳机能够帮助我隔绝杂音。
 我不想再使用入耳式耳机了，因为我长时间戴入耳式耳朵很容易痒，我比较害怕得中耳炎。
@@ -22,7 +22,7 @@
 外观 # 我买的是黑色的，虽然感觉白色更好看一些，但是考虑到比较容易脏我还是选择了黑色。我个人是比较喜欢这个外观的，给我一种现代简约的感觉。
 佩戴 # xm5佩戴绝对是第一梯队的水平，我的耳朵是属于比较大的那种的，之前头戴久了耳朵容易痛，但是xm5非常舒适，戴久了耳朵也不会痛。缺的也很明显，是头型毁灭者。
 还有最重要的一点是我是戴眼镜的，戴久了也不会感觉很夹，十分舒适。但是还是不推荐戴眼镜，因为会使得耳机密闭性下降，降噪效果会下降。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/xm5%E8%AF%84%E6%B5%8B/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/xm5/feature.jpg" />
     </item>
     
   </channel>

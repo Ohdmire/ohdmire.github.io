@@ -44,7 +44,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/</loc>
+            <loc>https://example.org/posts/t2s-s2t/</loc>
             <lastmod>2023-09-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -55,7 +55,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/</loc>
+            <loc>https://example.org/posts/bitwarden/</loc>
             <lastmod>2023-09-23T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -87,7 +87,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91zerotier/</loc>
+            <loc>https://example.org/posts/zerotier/</loc>
             <lastmod>2023-04-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -104,7 +104,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E6%B8%B8%E6%88%8F%E4%B8%8B%E8%BD%BD/</loc>
+            <loc>https://example.org/posts/gamedownload/</loc>
             <lastmod>2023-03-21T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -117,7 +117,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/xm5%E8%AF%84%E6%B5%8B/</loc>
+            <loc>https://example.org/posts/xm5/</loc>
             <lastmod>2023-01-17T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -134,7 +134,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/</loc>
+            <loc>https://example.org/posts/onepresskill/</loc>
             <lastmod>2023-01-07T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -145,7 +145,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/javascript%E7%AC%94%E8%AE%B0/</loc>
+            <loc>https://example.org/posts/javascriptnote/</loc>
             <lastmod>2022-12-14T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -156,7 +156,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/</loc>
+            <loc>https://example.org/posts/superpaste/</loc>
             <lastmod>2022-12-12T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -167,7 +167,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%AD%97%E5%B9%95%E7%A5%9E%E5%99%A8pytranscriber/</loc>
+            <loc>https://example.org/posts/pytranscriber/</loc>
             <lastmod>2022-12-01T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -180,7 +180,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/</loc>
+            <loc>https://example.org/posts/wittgenstein/</loc>
             <lastmod>2022-11-24T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -189,7 +189,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</loc>
+            <loc>https://example.org/posts/website/</loc>
             <lastmod>2022-11-24T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>

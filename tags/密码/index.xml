@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 23 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/%E5%AF%86%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bitwarden使用docker自建服务器教程</title>
-      <link>https://example.org/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/</link>
+      <link>https://example.org/posts/bitwarden/</link>
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://example.org/posts/bitwarden/</guid>
       <description>bitwarden # 介绍 # Bitwarden是一款自由且开源的密码管理服务，用户可在加密的保管库中存储敏感信息。Bitwarden平台提供有多种客户端应用程序，包括网页用户界面、桌面应用，浏览器扩展、移动应用以及命令行界面。Bitwarden提供云端托管服务，并支持自行部署解决方案。
 bitwarden的优势在于跨平台，和自建云托管服务器，相比起Chrome或Firefox的密码保存来说，提供了更为可靠的安全性
 准备 # 域名一个 vps（最好是Linux） ssl证书 Onedrive账号（可选） 搭建服务 # 域名解析与ssl证书 # 这个比较基础所以我放在一起了。
@@ -25,7 +25,7 @@ ssl证书 # 推荐使用acme.sh获取证书
 acme.sh的wiki
 wiki上也详细讲述了安装教程我就不再多说
 推荐使用这条命令来获取域名。其中mydomain2.com 换成已经完成解析的域名</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/bitwarden/feature.png" />
     </item>
     
   </channel>

@@ -65,11 +65,12 @@
 <meta property="og:description" content="一键结束进程 # 起因 # 我真的绷不住了，Alt&#43;F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
 编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&#34;explorer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/onepresskill/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://example.org/posts/onepresskill/" /><meta property="og:image" content="https://example.org/posts/onepresskill/feature.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-01-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2023-01-07T00:00:00+00:00" />
 
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.org/posts/onepresskill/feature.png"/>
 <meta name="twitter:title" content="一键kill"/>
 <meta name="twitter:description" content="一键结束进程 # 起因 # 我真的绷不住了，Alt&#43;F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
 编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&#34;explorer."/>
@@ -99,7 +100,7 @@
     "keywords": ["taskkill"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "136"
+    "wordCount": "141"
   }]
   </script>
 
@@ -241,7 +242,17 @@
   <a href=""  class="flex items-center">
     
     <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
-        Users
+        Links
+    </p>
+</a>
+
+
+            
+            
+  <a href="/about/"  class="flex items-center">
+    
+    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="关于博客">
+        About
     </p>
 </a>
 
@@ -462,7 +473,21 @@
     <a href=""  class="flex items-center">
         
         <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
-            Users
+            Links
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center">
+        
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="关于博客">
+            About
         </p>
     </a>
 </li>
@@ -592,6 +617,10 @@
   
   
   
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/onepresskill/feature_hud6952016226169985b8ba3953ba2dfee_281431_1200x0_resize_box_3.png);"></div>
+        
+    
   
   
 
@@ -608,7 +637,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/"
-      >Ohdmire</a
+      ></a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -673,12 +702,10 @@
 
 
 
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-01-07 00:00:00 &#43;0000 UTC">7 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-01-07 00:00:00 &#43;0000 UTC">7 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_posts\一键结束进程\index.md" title="views">0</span> 
     
@@ -802,7 +829,7 @@
     </div>
     
     
-    <div class="text-sm text-neutral-700 dark:text-neutral-400">Think much</div>
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">Think much.</div>
     
     <div class="text-2xl sm:text-lg">
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
@@ -1133,6 +1160,66 @@
 </span></span></code></pre></div><p>我也会把exe文件发布在GitHub上</p>
 <p><a href="https://github.com/ohdmire/OnePressKill/releases/"   target="_blank">
     https://github.com/ohdmire/OnePressKill/releases/</a></p>
+<a target="_blank" href="https://github.com/ohdmire/OnePressKill" class="cursor-pointer">
+  <div class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md backdrop-blur shadow-2xl">
+
+    <div class="flex items-center">
+      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+      </span>
+      <div class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+        ohdmire/OnePressKill
+      </div>
+    </div>
+
+    <p class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+      能够一键结束进程
+    </p>
+
+    <div class="m-0 mt-2 flex items-center">
+      
+      <span class="mr-1 inline-block h-3 w-3 rounded-full" style="background-color: #e34c26"></span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+         HTML 
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
+  </span>
+
+
+      </span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
+  </span>
+
+
+      </span>
+      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+        0
+      </div>
+
+    </div>
+
+  </div>
+</a>
 <div id="小趣事" class="anchor"></div>
 <h3 class="relative group">小趣事 
     <span
@@ -1288,7 +1375,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/superpaste/feature_hud6952016226169985b8ba3953ba2dfee_281431_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1332,12 +1419,10 @@
 
 
 
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-12-12 00:00:00 &#43;0000 UTC">12 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2022-12-12 00:00:00 &#43;0000 UTC">12 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_posts\超级粘贴\index.md" title="views">0</span> 
     
@@ -1445,7 +1530,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/pytranscriber/feature_hu0e7064b61b51e2972b73936a53bd37f9_1627172_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1489,12 +1574,10 @@
 
 
 
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-12-01 00:00:00 &#43;0000 UTC">1 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2022-12-01 00:00:00 &#43;0000 UTC">1 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_posts\语音转字幕神器pyTranscriber\index.md" title="views">0</span> 
     
@@ -1598,11 +1681,11 @@
   
   
 
-  <a href="/posts/website-software/" class="min-w-full">
+  <a href="/posts/website/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/website/feature_hu411fbe7342e601014b2a4021a25f94bd_9252368_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1610,7 +1693,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/website-software/">我网站使用的一些东西</div>
+          href="/posts/website/">我网站使用的一些东西</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1646,12 +1729,10 @@
 
 
 
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_posts\我网站使用的一些东西\index.md" title="views">0</span> 
     
@@ -1748,7 +1829,7 @@
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/wittgenstein/feature_hub3861a2fc8a714cba5025c698d818fe3_288583_600x0_resize_q75_box.jpg);"></div>
         
       
 
@@ -1792,12 +1873,10 @@
 
 
 
-
-
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
     
     <span id="views_posts\维特根斯坦\index.md" title="views">0</span> 
     
@@ -1866,174 +1945,6 @@
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
     哲学
-  </span>
-</span>
-
-  </span>
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
-  
-
-  <a href="/posts/test/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/test/">Hugo 静态博客搭建</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2021-03-04 11:25:03 &#43;0800 CST">4 March 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="views_posts\test\index.md" title="views">0</span> 
-    
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E5%85%B3%E4%BA%8E%E6%88%91%E6%83%B3%E7%8E%A9%E5%8D%9A%E5%AE%A2%E5%8D%B4%E4%B8%8D%E4%B8%80%E5%AE%9A%E4%BC%9A%E7%8E%A9%E5%8D%9A%E5%AE%A2%E8%BF%98%E6%9C%89%E5%8F%AF%E8%83%BD%E6%8A%8A%E5%8D%9A%E5%AE%A2%E7%8E%A9%E5%9D%8F%E8%BF%99%E4%BB%B6%E4%BA%8B/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    关于我想玩博客却不一定会玩博客还有可能把博客玩坏这件事
-  </span>
-</span>
-
-  </span>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/hugo/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    Hugo
-  </span>
-</span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    静态博客
-  </span>
-</span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E6%95%99%E7%A8%8B/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    教程
   </span>
 </span>
 
@@ -2136,6 +2047,29 @@
 
 
     
+    
+    <div class="pt-3">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="pt-3">
+        <script src="https://giscus.app/client.js"
+        data-repo="ohdmire/comments"
+        data-repo-id="R_kgDOKYbl0w"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKYbl084CZoBj"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+      </div>
+    </div>
+    
+    
   </footer>
 </article>
 
@@ -2203,8 +2137,6 @@
   
   <script type="text/javascript" src="/js/process.min.35c1113bcc16c5a59bf031082f9e63822aa95280423881a7847a7ff33a16e6299ce6a840d9ef4e10d947e030a18f3f20359afb2ec0f35967484b9a9360ac3145.js" integrity="sha512-NcERO8wWxaWb8DEIL55jgiqpUoBCOIGnhHp/8zoW5imc5qhA2e9OENlH4DChjz8gNZr7LsDzWWdIS5qTYKwxRQ=="></script>
   
-  
-  <a rel="me" href="https://masto.ai/@blowfish"></a>
   
 </footer><div
   id="search-wrapper"
