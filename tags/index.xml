@@ -228,5 +228,25 @@
       
     </item>
     
+    <item>
+      <title>friends</title>
+      <link>https://example.org/tags/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/tags/friends/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Personal site</title>
+      <link>https://example.org/tags/personal-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/tags/personal-site/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

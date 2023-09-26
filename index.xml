@@ -191,5 +191,15 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       
     </item>
     
+    <item>
+      <title>proxyerium的博客</title>
+      <link>https://example.org/friends/proxyerium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/friends/proxyerium/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/friends/proxyerium/feature.png" />
+    </item>
+    
   </channel>
 </rss>

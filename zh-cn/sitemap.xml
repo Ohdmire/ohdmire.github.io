@@ -212,6 +212,26 @@
   
     
       <url>
+            <loc>https://example.org/friends/</loc>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://example.org/friends/proxyerium/</loc>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
             <loc>https://example.org/about/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
