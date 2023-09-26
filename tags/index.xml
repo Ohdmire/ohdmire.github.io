@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Sat, 23 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>繁体中文</title>
+      <link>https://example.org/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>简体中文</title>
+      <link>https://example.org/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>bitwarden</title>
       <link>https://example.org/tags/bitwarden/</link>

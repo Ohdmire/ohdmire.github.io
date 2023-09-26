@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>博客介绍  &middot; Ohdmire</title>
-  <meta name="title" content="博客介绍  &middot; Ohdmire" />
-  
-  <meta name="description" content="我的博客有些啥？" />
-  <meta name="keywords" content=", " />
+  <title>使用opencc进行简繁转换 &middot; Ohdmire</title>
+  <meta name="title" content="使用opencc进行简繁转换 &middot; Ohdmire" />
   
   
-  <link rel="canonical" href="https://example.org/posts/%E4%BB%8B%E7%BB%8D/" />
+  <meta name="keywords" content="简体中文, 繁体中文, " />
+  
+  
+  <link rel="canonical" href="https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/" />
   
   
   
@@ -61,16 +61,27 @@
   
   
   
-  <meta property="og:title" content="博客介绍 " />
-<meta property="og:description" content="我的博客有些啥？" />
+  <meta property="og:title" content="使用opencc进行简繁转换" />
+<meta property="og:description" content="前言 # 在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个
+准备 # 在这里我使用python进行编写，使用opencc这个库进行简繁的转换。
+opencc # opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换
+编写 # 直接开始造
+繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称t2s
+import opencc import sys import re if len(sys.argv)==1: filenames=input(&#34;请拖入文件&#34;).replace(&#34;\\&#34;,&#34;/&#34;) filenames=re.findall(r&#39;(?&lt;=&#34;).*?(?=&#34;)&#39;,filenames) filenames.remove(&#34; &#34;) elif len(sys." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/%E4%BB%8B%E7%BB%8D/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-11-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-11-24T00:00:00+00:00" />
+<meta property="og:url" content="https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/" /><meta property="og:image" content="https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/feature.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-09-26T00:00:00+00:00" />
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="博客介绍 "/>
-<meta name="twitter:description" content="我的博客有些啥？"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/feature.png"/>
+<meta name="twitter:title" content="使用opencc进行简繁转换"/>
+<meta name="twitter:description" content="前言 # 在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个
+准备 # 在这里我使用python进行编写，使用opencc这个库进行简繁的转换。
+opencc # opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换
+编写 # 直接开始造
+繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称t2s
+import opencc import sys import re if len(sys.argv)==1: filenames=input(&#34;请拖入文件&#34;).replace(&#34;\\&#34;,&#34;/&#34;) filenames=re.findall(r&#39;(?&lt;=&#34;).*?(?=&#34;)&#39;,filenames) filenames.remove(&#34; &#34;) elif len(sys."/>
 
   
   <script type="application/ld+json">
@@ -78,26 +89,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "博客介绍 ",
-    "headline": "博客介绍 ",
-    "description": "我的博客有些啥？",
-    "abstract": "\r如有卡顿请访问 # https:\/\/thankful-water-038154a00.2.azurestaticapps.net\/\n介绍 # 你好啊，欢迎来到我的博客，我的博客平时主要以分享技术类的内容为主，主要是一些踩过的坑🕳或是网上冲浪🏄‍♂️的时候遇到的痛点。\n使用 # 你可以在右侧使用搜索功能 你可以点击右侧的tags或是categories来快速找到你需要的内容 ",
+    "name": "使用opencc进行简繁转换",
+    "headline": "使用opencc进行简繁转换",
+    
+    "abstract": "前言 # 在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个\n准备 # 在这里我使用python进行编写，使用opencc这个库进行简繁的转换。\nopencc # opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换\n编写 # 直接开始造\n繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称t2s\nimport opencc import sys import re if len(sys.argv)==1: filenames=input(\u0026#34;请拖入文件\u0026#34;).replace(\u0026#34;\\\\\u0026#34;,\u0026#34;\/\u0026#34;) filenames=re.findall(r\u0026#39;(?\u0026lt;=\u0026#34;).*?(?=\u0026#34;)\u0026#39;,filenames) filenames.remove(\u0026#34; \u0026#34;) elif len(sys.",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/example.org\/posts\/%E4%BB%8B%E7%BB%8D\/",
+    "url" : "https:\/\/example.org\/posts\/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96\/",
     "author" : {
       "@type": "Person",
       "name": "Ohdmire"
     },
-    "copyrightYear": "2022",
-    "dateCreated": "2022-11-24T00:00:00\u002b00:00",
-    "datePublished": "2022-11-24T00:00:00\u002b00:00",
+    "copyrightYear": "2023",
+    "dateCreated": "2023-09-26T00:00:00\u002b00:00",
+    "datePublished": "2023-09-26T00:00:00\u002b00:00",
     
-    "dateModified": "2022-11-24T00:00:00\u002b00:00",
+    "dateModified": "2023-09-26T00:00:00\u002b00:00",
     
-    "keywords": [""],
+    "keywords": ["简体中文","繁体中文"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "10"
+    "wordCount": "99"
   }]
   </script>
 
@@ -590,6 +601,10 @@
   
   
   
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/feature_hud6952016226169985b8ba3953ba2dfee_281431_1200x0_resize_box_3.png);"></div>
+        
+    
   
   
 
@@ -623,8 +638,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/%E4%BB%8B%E7%BB%8D/"
-      >博客介绍 </a
+      href="/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/"
+      >使用opencc进行简繁转换</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -633,7 +648,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      博客介绍 
+      使用opencc进行简繁转换
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -674,9 +689,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-09-26 00:00:00 &#43;0000 UTC">26 September 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts\介绍\index.md" title="views">0</span> 
+    <span id="views_posts\简繁转化\index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -718,9 +733,57 @@
   
   
   
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    技巧
+  </span>
+</span>
+
+  </span>
   
   
   
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    简体中文
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    繁体中文
+  </span>
+</span>
+
+  </span>
   
   
   
@@ -888,9 +951,31 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#如有卡顿请访问">如有卡顿请访问</a></li>
-    <li><a href="#介绍">介绍</a></li>
-    <li><a href="#使用">使用</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#准备">准备</a>
+      <ul>
+        <li><a href="#opencc">opencc</a></li>
+      </ul>
+    </li>
+    <li><a href="#编写">编写</a>
+      <ul>
+        <li><a href="#遇到的坑">遇到的坑</a>
+          <ul>
+            <li><a href="#路径问题">路径问题</a></li>
+            <li><a href="#传入参数">传入参数</a></li>
+            <li><a href="#编码问题">编码问题</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#使用教程">使用教程</a>
+      <ul>
+        <li><a href="#将文件拖到该程序的图标上进行转换">将文件拖到该程序的图标上进行转换</a></li>
+        <li><a href="#打开程序后将文件拖入后回车进行转换">打开程序后将文件拖入后回车进行转换</a></li>
+      </ul>
+    </li>
+    <li><a href="#最后">最后</a></li>
+    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav>
   </div>
@@ -904,9 +989,31 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#如有卡顿请访问">如有卡顿请访问</a></li>
-    <li><a href="#介绍">介绍</a></li>
-    <li><a href="#使用">使用</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#准备">准备</a>
+      <ul>
+        <li><a href="#opencc">opencc</a></li>
+      </ul>
+    </li>
+    <li><a href="#编写">编写</a>
+      <ul>
+        <li><a href="#遇到的坑">遇到的坑</a>
+          <ul>
+            <li><a href="#路径问题">路径问题</a></li>
+            <li><a href="#传入参数">传入参数</a></li>
+            <li><a href="#编码问题">编码问题</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#使用教程">使用教程</a>
+      <ul>
+        <li><a href="#将文件拖到该程序的图标上进行转换">将文件拖到该程序的图标上进行转换</a></li>
+        <li><a href="#打开程序后将文件拖入后回车进行转换">打开程序后将文件拖入后回车进行转换</a></li>
+      </ul>
+    </li>
+    <li><a href="#最后">最后</a></li>
+    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav>
   </div>
@@ -963,37 +1070,204 @@
 
 
         <div class="max-w-prose mb-20">
-          <div id="如有卡顿请访问" class="anchor"></div>
-<h2 class="relative group">如有卡顿请访问 
+          <div id="前言" class="anchor"></div>
+<h2 class="relative group">前言 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%a6%82%e6%9c%89%e5%8d%a1%e9%a1%bf%e8%af%b7%e8%ae%bf%e9%97%ae" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p><strong><a href="https://thankful-water-038154a00.2.azurestaticapps.net/"   target="_blank">
-    https://thankful-water-038154a00.2.azurestaticapps.net/</a></strong></p>
-<div id="介绍" class="anchor"></div>
-<h2 class="relative group">介绍 
+<p>在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个</p>
+<div id="准备" class="anchor"></div>
+<h2 class="relative group">准备 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bb%8b%e7%bb%8d" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%87%86%e5%a4%87" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>你好啊，欢迎来到我的博客，我的博客平时主要以分享技术类的内容为主，主要是一些踩过的坑🕳或是网上冲浪🏄‍♂️的时候遇到的痛点。</p>
-<div id="使用" class="anchor"></div>
-<h2 class="relative group">使用 
+<p>在这里我使用python进行编写，使用opencc这个库进行简繁的转换。</p>
+<div id="opencc" class="anchor"></div>
+<h3 class="relative group">opencc 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#opencc" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换</p>
+<div id="编写" class="anchor"></div>
+<h2 class="relative group">编写 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bc%96%e5%86%99" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>直接开始造</p>
+<p>繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称<strong>t2s</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">opencc</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">re</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filenames</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请拖入文件&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">&#34;</span><span class="p">,</span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filenames</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(?&lt;=&#34;).*?(?=&#34;)&#39;</span><span class="p">,</span><span class="n">filenames</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filenames</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filenames</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s2">&#34;r&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">converter</span><span class="o">=</span><span class="n">opencc</span><span class="o">.</span><span class="n">OpenCC</span><span class="p">(</span><span class="s2">&#34;t2s.json&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">result</span><span class="o">=</span><span class="n">converter</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s2">&#34;w&#34;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;- - -转换完成- - -&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>繁体中文转简体中文（Simplified Chinese to Traditional Chinese）简称<strong>s2t</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">......</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span><span class="o">=</span><span class="n">opencc</span><span class="o">.</span><span class="n">OpenCC</span><span class="p">(</span><span class="s2">&#34;s2t.json&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">......</span>
+</span></span></code></pre></div><p>最后通过pyinstaller打包即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pyinstaller -F main.py
+</span></span></code></pre></div><p>代码我也上传到了我的GitHub上</p>
+<p><a href="https://github.com/ohdmire/convert_sc-tc"   target="_blank">
+    https://github.com/ohdmire/convert_sc-tc</a></p>
+<div id="遇到的坑" class="anchor"></div>
+<h3 class="relative group">遇到的坑 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e9%81%87%e5%88%b0%e7%9a%84%e5%9d%91" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div id="路径问题" class="anchor"></div>
+<h4 class="relative group">路径问题 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%b7%af%e5%be%84%e9%97%ae%e9%a2%98" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>首先是这个windows的路径问题，我拖入的文件无法直接被python识别，必须按格式把<code>&quot;&quot;</code>去掉，还得把<code>\</code>转换成<code>/</code></p>
+<p>拖入多个文件时，得通过<strong>正则表达式</strong>提取出<code>&quot;&quot;</code>之内的路径，然后转换为列表</p>
+<div id="传入参数" class="anchor"></div>
+<h4 class="relative group">传入参数 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bc%a0%e5%85%a5%e5%8f%82%e6%95%b0" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>想让文件拖到图标上就能执行，要了解<code>sys.argv</code>可以获取传入的参数值，返回值是列表</p>
+<div id="编码问题" class="anchor"></div>
+<h4 class="relative group">编码问题 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bc%96%e7%a0%81%e9%97%ae%e9%a2%98" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>传入的文件有可能被误认为是<code>gbk</code>编码，我们需要手动强制编码为<code>utf-8</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span>
+</span></span></code></pre></div><div id="使用教程" class="anchor"></div>
+<h2 class="relative group">使用教程 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b" aria-label="锚点">#</a></span>        
     
 </h2>
 <ul>
-<li>你可以在右侧使用搜索功能</li>
-<li>你可以点击右侧的tags或是categories来快速找到你需要的内容</li>
+<li>
+<p><code>t2s.exe</code> 是繁体中文转简体中文</p>
+</li>
+<li>
+<p><code>s2t.exe</code> 是简体中文转繁体中文</p>
+</li>
 </ul>
+<div id="将文件拖到该程序的图标上进行转换" class="anchor"></div>
+<h3 class="relative group">将文件拖到该程序的图标上进行转换 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%b0%86%e6%96%87%e4%bb%b6%e6%8b%96%e5%88%b0%e8%af%a5%e7%a8%8b%e5%ba%8f%e7%9a%84%e5%9b%be%e6%a0%87%e4%b8%8a%e8%bf%9b%e8%a1%8c%e8%bd%ac%e6%8d%a2" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="%E6%8B%96%E5%85%A5.png" alt="" />
+      
+    </figure>
+  
+
+</p>
+<div id="打开程序后将文件拖入后回车进行转换" class="anchor"></div>
+<h3 class="relative group">打开程序后将文件拖入后回车进行转换 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%89%93%e5%bc%80%e7%a8%8b%e5%ba%8f%e5%90%8e%e5%b0%86%e6%96%87%e4%bb%b6%e6%8b%96%e5%85%a5%e5%90%8e%e5%9b%9e%e8%bd%a6%e8%bf%9b%e8%a1%8c%e8%bd%ac%e6%8d%a2" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="%E6%89%93%E5%BC%80%E6%8B%96%E5%85%A5.png" alt="" />
+      
+    </figure>
+  
+
+</p>
+<div id="最后" class="anchor"></div>
+<h2 class="relative group">最后 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%9c%80%e5%90%8e" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p>效果展示</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="%E6%95%88%E6%9E%9C.png" alt="" />
+      
+    </figure>
+  
+
+</p>
+<div id="参考链接" class="anchor"></div>
+<h2 class="relative group">参考链接 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p><a href="https://pypi.org/project/OpenCC/"   target="_blank">
+    opencc</a></p>
 
         </div>
                 
@@ -1007,7 +1281,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://example.org/posts/%E4%BB%8B%E7%BB%8D/&amp;text=%e5%8d%9a%e5%ae%a2%e4%bb%8b%e7%bb%8d%20"
+      href="https://twitter.com/intent/tweet/?url=https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/&amp;text=%e4%bd%bf%e7%94%a8opencc%e8%bf%9b%e8%a1%8c%e7%ae%80%e7%b9%81%e8%bd%ac%e6%8d%a2"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1026,7 +1300,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://example.org/posts/%E4%BB%8B%E7%BB%8D/&amp;resubmit=true&amp;title=%e5%8d%9a%e5%ae%a2%e4%bb%8b%e7%bb%8d%20"
+      href="https://t.me/share/url?url=https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/&amp;resubmit=true&amp;title=%e4%bd%bf%e7%94%a8opencc%e8%bf%9b%e8%a1%8c%e7%ae%80%e7%b9%81%e8%bd%ac%e6%8d%a2"
       title=""
       aria-label=""
       >
@@ -1045,7 +1319,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://example.org/posts/%E4%BB%8B%E7%BB%8D/&amp;subject=%e5%8d%9a%e5%ae%a2%e4%bb%8b%e7%bb%8d%20"
+      href="mailto:?body=https://example.org/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/&amp;subject=%e4%bd%bf%e7%94%a8opencc%e8%bf%9b%e8%a1%8c%e7%ae%80%e7%b9%81%e8%bd%ac%e6%8d%a2"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1071,11 +1345,11 @@
   
   
 
-  <a href="/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/" class="min-w-full">
+  <a href="/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/feature_hud6952016226169985b8ba3953ba2dfee_281431_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1083,7 +1357,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/"></div>
+          href="/posts/%E4%B8%80%E9%94%AE%E7%BB%93%E6%9D%9F%E8%BF%9B%E7%A8%8B/">一键kill</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1122,127 +1396,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-01-07 00:00:00 &#43;0000 UTC">7 January 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts\模板\模板.md" title="views">0</span> 
-    
-    <span class="inline-block align-text-bottom">
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
-  </span>
-
-</span>
-</span>
-  
-
-  
-  
-</div>
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</div>
-
-
-
-        </div>
-
-        
-      </div>
-      <div class="px-6 pt-4 pb-2">
-
-      </div>
-    </div>
-  </a>
-  
-  
-
-  <a href="/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/" class="min-w-full">
-    
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
-        
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/feature_hu411fbe7342e601014b2a4021a25f94bd_9252368_600x0_resize_box_3.png);"></div>
-        
-      
-
-      <div class="px-6 py-4">
-
-        
-        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/%E6%88%91%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/">我网站使用的一些东西</div>
-        
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="flex flex-row flex-wrap items-center">
-  
-  
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
-    
-    <span id="views_posts\我网站使用的一些东西\index.md" title="views">0</span> 
+    <span id="views_posts\一键结束进程\index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1295,20 +1451,31 @@
 
   </span>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%BD%91%E7%AB%99/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E8%BD%AF%E4%BB%B6/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    网站
+    软件
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/taskkill/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    taskkill
   </span>
 </span>
 
@@ -1333,11 +1500,11 @@
   
   
 
-  <a href="/posts/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/" class="min-w-full">
+  <a href="/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/feature_hub3861a2fc8a714cba5025c698d818fe3_288583_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/feature_hud6952016226169985b8ba3953ba2dfee_281431_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1345,7 +1512,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/%E7%BB%B4%E7%89%B9%E6%A0%B9%E6%96%AF%E5%9D%A6/">维特根斯坦</div>
+          href="/posts/%E8%B6%85%E7%BA%A7%E7%B2%98%E8%B4%B4/">超级粘贴</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1384,9 +1551,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2022-12-12 00:00:00 &#43;0000 UTC">12 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts\维特根斯坦\index.md" title="views">0</span> 
+    <span id="views_posts\超级粘贴\index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1428,12 +1595,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    技巧
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E8%BD%AF%E4%BB%B6/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    软件
   </span>
 </span>
 
@@ -1447,12 +1625,687 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%93%B2%E5%AD%A6/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%B2%98%E8%B4%B4/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    哲学
+    粘贴
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/e5/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/e5/feature_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_600x0_resize_box_3.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/e5/">Microsoft 365 E5开发者使用指南</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-06-12 00:00:00 &#43;0000 UTC">12 June 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts\e5\index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/e5/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    E5
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/onedrive/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    OneDrive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/office365/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Office365
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%BE%AE%E8%BD%AF/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    微软
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/feature_hucc12b0d618fd8d7f4b98a450364ebcf9_254789_600x0_resize_box_3.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/">bitwarden使用docker自建服务器教程</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-09-23 00:00:00 &#43;0000 UTC">23 September 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts\bitwarden自建服务器教程\index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/bitwarden/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    bitwarden
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%AF%86%E7%A0%81/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    密码
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91zerotier/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91zerotier/feature_hu3ef3a945ed30fde8b0c6b3b239861d99_8739729_600x0_resize_box_3.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91zerotier/">异地组网-ZeroTier简明教程</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-04-26 00:00:00 &#43;0000 UTC">26 April 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts\异地组网zerotier\index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%BD%91%E7%BB%9C/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    网络
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zerotier/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    ZeroTier
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/%E6%B8%B8%E6%88%8F%E4%B8%8B%E8%BD%BD/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/%E6%B8%B8%E6%88%8F%E4%B8%8B%E8%BD%BD/feature_hu0efe790cc80c5fa11dbef893210319c4_503545_600x0_resize_q75_box.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/%E6%B8%B8%E6%88%8F%E4%B8%8B%E8%BD%BD/">关于一些外服游戏下载节省流量</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-03-21 00:00:00 &#43;0000 UTC">21 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts\游戏下载\index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%8B%E8%BD%BD/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    下载
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blue-archive/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Blue Archive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/project-sekai/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Project Sekai
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/heaven-burns-red/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Heaven Burns Red
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/clash/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    clash
   </span>
 </span>
 
@@ -1481,8 +2334,8 @@
       </div>
      
      <script>
-        var oid = "views_posts\\介绍\\index.md"
-        var oid_likes = "likes_posts\\介绍\\index.md"
+        var oid = "views_posts\\简繁转化\\index.md"
+        var oid_likes = "likes_posts\\简繁转化\\index.md"
       </script>
       
       
@@ -1501,7 +2354,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/%E7%AE%80%E7%B9%81%E8%BD%AC%E5%8C%96/">
+            <a class="flex group mr-3" href="/posts/bitwarden%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1513,11 +2366,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用opencc进行简繁转换</span
+                  >bitwarden使用docker自建服务器教程</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-09-26 00:00:00 &#43;0000 UTC">26 September 2023</time>
+                    <time datetime="2023-09-23 00:00:00 &#43;0000 UTC">23 September 2023</time>
                   
                 </span>
               </span>
@@ -1525,6 +2378,28 @@
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/%E4%BB%8B%E7%BB%8D/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >博客介绍 </span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
