@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Ohdmire</title>
-    <link>https://example.org/tags/javascript/</link>
+    <link>https://ohdmire.github.io/tags/javascript/</link>
     <description>Recent content in JavaScript on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript笔记</title>
-      <link>https://example.org/posts/javascriptnote/</link>
+      <link>https://ohdmire.github.io/posts/javascriptnote/</link>
       <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/javascriptnote/</guid>
+      <guid>https://ohdmire.github.io/posts/javascriptnote/</guid>
       <description>JavaScript笔记 # 内容参考来源W3School
 以下内容并不完整，主要是我在我学过Python的基础上，在理解新的语言所需要留意的部分。
 显示方案 # JavaScript 能够以不同方式“显示”数据：
 使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 # var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x + y;	// 如何计算值 块作用域 # 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/javascriptnote/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/javascriptnote/feature.png" />
     </item>
     
   </channel>

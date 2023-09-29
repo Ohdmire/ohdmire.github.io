@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ZeroTier on Ohdmire</title>
-    <link>https://example.org/tags/zerotier/</link>
+    <link>https://ohdmire.github.io/tags/zerotier/</link>
     <description>Recent content in ZeroTier on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/zerotier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>异地组网-ZeroTier简明教程</title>
-      <link>https://example.org/posts/zerotier/</link>
+      <link>https://ohdmire.github.io/posts/zerotier/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/zerotier/</guid>
+      <guid>https://ohdmire.github.io/posts/zerotier/</guid>
       <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
 介绍 # ZeroTier的优点
 采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网：ZeroTier
 推荐直接使用Google账号登录，方便快捷
 创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
 加入设备 # 下载对应操作系统的客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/zerotier/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/zerotier/feature.png" />
     </item>
     
   </channel>

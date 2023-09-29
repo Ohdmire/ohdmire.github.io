@@ -4,19 +4,19 @@
   
     
       <url>
-            <loc>https://example.org/</loc>
+            <loc>https://ohdmire.github.io/</loc>
             <lastmod>2023-09-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://example.org/en/"
+              href="https://ohdmire.github.io/en/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="zh-cn"
-              href="https://example.org/"
+              href="https://ohdmire.github.io/"
               />
           </url>
     
@@ -25,7 +25,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/</loc>
+            <loc>https://ohdmire.github.io/posts/</loc>
             <lastmod>2023-09-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -44,7 +44,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/t2s-s2t/</loc>
+            <loc>https://ohdmire.github.io/posts/t2s-s2t/</loc>
             <lastmod>2023-09-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -55,7 +55,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/bitwarden/</loc>
+            <loc>https://ohdmire.github.io/posts/bitwarden/</loc>
             <lastmod>2023-09-23T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -68,7 +68,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/e5/</loc>
+            <loc>https://ohdmire.github.io/posts/e5/</loc>
             <lastmod>2023-06-12T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -87,7 +87,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/zerotier/</loc>
+            <loc>https://ohdmire.github.io/posts/zerotier/</loc>
             <lastmod>2023-04-26T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -104,7 +104,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/gamedownload/</loc>
+            <loc>https://ohdmire.github.io/posts/gamedownload/</loc>
             <lastmod>2023-03-21T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -117,7 +117,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/xm5/</loc>
+            <loc>https://ohdmire.github.io/posts/xm5/</loc>
             <lastmod>2023-01-17T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -134,7 +134,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/onepresskill/</loc>
+            <loc>https://ohdmire.github.io/posts/onepresskill/</loc>
             <lastmod>2023-01-07T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -145,7 +145,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/javascriptnote/</loc>
+            <loc>https://ohdmire.github.io/posts/javascriptnote/</loc>
             <lastmod>2022-12-14T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -156,7 +156,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/superpaste/</loc>
+            <loc>https://ohdmire.github.io/posts/superpaste/</loc>
             <lastmod>2022-12-12T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -167,7 +167,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/pytranscriber/</loc>
+            <loc>https://ohdmire.github.io/posts/pytranscriber/</loc>
             <lastmod>2022-12-01T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -180,7 +180,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/wittgenstein/</loc>
+            <loc>https://ohdmire.github.io/posts/wittgenstein/</loc>
             <lastmod>2022-11-24T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -189,7 +189,7 @@
   
     
       <url>
-            <loc>https://example.org/posts/website/</loc>
+            <loc>https://ohdmire.github.io/posts/website/</loc>
             <lastmod>2022-11-24T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
@@ -200,7 +200,15 @@
   
     
       <url>
-            <loc>https://example.org/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
+            <loc>https://ohdmire.github.io/posts/%E6%97%A5%E8%AF%AD/%E6%97%A5%E8%AF%AD/</loc>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
@@ -212,7 +220,7 @@
   
     
       <url>
-            <loc>https://example.org/friends/</loc>
+            <loc>https://ohdmire.github.io/friends/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
@@ -222,7 +230,7 @@
   
     
       <url>
-            <loc>https://example.org/friends/proxyerium/</loc>
+            <loc>https://ohdmire.github.io/friends/proxyerium/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
@@ -232,7 +240,7 @@
   
     
       <url>
-            <loc>https://example.org/about/</loc>
+            <loc>https://ohdmire.github.io/about/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>

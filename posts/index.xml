@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Ohdmire</title>
-    <link>https://example.org/posts/</link>
+    <link>https://ohdmire.github.io/posts/</link>
     <description>Recent content in Posts on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用opencc进行简繁转换</title>
-      <link>https://example.org/posts/t2s-s2t/</link>
+      <link>https://ohdmire.github.io/posts/t2s-s2t/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/t2s-s2t/</guid>
+      <guid>https://ohdmire.github.io/posts/t2s-s2t/</guid>
       <description>前言 # 在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个
 准备 # 在这里我使用python进行编写，使用opencc这个库进行简繁的转换。
 opencc # opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换
 编写 # 直接开始造
 繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称t2s
 import opencc import sys import re if len(sys.argv)==1: filenames=input(&amp;#34;请拖入文件&amp;#34;).replace(&amp;#34;\\&amp;#34;,&amp;#34;/&amp;#34;) filenames=re.findall(r&amp;#39;(?&amp;lt;=&amp;#34;).*?(?=&amp;#34;)&amp;#39;,filenames) filenames.remove(&amp;#34; &amp;#34;) elif len(sys.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/t2s-s2t/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/t2s-s2t/feature.png" />
     </item>
     
     <item>
       <title>bitwarden使用docker自建服务器教程</title>
-      <link>https://example.org/posts/bitwarden/</link>
+      <link>https://ohdmire.github.io/posts/bitwarden/</link>
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/bitwarden/</guid>
+      <guid>https://ohdmire.github.io/posts/bitwarden/</guid>
       <description>bitwarden # 介绍 # Bitwarden是一款自由且开源的密码管理服务，用户可在加密的保管库中存储敏感信息。Bitwarden平台提供有多种客户端应用程序，包括网页用户界面、桌面应用，浏览器扩展、移动应用以及命令行界面。Bitwarden提供云端托管服务，并支持自行部署解决方案。
 bitwarden的优势在于跨平台，和自建云托管服务器，相比起Chrome或Firefox的密码保存来说，提供了更为可靠的安全性
 准备 # 域名一个 vps（最好是Linux） ssl证书 Onedrive账号（可选） 搭建服务 # 域名解析与ssl证书 # 这个比较基础所以我放在一起了。
@@ -40,60 +40,60 @@ ssl证书 # 推荐使用acme.sh获取证书
 acme.sh的wiki
 wiki上也详细讲述了安装教程我就不再多说
 推荐使用这条命令来获取域名。其中mydomain2.com 换成已经完成解析的域名</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/bitwarden/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/bitwarden/feature.png" />
     </item>
     
     <item>
       <title>Microsoft 365 E5开发者使用指南</title>
-      <link>https://example.org/posts/e5/</link>
+      <link>https://ohdmire.github.io/posts/e5/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/e5/</guid>
+      <guid>https://ohdmire.github.io/posts/e5/</guid>
       <description>E5 # 前言 # 本文大部分内容来自以下链接
 2023 最新白嫖Microsoft E5 ( Onedrive 5T ) 开发者账号教程
 E5 调用API续订服务：Microsoft 365 E5 Renew X
 E5简介 # Office365开发版E5是为开发人员提供的，是微软的官方活动，申请Office 365开发者计划可以获得为期3个月的免费Office365 E5。 而E5计划就包含了25个用于所有Office 365 应用的许可证
 E5的使用大体分为注册和续订两个部分
 E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作为开发者</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/e5/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/e5/feature.png" />
     </item>
     
     <item>
       <title>异地组网-ZeroTier简明教程</title>
-      <link>https://example.org/posts/zerotier/</link>
+      <link>https://ohdmire.github.io/posts/zerotier/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/zerotier/</guid>
+      <guid>https://ohdmire.github.io/posts/zerotier/</guid>
       <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
 介绍 # ZeroTier的优点
 采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网：ZeroTier
 推荐直接使用Google账号登录，方便快捷
 创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
 加入设备 # 下载对应操作系统的客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/zerotier/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/zerotier/feature.png" />
     </item>
     
     <item>
       <title>关于一些外服游戏下载节省流量</title>
-      <link>https://example.org/posts/gamedownload/</link>
+      <link>https://ohdmire.github.io/posts/gamedownload/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/gamedownload/</guid>
+      <guid>https://ohdmire.github.io/posts/gamedownload/</guid>
       <description>节省流量下载外服游戏资源 # 引言 # 在游玩外服的时候特别是下载资源，特别耗时又费力，特别是当节点质量不稳定的时候，特别容易造成下载速度慢。而且有一些游戏节点流量是翻倍计算的。
 原理 # 大家下载游戏的时候有没有遇到过连接一段时间的节点后，马上断开，下载速度就突然快了不少或者是也能下载了？这多半原因是DNS污染造成（当然也可能是一些其他的原因）。很多资源下载的地址是可以直连的，速度也还不错，特别是有些游戏用的CDN节点。
 教程 # 解决方法大致有
 更换加密DNS放置被污染（作用有限） 让资源下载地址直接连接 加密DNS # 在手机设置加密DNS 在手机网络选项里基本上都有支持DoT，大概是Android 9以后开始加入的，国外的加密DNS基本上连不上，国内的我在用阿里的 dns.alidns.com 这个方法解决有限，而且有一些不如国外的DoH
 直连 # 这个其实也很简单，就是在游戏下载的时候找到它在下载的那个域名添加的直连列表中。以clash的config.yaml为例
 只需要在rules中加入规则即可 rules: - DOMAIN-KEYWORD,sharepoint.com,DIRECT 如果你用的是Windows，可以在Parsers中加入如下代码实现预处理，这样就不必每次更新的时候都会被替换掉 parsers: # array - url: 你的订阅连接 yaml: prepend-rules: - DOMAIN-KEYWORD,sharepoint.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/gamedownload/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/gamedownload/feature.jpg" />
     </item>
     
     <item>
       <title>Sony XM5 耳机使用感受</title>
-      <link>https://example.org/posts/xm5/</link>
+      <link>https://ohdmire.github.io/posts/xm5/</link>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/xm5/</guid>
+      <guid>https://ohdmire.github.io/posts/xm5/</guid>
       <description>XM5使用体验 # 本篇文章只是分享个人的使用感受，可能描述得有些偏颇，请见谅
 个人状况 # 需求 # 我是一名学生党，平时在自习室的时候，特别是在教室晚自习，总是有很多细细碎碎的杂音干扰我学习。所以我想有一个耳机能够帮助我隔绝杂音。
 我不想再使用入耳式耳机了，因为我长时间戴入耳式耳朵很容易痒，我比较害怕得中耳炎。
@@ -102,91 +102,105 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
 外观 # 我买的是黑色的，虽然感觉白色更好看一些，但是考虑到比较容易脏我还是选择了黑色。我个人是比较喜欢这个外观的，给我一种现代简约的感觉。
 佩戴 # xm5佩戴绝对是第一梯队的水平，我的耳朵是属于比较大的那种的，之前头戴久了耳朵容易痛，但是xm5非常舒适，戴久了耳朵也不会痛。缺的也很明显，是头型毁灭者。
 还有最重要的一点是我是戴眼镜的，戴久了也不会感觉很夹，十分舒适。但是还是不推荐戴眼镜，因为会使得耳机密闭性下降，降噪效果会下降。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/xm5/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/xm5/feature.jpg" />
     </item>
     
     <item>
       <title>一键kill</title>
-      <link>https://example.org/posts/onepresskill/</link>
+      <link>https://ohdmire.github.io/posts/onepresskill/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/onepresskill/</guid>
+      <guid>https://ohdmire.github.io/posts/onepresskill/</guid>
       <description>一键结束进程 # 起因 # 我真的绷不住了，Alt+F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
 编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/onepresskill/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onepresskill/feature.png" />
     </item>
     
     <item>
       <title>JavaScript笔记</title>
-      <link>https://example.org/posts/javascriptnote/</link>
+      <link>https://ohdmire.github.io/posts/javascriptnote/</link>
       <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/javascriptnote/</guid>
+      <guid>https://ohdmire.github.io/posts/javascriptnote/</guid>
       <description>JavaScript笔记 # 内容参考来源W3School
 以下内容并不完整，主要是我在我学过Python的基础上，在理解新的语言所需要留意的部分。
 显示方案 # JavaScript 能够以不同方式“显示”数据：
 使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 # var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x + y;	// 如何计算值 块作用域 # 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/javascriptnote/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/javascriptnote/feature.png" />
     </item>
     
     <item>
       <title>超级粘贴</title>
-      <link>https://example.org/posts/superpaste/</link>
+      <link>https://ohdmire.github.io/posts/superpaste/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/superpaste/</guid>
+      <guid>https://ohdmire.github.io/posts/superpaste/</guid>
       <description>超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序
 编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了
 读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)
 编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/superpaste/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/superpaste/feature.png" />
     </item>
     
     <item>
       <title>视频字幕神器pyTranscriber</title>
-      <link>https://example.org/posts/pytranscriber/</link>
+      <link>https://ohdmire.github.io/posts/pytranscriber/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/pytranscriber/</guid>
+      <guid>https://ohdmire.github.io/posts/pytranscriber/</guid>
       <description>pyTranscriber # 引言 # 你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕
 安装步骤 # 注意，你可能需要一定的Python cmd git知识
 首先你需要下载项目(推荐使用git clone) https://github.com/raryelcostasouza/pyTranscriber 你需要安装Python(勾选上 add to path) https://www.python.org/ 请打开cmd，cd到项目的目录中 输入pip install -r requirement.txt安装依赖 输入python main.py打开项目 你也可以使用虚拟Python环境安装软件，如poetry
 使用教程 # 生成字幕文件 # 首先打开软件是英文页面，点击标题栏上language按钮选择简体中文 再点击旁边的setting选项，设置好一个能连接上Google的代理(点击test可以测试连接可用性) 之后选择文件和视频的语言(原视频是什么语言就选什么语言) 点击生成字幕之后耐心等待 最后你会得到srt和txt文件 到这里就已经结束了，请享用你的字幕吧</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/pytranscriber/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/pytranscriber/feature.png" />
     </item>
     
     <item>
       <title>维特根斯坦</title>
-      <link>https://example.org/posts/wittgenstein/</link>
+      <link>https://ohdmire.github.io/posts/wittgenstein/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/wittgenstein/</guid>
+      <guid>https://ohdmire.github.io/posts/wittgenstein/</guid>
       <description>笔记 # 这些笔记是我阅读知乎上觉得重要的内容摘抄下来的
 世界是事实的总和，而非物的总和 # 我们观察的不可能是超越时间的、不变的“物” 实无穷与潜无穷 # 排中律 世界是无限的 当用“非A”代替“B”时，其逻辑依然是“A或非A”为真的条件是“A为真”或“非A”为真，而不能说“A或非A”这个命题恒为真。 世界是有限的 保证了A和非A构成一个整体 “真的意义” # 当命题表达了实际情况时，命题就是“真”的；否则命题就是表达了非实际情况，也就是“假”的。维特根斯坦用这个命题将世界的“真”锁定在过去和当下中。 两类逻辑 # “逻辑必然的数学推理”和“逻辑不必然的力学推理” 维特根斯坦通过这个命题（1.13逻辑空间中的事实是世界）区分了“数学的逻辑”和“力学的逻辑” 数学的每一个定理和推论都是公理的同义反复或者是公理的矛盾命题，这类命题要不是必然的，要不是不可能的，它们的“真、假”在逻辑上是必然的，但是也没有告诉人们新的知识。而力学的逻辑，或者说物理命题的“真假”是由它们是否与事实一致进行判断的。 逻辑空间中的“事实”是物理命题，而逻辑空间中的“非事实”则是纯形式化的逻辑命题。 世界是可还原的 # 使用还原论去认识世界 一个基本组成成分和另一个相互独立，互不影响 与还原论相对的是整体论或系统论，就是把复杂系统看着是一个整体 世界之内与世界之外 # 世界是所有基本事态的存在 “物的可能状态”只有在实际发生后，才进入世界之内。而“物的可能状态”没有实际发生，那么就是在世界之外。 参考链接 # 维特根斯坦《逻辑哲学论》解读</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/wittgenstein/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/wittgenstein/feature.jpg" />
     </item>
     
     <item>
       <title>我网站使用的一些东西</title>
-      <link>https://example.org/posts/website/</link>
+      <link>https://ohdmire.github.io/posts/website/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/website/</guid>
+      <guid>https://ohdmire.github.io/posts/website/</guid>
       <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
 网站搭建 # 将网站搭建在GitHub Pages上
 还使用了Azure的静态web解析，相当于有两个域名了
 网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
 本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
 同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/website/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
     </item>
     
     <item>
       <title></title>
-      <link>https://example.org/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</link>
+      <link>https://ohdmire.github.io/posts/%E6%97%A5%E8%AF%AD/%E6%97%A5%E8%AF%AD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</guid>
+      <guid>https://ohdmire.github.io/posts/%E6%97%A5%E8%AF%AD/%E6%97%A5%E8%AF%AD/</guid>
+      <description>日语的音调 # 单词的第一个音节和第二个音节的高低相反 一个单词的声调中，或没有下降，或只有一处下降 平板型 0 # 一低二高一直高，助词也高
+头高型 1 # 一高二低一直低，助词也低
+中高型 2-4 # 两头低中间高，助词低
+尾高型 5 # 一低二高一直高，助词低
+送气音 # 「k t p」行根据位置的不同发音有两种。</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ohdmire.github.io/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</guid>
       <description></description>
       
     </item>

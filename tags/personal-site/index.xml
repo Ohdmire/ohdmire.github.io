@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal site on Ohdmire</title>
-    <link>https://example.org/tags/personal-site/</link>
+    <link>https://ohdmire.github.io/tags/personal-site/</link>
     <description>Recent content in Personal site on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <atom:link href="https://example.org/tags/personal-site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ohdmire.github.io/tags/personal-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>proxyerium的博客</title>
-      <link>https://example.org/friends/proxyerium/</link>
+      <link>https://ohdmire.github.io/friends/proxyerium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/friends/proxyerium/</guid>
+      <guid>https://ohdmire.github.io/friends/proxyerium/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/friends/proxyerium/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/friends/proxyerium/feature.png" />
     </item>
     
   </channel>

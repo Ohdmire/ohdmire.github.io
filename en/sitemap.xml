@@ -8,18 +8,18 @@
   
     
       <url>
-            <loc>https://example.org/en/</loc>
+            <loc>https://ohdmire.github.io/en/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
             <xhtml:link
               rel="alternate"
               hreflang="zh-cn"
-              href="https://example.org/"
+              href="https://ohdmire.github.io/"
               />
             <xhtml:link
               rel="alternate"
               hreflang="en"
-              href="https://example.org/en/"
+              href="https://ohdmire.github.io/en/"
               />
           </url>
     

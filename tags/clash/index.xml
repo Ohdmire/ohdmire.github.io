@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>clash on Ohdmire</title>
-    <link>https://example.org/tags/clash/</link>
+    <link>https://ohdmire.github.io/tags/clash/</link>
     <description>Recent content in clash on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/clash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/clash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于一些外服游戏下载节省流量</title>
-      <link>https://example.org/posts/gamedownload/</link>
+      <link>https://ohdmire.github.io/posts/gamedownload/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/gamedownload/</guid>
+      <guid>https://ohdmire.github.io/posts/gamedownload/</guid>
       <description>节省流量下载外服游戏资源 # 引言 # 在游玩外服的时候特别是下载资源，特别耗时又费力，特别是当节点质量不稳定的时候，特别容易造成下载速度慢。而且有一些游戏节点流量是翻倍计算的。
 原理 # 大家下载游戏的时候有没有遇到过连接一段时间的节点后，马上断开，下载速度就突然快了不少或者是也能下载了？这多半原因是DNS污染造成（当然也可能是一些其他的原因）。很多资源下载的地址是可以直连的，速度也还不错，特别是有些游戏用的CDN节点。
 教程 # 解决方法大致有
 更换加密DNS放置被污染（作用有限） 让资源下载地址直接连接 加密DNS # 在手机设置加密DNS 在手机网络选项里基本上都有支持DoT，大概是Android 9以后开始加入的，国外的加密DNS基本上连不上，国内的我在用阿里的 dns.alidns.com 这个方法解决有限，而且有一些不如国外的DoH
 直连 # 这个其实也很简单，就是在游戏下载的时候找到它在下载的那个域名添加的直连列表中。以clash的config.yaml为例
 只需要在rules中加入规则即可 rules: - DOMAIN-KEYWORD,sharepoint.com,DIRECT 如果你用的是Windows，可以在Parsers中加入如下代码实现预处理，这样就不必每次更新的时候都会被替换掉 parsers: # array - url: 你的订阅连接 yaml: prepend-rules: - DOMAIN-KEYWORD,sharepoint.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/gamedownload/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/gamedownload/feature.jpg" />
     </item>
     
   </channel>

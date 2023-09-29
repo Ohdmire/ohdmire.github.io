@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ohdmire</title>
-    <link>https://example.org/tags/</link>
+    <link>https://ohdmire.github.io/tags/</link>
     <description>Recent content in Tags on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>繁体中文</title>
-      <link>https://example.org/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</link>
+      <link>https://ohdmire.github.io/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
+      <guid>https://ohdmire.github.io/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>简体中文</title>
-      <link>https://example.org/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</link>
+      <link>https://ohdmire.github.io/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
+      <guid>https://ohdmire.github.io/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>bitwarden</title>
-      <link>https://example.org/tags/bitwarden/</link>
+      <link>https://ohdmire.github.io/tags/bitwarden/</link>
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/bitwarden/</guid>
+      <guid>https://ohdmire.github.io/tags/bitwarden/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>密码</title>
-      <link>https://example.org/tags/%E5%AF%86%E7%A0%81/</link>
+      <link>https://ohdmire.github.io/tags/%E5%AF%86%E7%A0%81/</link>
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E5%AF%86%E7%A0%81/</guid>
+      <guid>https://ohdmire.github.io/tags/%E5%AF%86%E7%A0%81/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>E5</title>
-      <link>https://example.org/tags/e5/</link>
+      <link>https://ohdmire.github.io/tags/e5/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/e5/</guid>
+      <guid>https://ohdmire.github.io/tags/e5/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Office365</title>
-      <link>https://example.org/tags/office365/</link>
+      <link>https://ohdmire.github.io/tags/office365/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/office365/</guid>
+      <guid>https://ohdmire.github.io/tags/office365/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>OneDrive</title>
-      <link>https://example.org/tags/onedrive/</link>
+      <link>https://ohdmire.github.io/tags/onedrive/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/onedrive/</guid>
+      <guid>https://ohdmire.github.io/tags/onedrive/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>微软</title>
-      <link>https://example.org/tags/%E5%BE%AE%E8%BD%AF/</link>
+      <link>https://ohdmire.github.io/tags/%E5%BE%AE%E8%BD%AF/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E5%BE%AE%E8%BD%AF/</guid>
+      <guid>https://ohdmire.github.io/tags/%E5%BE%AE%E8%BD%AF/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ZeroTier</title>
-      <link>https://example.org/tags/zerotier/</link>
+      <link>https://ohdmire.github.io/tags/zerotier/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/zerotier/</guid>
+      <guid>https://ohdmire.github.io/tags/zerotier/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Blue Archive</title>
-      <link>https://example.org/tags/blue-archive/</link>
+      <link>https://ohdmire.github.io/tags/blue-archive/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/blue-archive/</guid>
+      <guid>https://ohdmire.github.io/tags/blue-archive/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>clash</title>
-      <link>https://example.org/tags/clash/</link>
+      <link>https://ohdmire.github.io/tags/clash/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/clash/</guid>
+      <guid>https://ohdmire.github.io/tags/clash/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Heaven Burns Red</title>
-      <link>https://example.org/tags/heaven-burns-red/</link>
+      <link>https://ohdmire.github.io/tags/heaven-burns-red/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/heaven-burns-red/</guid>
+      <guid>https://ohdmire.github.io/tags/heaven-burns-red/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Project Sekai</title>
-      <link>https://example.org/tags/project-sekai/</link>
+      <link>https://ohdmire.github.io/tags/project-sekai/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/project-sekai/</guid>
+      <guid>https://ohdmire.github.io/tags/project-sekai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>下载</title>
-      <link>https://example.org/tags/%E4%B8%8B%E8%BD%BD/</link>
+      <link>https://ohdmire.github.io/tags/%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E4%B8%8B%E8%BD%BD/</guid>
+      <guid>https://ohdmire.github.io/tags/%E4%B8%8B%E8%BD%BD/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Sony</title>
-      <link>https://example.org/tags/sony/</link>
+      <link>https://ohdmire.github.io/tags/sony/</link>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/sony/</guid>
+      <guid>https://ohdmire.github.io/tags/sony/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>耳机</title>
-      <link>https://example.org/tags/%E8%80%B3%E6%9C%BA/</link>
+      <link>https://ohdmire.github.io/tags/%E8%80%B3%E6%9C%BA/</link>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E8%80%B3%E6%9C%BA/</guid>
+      <guid>https://ohdmire.github.io/tags/%E8%80%B3%E6%9C%BA/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>taskkill</title>
-      <link>https://example.org/tags/taskkill/</link>
+      <link>https://ohdmire.github.io/tags/taskkill/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/taskkill/</guid>
+      <guid>https://ohdmire.github.io/tags/taskkill/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>https://example.org/tags/javascript/</link>
+      <link>https://ohdmire.github.io/tags/javascript/</link>
       <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/javascript/</guid>
+      <guid>https://ohdmire.github.io/tags/javascript/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>粘贴</title>
-      <link>https://example.org/tags/%E7%B2%98%E8%B4%B4/</link>
+      <link>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E7%B2%98%E8%B4%B4/</guid>
+      <guid>https://ohdmire.github.io/tags/%E7%B2%98%E8%B4%B4/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>字幕</title>
-      <link>https://example.org/tags/%E5%AD%97%E5%B9%95/</link>
+      <link>https://ohdmire.github.io/tags/%E5%AD%97%E5%B9%95/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E5%AD%97%E5%B9%95/</guid>
+      <guid>https://ohdmire.github.io/tags/%E5%AD%97%E5%B9%95/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>网站</title>
-      <link>https://example.org/tags/%E7%BD%91%E7%AB%99/</link>
+      <link>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E7%BD%91%E7%AB%99/</guid>
+      <guid>https://ohdmire.github.io/tags/%E7%BD%91%E7%AB%99/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>哲学</title>
-      <link>https://example.org/tags/%E5%93%B2%E5%AD%A6/</link>
+      <link>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/%E5%93%B2%E5%AD%A6/</guid>
+      <guid>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>friends</title>
-      <link>https://example.org/tags/friends/</link>
+      <link>https://ohdmire.github.io/tags/friends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/friends/</guid>
+      <guid>https://ohdmire.github.io/tags/friends/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Personal site</title>
-      <link>https://example.org/tags/personal-site/</link>
+      <link>https://ohdmire.github.io/tags/personal-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/tags/personal-site/</guid>
+      <guid>https://ohdmire.github.io/tags/personal-site/</guid>
       <description></description>
       
     </item>

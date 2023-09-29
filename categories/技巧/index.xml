@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技巧 on Ohdmire</title>
-    <link>https://example.org/categories/%E6%8A%80%E5%B7%A7/</link>
+    <link>https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/</link>
     <description>Recent content in 技巧 on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/categories/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用opencc进行简繁转换</title>
-      <link>https://example.org/posts/t2s-s2t/</link>
+      <link>https://ohdmire.github.io/posts/t2s-s2t/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/t2s-s2t/</guid>
+      <guid>https://ohdmire.github.io/posts/t2s-s2t/</guid>
       <description>前言 # 在使用Whisper进行语音转换的同时，不知道咋的抽风给我生成繁体中文，虽然很容易就能在网上找到简繁转换的工具，但我还是打算自己写一个
 准备 # 在这里我使用python进行编写，使用opencc这个库进行简繁的转换。
 opencc # opencc是一款强大的汉字转换的开源项目，支持中文简繁转换，支持词汇级别的转换、异体字转换和地区习惯用词转换
 编写 # 直接开始造
 繁体中文转简体中文（Traditional Chinese to Simplified Chinese）简称t2s
 import opencc import sys import re if len(sys.argv)==1: filenames=input(&amp;#34;请拖入文件&amp;#34;).replace(&amp;#34;\\&amp;#34;,&amp;#34;/&amp;#34;) filenames=re.findall(r&amp;#39;(?&amp;lt;=&amp;#34;).*?(?=&amp;#34;)&amp;#39;,filenames) filenames.remove(&amp;#34; &amp;#34;) elif len(sys.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/t2s-s2t/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/t2s-s2t/feature.png" />
     </item>
     
     <item>
       <title>一键kill</title>
-      <link>https://example.org/posts/onepresskill/</link>
+      <link>https://ohdmire.github.io/posts/onepresskill/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/onepresskill/</guid>
+      <guid>https://ohdmire.github.io/posts/onepresskill/</guid>
       <description>一键结束进程 # 起因 # 我真的绷不住了，Alt+F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
 编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/onepresskill/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onepresskill/feature.png" />
     </item>
     
     <item>
       <title>超级粘贴</title>
-      <link>https://example.org/posts/superpaste/</link>
+      <link>https://ohdmire.github.io/posts/superpaste/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/superpaste/</guid>
+      <guid>https://ohdmire.github.io/posts/superpaste/</guid>
       <description>超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序
 编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了
 读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)
 编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/superpaste/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/superpaste/feature.png" />
     </item>
     
     <item>
       <title>视频字幕神器pyTranscriber</title>
-      <link>https://example.org/posts/pytranscriber/</link>
+      <link>https://ohdmire.github.io/posts/pytranscriber/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/pytranscriber/</guid>
+      <guid>https://ohdmire.github.io/posts/pytranscriber/</guid>
       <description>pyTranscriber # 引言 # 你有没有过需要视频生成字幕的需求但是网上的转换都是收费的？今天我将介绍一个神器pyTranscriber能够免费生成视频字幕
 安装步骤 # 注意，你可能需要一定的Python cmd git知识
 首先你需要下载项目(推荐使用git clone) https://github.com/raryelcostasouza/pyTranscriber 你需要安装Python(勾选上 add to path) https://www.python.org/ 请打开cmd，cd到项目的目录中 输入pip install -r requirement.txt安装依赖 输入python main.py打开项目 你也可以使用虚拟Python环境安装软件，如poetry
 使用教程 # 生成字幕文件 # 首先打开软件是英文页面，点击标题栏上language按钮选择简体中文 再点击旁边的setting选项，设置好一个能连接上Google的代理(点击test可以测试连接可用性) 之后选择文件和视频的语言(原视频是什么语言就选什么语言) 点击生成字幕之后耐心等待 最后你会得到srt和txt文件 到这里就已经结束了，请享用你的字幕吧</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/pytranscriber/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/pytranscriber/feature.png" />
     </item>
     
     <item>
       <title>我网站使用的一些东西</title>
-      <link>https://example.org/posts/website/</link>
+      <link>https://ohdmire.github.io/posts/website/</link>
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/posts/website/</guid>
+      <guid>https://ohdmire.github.io/posts/website/</guid>
       <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
 网站搭建 # 将网站搭建在GitHub Pages上
 还使用了Azure的静态web解析，相当于有两个域名了
 网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
 本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
 同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://example.org/posts/website/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
     </item>
     
   </channel>
