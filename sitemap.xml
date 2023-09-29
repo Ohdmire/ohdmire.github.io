@@ -190,14 +190,6 @@
   
     
       <url>
-            <loc>https://ohdmire.github.io/posts/%E6%97%A5%E8%AF%AD/%E6%97%A5%E8%AF%AD/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
             <loc>https://ohdmire.github.io/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
