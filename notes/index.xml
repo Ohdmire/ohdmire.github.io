@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Ohdmire</title>
+    <link>https://ohdmire.github.io/notes/</link>
+    <description>Recent content in Notes on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript笔记</title>
+      <link>https://ohdmire.github.io/notes/javascriptnote/</link>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/javascriptnote/</guid>
+      <description>JavaScript笔记 # 内容参考来源W3School
+以下内容并不完整，主要是我在我学过Python的基础上，在理解新的语言所需要留意的部分。
+显示方案 # JavaScript 能够以不同方式“显示”数据：
+使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 # var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x + y;	// 如何计算值 块作用域 # 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/javascriptnote/feature.png" />
+    </item>
+    
+    <item>
+      <title>维特根斯坦</title>
+      <link>https://ohdmire.github.io/notes/wittgenstein/</link>
+      <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/wittgenstein/</guid>
+      <description>笔记 # 这些笔记是我阅读知乎上觉得重要的内容摘抄下来的
+世界是事实的总和，而非物的总和 # 我们观察的不可能是超越时间的、不变的“物” 实无穷与潜无穷 # 排中律 世界是无限的 当用“非A”代替“B”时，其逻辑依然是“A或非A”为真的条件是“A为真”或“非A”为真，而不能说“A或非A”这个命题恒为真。 世界是有限的 保证了A和非A构成一个整体 “真的意义” # 当命题表达了实际情况时，命题就是“真”的；否则命题就是表达了非实际情况，也就是“假”的。维特根斯坦用这个命题将世界的“真”锁定在过去和当下中。 两类逻辑 # “逻辑必然的数学推理”和“逻辑不必然的力学推理” 维特根斯坦通过这个命题（1.13逻辑空间中的事实是世界）区分了“数学的逻辑”和“力学的逻辑” 数学的每一个定理和推论都是公理的同义反复或者是公理的矛盾命题，这类命题要不是必然的，要不是不可能的，它们的“真、假”在逻辑上是必然的，但是也没有告诉人们新的知识。而力学的逻辑，或者说物理命题的“真假”是由它们是否与事实一致进行判断的。 逻辑空间中的“事实”是物理命题，而逻辑空间中的“非事实”则是纯形式化的逻辑命题。 世界是可还原的 # 使用还原论去认识世界 一个基本组成成分和另一个相互独立，互不影响 与还原论相对的是整体论或系统论，就是把复杂系统看着是一个整体 世界之内与世界之外 # 世界是所有基本事态的存在 “物的可能状态”只有在实际发生后，才进入世界之内。而“物的可能状态”没有实际发生，那么就是在世界之外。 参考链接 # 维特根斯坦《逻辑哲学论》解读</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/wittgenstein/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>

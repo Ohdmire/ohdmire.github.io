@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doing on Ohdmire</title>
+    <link>https://ohdmire.github.io/tags/doing/</link>
+    <description>Recent content in doing on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <atom:link href="https://ohdmire.github.io/tags/doing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doing</title>
+      <link>https://ohdmire.github.io/doing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/doing/</guid>
+      <description>正在做 # 正在学习日语，观看梦子老师的视频Youtube 正在读《西方哲学十五讲》 已完成 # nonebot-plugin-playercheck编写Github </description>
+      
+    </item>
+    
+  </channel>
+</rss>
