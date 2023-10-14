@@ -30,7 +30,7 @@ import opencc import sys import re if len(sys.argv)==1: filenames=input(&amp;#34
       
       <guid>https://ohdmire.github.io/posts/onepresskill/</guid>
       <description>一键结束进程 # 起因 # 我真的绷不住了，Alt+F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
-编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
+编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客 超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onepresskill/feature.png" />
     </item>
     
@@ -66,12 +66,12 @@ import opencc import sys import re if len(sys.argv)==1: filenames=input(&amp;#34
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/posts/website/</guid>
-      <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
-网站搭建 # 将网站搭建在GitHub Pages上
-还使用了Azure的静态web解析，相当于有两个域名了
-网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
-本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
-同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
+      <description>网站涉及相关 # 网站设计 # 首先我使用了 Hugo这个网站框架并且配上了 stack主题
+网站搭建 # 将网站搭建在 GitHub Pages上
+还使用了 Azure的静态web解析，相当于有两个域名了
+网站编辑 # 我使用 Obsidian进行博客网站的编辑，他支持 Markdown语言，并且拥有模板。
+本来是向用 Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了 Obsidian
+同时我编辑的内容也通过 OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
     </item>
     
