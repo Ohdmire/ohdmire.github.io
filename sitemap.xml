@@ -199,7 +199,15 @@
   
     
       <url>
-            <loc>https://ohdmire.github.io/posts/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
+            <loc>https://ohdmire.github.io/notes/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
@@ -244,6 +252,14 @@
     
       <url>
             <loc>https://ohdmire.github.io/about/</loc>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
