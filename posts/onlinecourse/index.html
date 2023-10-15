@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>超级粘贴 &middot; Ohdmire</title>
-  <meta name="title" content="超级粘贴 &middot; Ohdmire" />
+  <title>大学生生存指南——OCS网课助手 &middot; Ohdmire</title>
+  <meta name="title" content="大学生生存指南——OCS网课助手 &middot; Ohdmire" />
   
   
-  <meta name="keywords" content="粘贴, " />
+  <meta name="keywords" content="大学生, 网课, " />
   
   
-  <link rel="canonical" href="https://ohdmire.github.io/posts/superpaste/" />
+  <link rel="canonical" href="https://ohdmire.github.io/posts/onlinecourse/" />
   
   
   
@@ -63,23 +63,35 @@
   
   
   
-  <meta property="og:title" content="超级粘贴" />
-<meta property="og:description" content="超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序
-编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了
-读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)
-编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time." />
+  <meta property="og:title" content="大学生生存指南——OCS网课助手" />
+<meta property="og:description" content="大学生生存指南——网课 # 前言 # 在我读大一的时候，疫情还未结束，我们还处于网课阶段。现在网课结束了，但是那种水网课依然还在。这些课程存在的必要性真的有吗，真的有人去看？对我而言，这些课程十分的浪费时间，要是你对某个领域感兴趣的话，不如上B站，上Youtube去自己寻找课程观看，还有许多入门视频推荐。现在我看依然有很多人不知道怎么刷课，或者是找别人代刷。所以我写这篇文章，大体的教你如何应对网课
+刷课 # 在我的学校目前只有超星平台和智慧树平台，所以我以这两个平台为演示
+OCS网课助手 # OCS官网
+这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用 不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。
+网页脚本 # 这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google
+安装 油猴插件 安装 OCS脚本 然后打开你的网课页面就开始刷了。 ![[超星.png]]
+客户端 # 到 官网下载客户端，安装完成后打开，创建一个浏览器并运行
+![[OCS页面.png]]
+然后登录超星/智慧树，进入你要刷的课程页面，会有弹窗，最好开启自动调整窗口大小。正常的话他会一直刷下去，除非出现验证码。如果有平时分的话可以开启定时。
+![[智慧树.png]]" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ohdmire.github.io/posts/superpaste/" /><meta property="og:image" content="https://ohdmire.github.io/posts/superpaste/feature.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-12T00:00:00+00:00" />
+<meta property="og:url" content="https://ohdmire.github.io/posts/onlinecourse/" /><meta property="og:image" content="https://ohdmire.github.io/posts/onlinecourse/feature.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-15T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://ohdmire.github.io/posts/superpaste/feature.png"/>
-<meta name="twitter:title" content="超级粘贴"/>
-<meta name="twitter:description" content="超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序
-编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了
-读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)
-编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time."/>
+<meta name="twitter:image" content="https://ohdmire.github.io/posts/onlinecourse/feature.png"/>
+<meta name="twitter:title" content="大学生生存指南——OCS网课助手"/>
+<meta name="twitter:description" content="大学生生存指南——网课 # 前言 # 在我读大一的时候，疫情还未结束，我们还处于网课阶段。现在网课结束了，但是那种水网课依然还在。这些课程存在的必要性真的有吗，真的有人去看？对我而言，这些课程十分的浪费时间，要是你对某个领域感兴趣的话，不如上B站，上Youtube去自己寻找课程观看，还有许多入门视频推荐。现在我看依然有很多人不知道怎么刷课，或者是找别人代刷。所以我写这篇文章，大体的教你如何应对网课
+刷课 # 在我的学校目前只有超星平台和智慧树平台，所以我以这两个平台为演示
+OCS网课助手 # OCS官网
+这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用 不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。
+网页脚本 # 这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google
+安装 油猴插件 安装 OCS脚本 然后打开你的网课页面就开始刷了。 ![[超星.png]]
+客户端 # 到 官网下载客户端，安装完成后打开，创建一个浏览器并运行
+![[OCS页面.png]]
+然后登录超星/智慧树，进入你要刷的课程页面，会有弹窗，最好开启自动调整窗口大小。正常的话他会一直刷下去，除非出现验证码。如果有平时分的话可以开启定时。
+![[智慧树.png]]"/>
 
   
   <script type="application/ld+json">
@@ -87,26 +99,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "超级粘贴",
-    "headline": "超级粘贴",
+    "name": "大学生生存指南——OCS网课助手",
+    "headline": "大学生生存指南——OCS网课助手",
     
-    "abstract": "超级粘贴 # 起因 # 最近发现一些平台是不能直接粘贴内容的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序\n编写 # 思路 # 毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了\n读取剪切板内容 将内容通过模拟键盘进行粘贴 我只会Python所以我就用Python来写:)\n编写过程 # 首先采用的是pyperclip进行剪切板读取，这一步没有什么问题。 然后我采用pyautogui模拟输入，然后重点是它不能输入中文 于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库pynput 到这就终于能输入中文了。 最后再加上按键监听就完成了 代码 # import pyperclip from pynput.keyboard import Controller,Listener,Key import time def paste(): time.",
+    "abstract": "大学生生存指南——网课 # 前言 # 在我读大一的时候，疫情还未结束，我们还处于网课阶段。现在网课结束了，但是那种水网课依然还在。这些课程存在的必要性真的有吗，真的有人去看？对我而言，这些课程十分的浪费时间，要是你对某个领域感兴趣的话，不如上B站，上Youtube去自己寻找课程观看，还有许多入门视频推荐。现在我看依然有很多人不知道怎么刷课，或者是找别人代刷。所以我写这篇文章，大体的教你如何应对网课\n刷课 # 在我的学校目前只有超星平台和智慧树平台，所以我以这两个平台为演示\nOCS网课助手 # OCS官网\n这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用 不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。\n网页脚本 # 这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google\n安装 油猴插件 安装 OCS脚本 然后打开你的网课页面就开始刷了。 ![[超星.png]]\n客户端 # 到 官网下载客户端，安装完成后打开，创建一个浏览器并运行\n![[OCS页面.png]]\n然后登录超星\/智慧树，进入你要刷的课程页面，会有弹窗，最好开启自动调整窗口大小。正常的话他会一直刷下去，除非出现验证码。如果有平时分的话可以开启定时。\n![[智慧树.png]]",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/ohdmire.github.io\/posts\/superpaste\/",
+    "url" : "https:\/\/ohdmire.github.io\/posts\/onlinecourse\/",
     "author" : {
       "@type": "Person",
       "name": "Ohdmire"
     },
-    "copyrightYear": "2022",
-    "dateCreated": "2022-12-12T00:00:00\u002b00:00",
-    "datePublished": "2022-12-12T00:00:00\u002b00:00",
+    "copyrightYear": "2023",
+    "dateCreated": "2023-10-15T00:00:00\u002b00:00",
+    "datePublished": "2023-10-15T00:00:00\u002b00:00",
     
-    "dateModified": "2022-12-12T00:00:00\u002b00:00",
+    "dateModified": "2023-10-15T00:00:00\u002b00:00",
     
-    "keywords": ["粘贴"],
+    "keywords": ["大学生","网课"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "82"
+    "wordCount": "75"
   }]
   </script>
 
@@ -672,7 +684,7 @@
   
   
         
-            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/superpaste/feature_hud6952016226169985b8ba3953ba2dfee_281431_1200x0_resize_box_3.png);"></div>
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/onlinecourse/feature_hu1a6c5c2294d8cd6b1f50e8889cbc83b5_448328_1200x0_resize_box_3.png);"></div>
         
     
   
@@ -708,8 +720,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/superpaste/"
-      >超级粘贴</a
+      href="/posts/onlinecourse/"
+      >大学生生存指南——OCS网课助手</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -718,7 +730,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      超级粘贴
+      大学生生存指南——OCS网课助手
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -763,9 +775,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-12-12 00:00:00 &#43;0000 UTC">12 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-10-15 00:00:00 &#43;0000 UTC">15 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts/超级粘贴/index.md" title="views">0</span> 
+    <span id="views_posts/网课助手/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -777,7 +789,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_posts/超级粘贴/index.md" title="likes">0</span> 
+    <span id="likes_posts/网课助手/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -841,23 +853,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    技巧
-  </span>
-</span>
-
-  </span>
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E8%BD%AF%E4%BB%B6/&#34;,'_self');">
-    <span class="flex">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
-  >
-    软件
+    教程
   </span>
 </span>
 
@@ -871,12 +872,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%B2%98%E8%B4%B4/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    粘贴
+    大学生
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%BD%91%E8%AF%BE/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    网课
   </span>
 </span>
 
@@ -1050,17 +1062,34 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#起因">起因</a></li>
-    <li><a href="#编写">编写</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#刷课">刷课</a>
       <ul>
-        <li><a href="#思路">思路</a></li>
-        <li><a href="#编写过程">编写过程</a></li>
-        <li><a href="#代码">代码</a></li>
+        <li><a href="#ocs网课助手">OCS网课助手</a>
+          <ul>
+            <li><a href="#网页脚本">网页脚本</a></li>
+            <li><a href="#客户端">客户端</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#使用教程">使用教程</a></li>
+    <li><a href="#答题">答题</a>
+      <ul>
+        <li><a href="#ocs">OCS</a>
+          <ul>
+            <li><a href="#价格">价格</a></li>
+            <li><a href="#教程">教程</a></li>
+          </ul>
+        </li>
+        <li><a href="#题海">题海</a>
+          <ul>
+            <li><a href="#网页端">网页端</a></li>
+            <li><a href="#app">APP</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#最后">最后</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav>
   </div>
@@ -1074,17 +1103,34 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#起因">起因</a></li>
-    <li><a href="#编写">编写</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#刷课">刷课</a>
       <ul>
-        <li><a href="#思路">思路</a></li>
-        <li><a href="#编写过程">编写过程</a></li>
-        <li><a href="#代码">代码</a></li>
+        <li><a href="#ocs网课助手">OCS网课助手</a>
+          <ul>
+            <li><a href="#网页脚本">网页脚本</a></li>
+            <li><a href="#客户端">客户端</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#使用教程">使用教程</a></li>
+    <li><a href="#答题">答题</a>
+      <ul>
+        <li><a href="#ocs">OCS</a>
+          <ul>
+            <li><a href="#价格">价格</a></li>
+            <li><a href="#教程">教程</a></li>
+          </ul>
+        </li>
+        <li><a href="#题海">题海</a>
+          <ul>
+            <li><a href="#网页端">网页端</a></li>
+            <li><a href="#app">APP</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#最后">最后</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
   </ul>
 </nav>
   </div>
@@ -1141,168 +1187,165 @@
 
 
         <div class="max-w-prose mb-20">
-          <div id="超级粘贴" class="anchor"></div>
-<h1 class="relative group">超级粘贴 
+          <div id="大学生生存指南网课" class="anchor"></div>
+<h1 class="relative group">大学生生存指南——网课 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e8%b6%85%e7%ba%a7%e7%b2%98%e8%b4%b4" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%a4%a7%e5%ad%a6%e7%94%9f%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e7%bd%91%e8%af%be" aria-label="锚点">#</a></span>        
     
 </h1>
-<div id="起因" class="anchor"></div>
-<h2 class="relative group">起因 
+<div id="前言" class="anchor"></div>
+<h2 class="relative group">前言 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e8%b5%b7%e5%9b%a0" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>最近发现一些平台是<strong>不能直接粘贴内容</strong>的（具体我就不说是哪个平台了😅），所以我编写了一段超级粘贴的程序</p>
-<div id="编写" class="anchor"></div>
-<h2 class="relative group">编写 
+<p>在我读大一的时候，疫情还未结束，我们还处于网课阶段。现在网课结束了，但是那种水网课依然还在。这些课程存在的必要性真的有吗，真的有人去看？对我而言，这些课程十分的浪费时间，要是你对某个领域感兴趣的话，不如上B站，上Youtube去自己寻找课程观看，还有许多入门视频推荐。现在我看依然有很多人不知道怎么刷课，或者是找别人代刷。所以我写这篇文章，大体的教你如何应对网课</p>
+<div id="刷课" class="anchor"></div>
+<h2 class="relative group">刷课 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e7%bc%96%e5%86%99" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%88%b7%e8%af%be" aria-label="锚点">#</a></span>        
     
 </h2>
-<div id="思路" class="anchor"></div>
-<h3 class="relative group">思路 
+<p>在我的学校目前只有超星平台和智慧树平台，所以我以这两个平台为演示</p>
+<div id="ocs网课助手" class="anchor"></div>
+<h3 class="relative group">OCS网课助手 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e6%80%9d%e8%b7%af" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#ocs%e7%bd%91%e8%af%be%e5%8a%a9%e6%89%8b" aria-label="锚点">#</a></span>        
     
 </h3>
-<p>毕竟粘贴这个行为是不合法的，那么我们能不能通过模拟键盘输入的方式来进行“粘贴”呢？这样思路就十分清晰了</p>
+<p><a href="https://docs.ocsjs.com/"   target="_blank">
+    OCS官网</a></p>
+<p>这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用
+不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。</p>
+<div id="网页脚本" class="anchor"></div>
+<h4 class="relative group">网页脚本 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bd%91%e9%a1%b5%e8%84%9a%e6%9c%ac" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google</p>
 <ol>
-<li>读取剪切板内容</li>
-<li>将内容通过模拟键盘进行粘贴</li>
+<li>安装<a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"   target="_blank">
+    油猴插件</a></li>
+<li>安装<a href="https://cdn.ocsjs.com/ocs.user.js"   target="_blank">
+    OCS脚本</a></li>
 </ol>
-<blockquote>
-<p>我只会Python所以我就用Python来写:)</p>
-</blockquote>
-<div id="编写过程" class="anchor"></div>
-<h3 class="relative group">编写过程 
+<p>然后打开你的网课页面就开始刷了。
+![[超星.png]]</p>
+<div id="客户端" class="anchor"></div>
+<h4 class="relative group">客户端 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e7%bc%96%e5%86%99%e8%bf%87%e7%a8%8b" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%ae%a2%e6%88%b7%e7%ab%af" aria-label="锚点">#</a></span>        
     
-</h3>
-<ul>
-<li>首先采用的是<code>pyperclip</code>进行剪切板读取，这一步没有什么问题。</li>
-<li>然后我采用<code>pyautogui</code>模拟输入，然后重点是它<strong>不能输入中文</strong></li>
-<li>于是我又去网上找了找能输入中文的方案，最终找到了一个很好用的库<code>pynput</code>
-到这就终于能输入中文了。</li>
-<li>最后再加上按键监听就完成了</li>
-</ul>
-<div id="代码" class="anchor"></div>
-<h3 class="relative group">代码 
+</h4>
+<p>到<a href="https://docs.ocsjs.com/docs/app"   target="_blank">
+    官网</a>下载客户端，安装完成后打开，创建一个浏览器并运行</p>
+<p>![[OCS页面.png]]</p>
+<p>然后登录超星/智慧树，进入你要刷的课程页面，会有弹窗，最好开启<strong>自动调整窗口大小</strong>。正常的话他会一直刷下去，<strong>除非出现验证码</strong>。如果有平时分的话可以开启定时。</p>
+<p>![[智慧树.png]]</p>
+<div id="答题" class="anchor"></div>
+<h2 class="relative group">答题 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bb%a3%e7%a0%81" aria-label="锚点">#</a></span>        
-    
-</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyperclip</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pynput.keyboard</span> <span class="kn">import</span> <span class="n">Controller</span><span class="p">,</span><span class="n">Listener</span><span class="p">,</span><span class="n">Key</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">paste</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>     <span class="c1">#按下后间隔0.2s</span>
-</span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="o">=</span><span class="n">pyperclip</span><span class="o">.</span><span class="n">paste</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">keyboard</span> <span class="o">=</span> <span class="n">Controller</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">keyboard</span><span class="o">.</span><span class="n">type</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;粘贴成功&#34;</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">on_release</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">Key</span><span class="o">.</span><span class="n">esc</span><span class="p">:</span>      <span class="c1"># 停止监听</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="n">Key</span><span class="o">.</span><span class="n">f2</span><span class="p">:</span>       <span class="c1"># 这里是按f2调用粘贴函数</span>
-</span></span><span class="line"><span class="cl">        <span class="n">paste</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">Listener</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">        <span class="n">on_release</span><span class="o">=</span><span class="n">on_release</span><span class="p">)</span> <span class="k">as</span> <span class="n">listener</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">listener</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
-</span></span></code></pre></div><p>我也会把exe文件发布在GitHub上</p>
-<p><a href="https://github.com/ohdmire/SuperPaste/releases"   target="_blank">
-    https://github.com/ohdmire/SuperPaste/releases</a></p>
-<a target="_blank" href="https://github.com/Ohdmire/SuperPaste" class="cursor-pointer">
-  <div class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md backdrop-blur shadow-2xl">
-
-    <div class="flex items-center">
-      <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-
-  </span>
-
-
-      </span>
-      <div class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
-        Ohdmire/SuperPaste
-      </div>
-    </div>
-
-    <p class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
-      超级粘贴，能够粘贴文本
-    </p>
-
-    <div class="m-0 mt-2 flex items-center">
-      
-      <span class="mr-1 inline-block h-3 w-3 rounded-full" style="background-color: #e34c26"></span>
-      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-         HTML 
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"/></svg>
-  </span>
-
-
-      </span>
-      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
-      </div>
-
-      <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
-        
-
-  <span class="relative block icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 104c13.3 0 24-10.7 24-24s-10.7-24-24-24S56 66.7 56 80s10.7 24 24 24zm80-24c0 32.8-19.7 61-48 73.3V192c0 17.7 14.3 32 32 32H304c17.7 0 32-14.3 32-32V153.3C307.7 141 288 112.8 288 80c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V192c0 53-43 96-96 96H256v70.7c28.3 12.3 48 40.5 48 73.3c0 44.2-35.8 80-80 80s-80-35.8-80-80c0-32.8 19.7-61 48-73.3V288H144c-53 0-96-43-96-96V153.3C19.7 141 0 112.8 0 80C0 35.8 35.8 0 80 0s80 35.8 80 80zm208 24c13.3 0 24-10.7 24-24s-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24zM248 432c0-13.3-10.7-24-24-24s-24 10.7-24 24s10.7 24 24 24s24-10.7 24-24z"/></svg>
-  </span>
-
-
-      </span>
-      <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-        0
-      </div>
-
-    </div>
-
-  </div>
-</a>
-<div id="使用教程" class="anchor"></div>
-<h2 class="relative group">使用教程 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e7%ad%94%e9%a2%98" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>只要运行程序按下<code>F2</code>就能粘贴，按<code>ESC</code>退出程序</p>
-<blockquote>
-<p>你可能还需要将输入法切换为英文</p>
-</blockquote>
-<p>如果你需要也可以自行更改按键，具体参考官方文档
-<a href="https://pynput.readthedocs.io/en/latest/keyboard.html"   target="_blank">
-    https://pynput.readthedocs.io/en/latest/keyboard.html</a></p>
+<p>在这里我推荐两个</p>
+<div id="ocs" class="anchor"></div>
+<h3 class="relative group">OCS 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ocs" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>OCS不仅能刷课，答题也是可以的，但是需要自己购买题库并且配置。官方推荐的一个付费题库[言溪题库](<a href="https://tk.enncy.cn"   target="_blank">
+    https://tk.enncy.cn</a>](<a href="https://tk.enncy.cn"   target="_blank">
+    https://tk.enncy.cn</a>)</p>
+<div id="价格" class="anchor"></div>
+<h4 class="relative group">价格 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%bb%b7%e6%a0%bc" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>虽然说是付费题库，但是基本上很便宜，按次数来算的。新用户送100次查询额度。目前（2023.10.15）的价格是</p>
+<ul>
+<li>1块钱100次</li>
+<li>3块钱2k次</li>
+<li>10块钱1w次</li>
+<li>50块10w次</li>
+</ul>
+<div id="教程" class="anchor"></div>
+<h4 class="relative group">教程 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%95%99%e7%a8%8b" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>首先登录自己的爱发电用户，没有的可以用手机注册一个</p>
+<p>登录后可以在主页面看到如下内容，点击题库配置右边的复制按钮
+![[题库配置.png]]</p>
+<p>回到OCS弹窗中点击<code>通用</code>-<code>全局设置</code>-<code>点击配置</code>，在弹出的页面中粘贴刚刚复制的内容后点击确定</p>
+<p>![[导入题库.png]]</p>
+<p>OK现在就会自动答题了，而且支持考试自动答题。</p>
+<p>智慧树的配置同理，我就不演示了。</p>
+<div id="题海" class="anchor"></div>
+<h3 class="relative group">题海 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e9%a2%98%e6%b5%b7" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p><a href="https://www.itihey.com/"   target="_blank">
+    题海官网</a></p>
+<p>题海也是付费题库，免费次数有限但我没有怎么测试过具体数字，官方也没说具体数字。题海分为网页端（划词搜索）和APP</p>
+<div id="网页端" class="anchor"></div>
+<h4 class="relative group">网页端 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bd%91%e9%a1%b5%e7%ab%af" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>和之前脚本安装一样</p>
+<ol>
+<li>安装<a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"   target="_blank">
+    油猴插件</a></li>
+<li>安装<a href="https://www.zhaojiaoben.cn/script/detail/3524835685254d03bf5af828815430ec"   target="_blank">
+    题海脚本</a></li>
+</ol>
+<p>之后在超星或者智慧树划词，点击右下角图标，会弹出窗口让你扫描二维码，用微信扫描即可。
+![[题海登录二维码.png]]</p>
+<p>日后可以在设置里面设置划词直接搜题，加快搜题效率。</p>
+<div id="app" class="anchor"></div>
+<h4 class="relative group">APP 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#app" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p><a href="https://app.itihey.com/share/index.html"   target="_blank">
+    官网下载</a>APP安装后打开</p>
+<p>然后在我的页面里有快捷搜题助手，点击后给予相应权限即可实现在屏幕上直接搜题，不需要手动截图去搜题，十分方便。
+![[快捷搜题.jpg]]</p>
 <div id="最后" class="anchor"></div>
 <h2 class="relative group">最后 
     <span
@@ -1311,32 +1354,7 @@
             style="text-decoration-line: none !important;" href="#%e6%9c%80%e5%90%8e" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>效果
-
-
-
-
-
-  
-  
-  
-    <figure>
-      <img class="my-0 rounded-md" src="%E6%95%88%E6%9E%9C.png" alt="效果" />
-      
-    </figure>
-  
-
-</p>
-<div id="参考链接" class="anchor"></div>
-<h2 class="relative group">参考链接 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e5%8f%82%e8%80%83%e9%93%be%e6%8e%a5" aria-label="锚点">#</a></span>        
-    
-</h2>
-<p><a href="https://pynput.readthedocs.io/en/latest/keyboard.html"   target="_blank">
-    pynput文档</a></p>
+<p>以上就是我常使用的网课工具，如果你有什么更好的工具或者是方案，欢迎在评论补充</p>
 
         </div>
                 
@@ -1350,7 +1368,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://ohdmire.github.io/posts/superpaste/&amp;text=%e8%b6%85%e7%ba%a7%e7%b2%98%e8%b4%b4"
+      href="https://twitter.com/intent/tweet/?url=https://ohdmire.github.io/posts/onlinecourse/&amp;text=%e5%a4%a7%e5%ad%a6%e7%94%9f%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e2%80%94%e2%80%94OCS%e7%bd%91%e8%af%be%e5%8a%a9%e6%89%8b"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1369,7 +1387,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://ohdmire.github.io/posts/superpaste/&amp;resubmit=true&amp;title=%e8%b6%85%e7%ba%a7%e7%b2%98%e8%b4%b4"
+      href="https://t.me/share/url?url=https://ohdmire.github.io/posts/onlinecourse/&amp;resubmit=true&amp;title=%e5%a4%a7%e5%ad%a6%e7%94%9f%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e2%80%94%e2%80%94OCS%e7%bd%91%e8%af%be%e5%8a%a9%e6%89%8b"
       title=""
       aria-label=""
       >
@@ -1388,7 +1406,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://ohdmire.github.io/posts/superpaste/&amp;subject=%e8%b6%85%e7%ba%a7%e7%b2%98%e8%b4%b4"
+      href="mailto:?body=https://ohdmire.github.io/posts/onlinecourse/&amp;subject=%e5%a4%a7%e5%ad%a6%e7%94%9f%e7%94%9f%e5%ad%98%e6%8c%87%e5%8d%97%e2%80%94%e2%80%94OCS%e7%bd%91%e8%af%be%e5%8a%a9%e6%89%8b"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1414,11 +1432,11 @@
   
   
 
-  <a href="/posts/pytranscriber/" class="min-w-full">
+  <a href="/posts/t2s-s2t/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/pytranscriber/feature_hu0e7064b61b51e2972b73936a53bd37f9_1627172_600x0_resize_box_3.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/t2s-s2t/feature_hud6952016226169985b8ba3953ba2dfee_281431_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1426,7 +1444,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/pytranscriber/">视频字幕神器pyTranscriber</div>
+          href="/posts/t2s-s2t/">使用opencc进行简繁转换</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1467,9 +1485,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-12-01 00:00:00 &#43;0000 UTC">1 December 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-09-26 00:00:00 &#43;0000 UTC">26 September 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts/语音转字幕神器pyTranscriber/index.md" title="views">0</span> 
+    <span id="views_posts/简繁转化/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1481,7 +1499,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_posts/语音转字幕神器pyTranscriber/index.md" title="likes">0</span> 
+    <span id="likes_posts/简繁转化/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1523,6 +1541,17 @@
   
   
   
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
   <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
     <span class="flex">
   <span
@@ -1534,31 +1563,31 @@
 
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E8%BD%AF%E4%BB%B6/&#34;,'_self');">
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    软件
+    简体中文
   </span>
 </span>
 
   </span>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%AD%97%E5%B9%95/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    字幕
+    繁体中文
   </span>
 </span>
 
@@ -1583,11 +1612,11 @@
   
   
 
-  <a href="/posts/website/" class="min-w-full">
+  <a href="/posts/e5/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/website/feature_hu411fbe7342e601014b2a4021a25f94bd_9252368_600x0_resize_box_3.png);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/e5/feature_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1595,7 +1624,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/website/">我网站使用的一些东西</div>
+          href="/posts/e5/">Microsoft 365 E5开发者使用指南</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1636,9 +1665,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-06-12 00:00:00 &#43;0000 UTC">12 June 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_posts/我网站使用的一些东西/index.md" title="views">0</span> 
+    <span id="views_posts/e5/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1650,7 +1679,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_posts/我网站使用的一些东西/index.md" title="likes">0</span> 
+    <span id="likes_posts/e5/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1692,12 +1721,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    技巧
+    教程
   </span>
 </span>
 
@@ -1711,12 +1740,45 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%BD%91%E7%AB%99/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/e5/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    网站
+    E5
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/onedrive/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    OneDrive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/office365/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Office365
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%BE%AE%E8%BD%AF/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    微软
   </span>
 </span>
 
@@ -1741,11 +1803,11 @@
   
   
 
-  <a href="/notes/wittgenstein/" class="min-w-full">
+  <a href="/posts/zerotier/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/notes/wittgenstein/feature_hub3861a2fc8a714cba5025c698d818fe3_288583_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/zerotier/feature_hu3ef3a945ed30fde8b0c6b3b239861d99_8739729_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1753,7 +1815,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/wittgenstein/">维特根斯坦</div>
+          href="/posts/zerotier/">异地组网-ZeroTier简明教程</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1794,9 +1856,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-11-24 00:00:00 &#43;0000 UTC">24 November 2022</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-04-26 00:00:00 &#43;0000 UTC">26 April 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/维特根斯坦/index.md" title="views">0</span> 
+    <span id="views_posts/异地组网zerotier/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1808,7 +1870,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/维特根斯坦/index.md" title="likes">0</span> 
+    <span id="likes_posts/异地组网zerotier/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1850,12 +1912,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%BD%91%E7%BB%9C/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    网络
   </span>
 </span>
 
@@ -1869,16 +1942,519 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%93%B2%E5%AD%A6/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/zerotier/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    哲学
+    ZeroTier
   </span>
 </span>
 
   </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/gamedownload/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/gamedownload/feature_hu0efe790cc80c5fa11dbef893210319c4_503545_600x0_resize_q75_box.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/gamedownload/">关于一些外服游戏下载节省流量</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-03-21 00:00:00 &#43;0000 UTC">21 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts/游戏下载/index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="likes_posts/游戏下载/index.md" title="likes">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%8B%E8%BD%BD/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    下载
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blue-archive/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Blue Archive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/project-sekai/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Project Sekai
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/heaven-burns-red/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Heaven Burns Red
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/clash/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    clash
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/posts/bitwarden/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/bitwarden/feature_hucc12b0d618fd8d7f4b98a450364ebcf9_254789_600x0_resize_box_3.png);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/bitwarden/">bitwarden使用docker自建服务器教程</div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-09-23 00:00:00 &#43;0000 UTC">23 September 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_posts/bitwarden自建服务器教程/index.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="likes_posts/bitwarden自建服务器教程/index.md" title="likes">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/bitwarden/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    bitwarden
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%AF%86%E7%A0%81/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    密码
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+        </div>
+
+        
+      </div>
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
+    </div>
+  </a>
+  
+  
+
+  <a href="/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
+        
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        
+      
+
+      <div class="px-6 py-4">
+
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/"></div>
+        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="views_模板/模板.md" title="views">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+    
+    <span id="likes_模板/模板.md" title="likes">0</span> 
+    
+    <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1903,8 +2479,8 @@
       </div>
      
      <script>
-        var oid = "views_posts\/超级粘贴\/index.md"
-        var oid_likes = "likes_posts\/超级粘贴\/index.md"
+        var oid = "views_posts\/网课助手\/index.md"
+        var oid_likes = "likes_posts\/网课助手\/index.md"
       </script>
       
       
@@ -1923,7 +2499,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/pytranscriber/">
+            <a class="flex group mr-3" href="/posts/t2s-s2t/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1935,11 +2511,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >视频字幕神器pyTranscriber</span
+                  >使用opencc进行简繁转换</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2022-12-01 00:00:00 &#43;0000 UTC">1 December 2022</time>
+                    <time datetime="2023-09-26 00:00:00 &#43;0000 UTC">26 September 2023</time>
                   
                 </span>
               </span>
@@ -1947,28 +2523,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/onepresskill/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >一键kill</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-01-07 00:00:00 &#43;0000 UTC">7 January 2023</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
