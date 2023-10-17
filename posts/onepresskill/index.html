@@ -167,6 +167,29 @@
   <meta name="theme-color"/>
   
   
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBGdvoLLSHohnqsq900V2AW-1qdctoOujs",
+      authDomain: "AIzaSyBGdvoLLSHohnqsq900V2AW-1qdctoOujs",
+      projectId: "ohdmire-269e7",
+      storageBucket: "ohdmire-269e7.appspot.com",
+      messagingSenderId: "458257344818",
+      appId: "1:458257344818:web:72faa89d4a2ad7c6ab4f2b",
+      measurementId: "G-DGHN5QCQLZ"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+  
+  
 </head>
 <body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
