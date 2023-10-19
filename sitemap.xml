@@ -5,10 +5,34 @@
     
       <url>
             <loc>https://ohdmire.github.io/</loc>
-            <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/notes/westernphilosophy/</loc>
+            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/notes/</loc>
+            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
     
   
     
@@ -20,8 +44,6 @@
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
     
   
     
@@ -157,17 +179,6 @@
   
     
       <url>
-            <loc>https://ohdmire.github.io/notes/</loc>
-            <lastmod>2022-12-14T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
             <loc>https://ohdmire.github.io/posts/superpaste/</loc>
             <lastmod>2022-12-12T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
@@ -203,16 +214,6 @@
       <url>
             <loc>https://ohdmire.github.io/posts/website/</loc>
             <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
