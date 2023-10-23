@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>随笔</title>
+      <link>https://ohdmire.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/tags/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>哲学</title>
       <link>https://ohdmire.github.io/tags/%E5%93%B2%E5%AD%A6/</link>
@@ -254,6 +264,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/tags/doing/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>essays</title>
+      <link>https://ohdmire.github.io/tags/essays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/tags/essays/</guid>
       <description></description>
       
     </item>
