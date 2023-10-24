@@ -16,8 +16,7 @@
       <guid>https://ohdmire.github.io/essays/essay/</guid>
       <description>没有分类的主题，大概会先以#为一个主题吧
 界限 # 从原始时代开始，细胞通过细胞膜将自身与外界隔离开来，控制物质的进出。而发展到人类这个宏观的大个体，我们依然拥有着将自身与外界隔离开的器官：皮肤。
-人的思想意识也是如此。为什么我们依赖感觉器官接收信息加工后传入大脑而不是直接让大脑接收信息？这个世界上的信息非常之庞大，直接让大脑置身于环境之中大脑很难生存。所以人类为了保护自我，或者说是维持自我意识，选择了将大脑封闭起来，让感受器去接收部分的信息。
-同时我认为人脑的私密性也是人最为重要的。人脑无法直接被直接被读写是保证意识独立最为重要的条件。一旦人类的意识能够被读取，那么一个人所拥有的最为自由，最为自己所拥有的东西就不复存在。</description>
+人的思想意识也是如此。为什么我们依赖感觉器官接收信息加工后传入大脑而不是直接让大脑接收信息？这个世界上的信息非常之庞大，直接让大脑置身于环境之中大脑很难生存。所以人类为了保护自我，或者说是维持自我意识，选择了将大脑封闭起来，让感受器去接收部分的信息。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/essays/essay/feature.jpg" />
     </item>
     
@@ -164,19 +163,6 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
     </item>
     
     <item>
-      <title>JavaScript笔记</title>
-      <link>https://ohdmire.github.io/notes/javascriptnote/</link>
-      <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohdmire.github.io/notes/javascriptnote/</guid>
-      <description>JavaScript笔记 # 内容参考来源 W3School
-以下内容并不完整，主要是我在我学过Python的基础上，在理解新的语言所需要留意的部分。
-显示方案 # JavaScript 能够以不同方式“显示”数据：
-使用 window.alert() 写入警告框 使用 document.write() 写入 HTML 输出 使用 innerHTML 写入 HTML 元素 使用 console.log() 写入浏览器控制台 语法 # var x, y;	// 如何声明变量 x = 7; y = 8;	// 如何赋值 z = x + y;	// 如何计算值 块作用域 # 通过 var 关键词声明的变量没有块作用域。 在块 {} 内声明的变量可以从块之外进行访问。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/javascriptnote/feature.png" />
-    </item>
-    
-    <item>
       <title>超级粘贴</title>
       <link>https://ohdmire.github.io/posts/superpaste/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
@@ -226,6 +212,16 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
 本来是向用 Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了 Obsidian
 同时我编辑的内容也通过 OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ohdmire.github.io/notes/javascript%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/javascript%E7%AC%94%E8%AE%B0/</guid>
+      <description>数据类型 # Number # 123; // 整数123 0.456; // 浮点数0.456 1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5 -99; // 负数 NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示 Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity 字符串 # 转义字符\ 多行字符串`` 字符串运算 # x=a+b; //类似于Python中的format let name=&amp;#39;123&amp;#39;; x=`xxx,${name}`; 字符串操作 # //字符串会转换为Array var s = &amp;#39;Hello, world!</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/javascript%E7%AC%94%E8%AE%B0/feature.png" />
     </item>
     
     <item>
