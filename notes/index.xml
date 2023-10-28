@@ -7,14 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript浏览器笔记</title>
+      <link>https://ohdmire.github.io/notes/javascriptbrowsernote/</link>
+      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/javascriptbrowsernote/</guid>
+      <description> 浏览器 # </description>
+      
+    </item>
+    
     <item>
       <title>JavaScript笔记</title>
       <link>https://ohdmire.github.io/notes/javascriptnote/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/notes/javascriptnote/</guid>
-      <description>数据类型 # Number # 123; // 整数123 0.456; // 浮点数0.456 1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5 -99; // 负数 NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示 Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity 字符串 # 转义字符\ 多行字符串`` 字符串运算 # x=a+b; //类似于Python中的format let name=&amp;#39;123&amp;#39;; x=`xxx,${name}`; 字符串操作 # //字符串会转换为Array var s = &amp;#39;Hello, world!</description>
+      <description>关于 # 文章内容来源于 廖雪峰的官方网站
+数据类型 # Number # 123; // 整数123 0.456; // 浮点数0.456 1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5 -99; // 负数 NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示 Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity 字符串 # 转义字符\ 多行字符串`` 字符串运算 # x=a+b; //类似于Python中的format let name=&amp;#39;123&amp;#39;; x=`xxx,${name}`; 字符串操作 # //字符串会转换为Array var s = &amp;#39;Hello, world!</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/javascriptnote/feature.png" />
     </item>
     
