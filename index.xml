@@ -14,7 +14,11 @@
       <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/notes/javascriptbrowsernote/</guid>
-      <description> 浏览器 # </description>
+      <description>浏览器 # 浏览器对象 # window # window对象不但充当全局作用域，而且表示浏览器窗口
+innerWidth属性 innerHeight属性 navigator # navigator对象表示浏览器的信息，最常用的属性包括：
+navigator.appName：浏览器名称； navigator.appVersion：浏览器版本； navigator.language：浏览器设置的语言； navigator.platform：操作系统类型； navigator.userAgent：浏览器设定的User-Agent字符串。 screen # screen对象表示屏幕的信息，常用的属性有：
+screen.width：屏幕宽度，以像素为单位； screen.height：屏幕高度，以像素为单位； screen.colorDepth：返回颜色位数，如8、16、24。**** location # location对象表示当前页面的URL信息
+http://www.example.com:8080/path/index.html?a=1&amp;amp;b=2#TOP location.protocol; // &amp;#39;http&amp;#39; location.</description>
       
     </item>
     
