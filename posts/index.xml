@@ -19,8 +19,8 @@
 OCS网课助手 # OCS官网
 这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用 不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。
 网页脚本 # 这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google
-安装 油猴插件 安装 OCS脚本 然后打开你的网课页面就开始刷了。
-客户端 # 到 官网下载客户端，安装完成后打开，创建一个浏览器并运行
+安装油猴插件 安装OCS脚本 然后打开你的网课页面就开始刷了。
+客户端 # 到官网下载客户端，安装完成后打开，创建一个浏览器并运行
 然后登录超星/智慧树，进入你要刷的课程页面，会有弹窗，最好开启自动调整窗口大小。正常的话他会一直刷下去，除非出现验证码。如果有平时分的话可以开启定时。
 答题 # 在这里我推荐两个</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onlinecourse/feature.png" />
@@ -84,10 +84,10 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       <guid>https://ohdmire.github.io/posts/zerotier/</guid>
       <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
 介绍 # ZeroTier的优点
-采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网： ZeroTier
+采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网：ZeroTier
 推荐直接使用Google账号登录，方便快捷
 创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
-加入设备 # 下载对应操作系统的 客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
+加入设备 # 下载对应操作系统的客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/zerotier/feature.png" />
     </item>
     
@@ -130,7 +130,7 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       
       <guid>https://ohdmire.github.io/posts/onepresskill/</guid>
       <description>一键结束进程 # 起因 # 我真的绷不住了，Alt+F4 不能够关闭程序，调个任务栏管理器半天不出来，出来了还无响应，我真的服了，只能强制重启。所以我打做个一键杀死进程的程序。
-编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客 超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
+编写 # 思路 # 需要获取当前正在运行的程序 获取当前窗口句柄需要使用到系统函数，通过窗口得到进程pid，所以必须使用win32库 需要能够调用taskkill指令 Python中内置的os.system()代码就能够很好的执行，但是需要提升至管理员身份 加上按键监听 这个部分在我之前的博客超级粘贴也有使用到，就是pynput库 代码 # import win32gui import win32process import psutil import os from pynput.keyboard import Listener,Key import ctypes # 排除列表 whitelist=[&amp;#34;explorer.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onepresskill/feature.png" />
     </item>
     
@@ -166,12 +166,12 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/posts/website/</guid>
-      <description>网站涉及相关 # 网站设计 # 首先我使用了 Hugo这个网站框架并且配上了 stack主题
-网站搭建 # 将网站搭建在 GitHub Pages上
-还使用了 Azure的静态web解析，相当于有两个域名了
-网站编辑 # 我使用 Obsidian进行博客网站的编辑，他支持 Markdown语言，并且拥有模板。
-本来是向用 Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了 Obsidian
-同时我编辑的内容也通过 OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
+      <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
+网站搭建 # 将网站搭建在GitHub Pages上
+还使用了Azure的静态web解析，相当于有两个域名了
+网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
+本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
+同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
     </item>
     
