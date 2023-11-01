@@ -19,8 +19,8 @@
 OCS网课助手 # OCS官网
 这是一个很强大的网课助手，支持多个平台，而且有自己的客户端和油猴脚本都可以用 不过目前（2023.10.15）在智慧树平台上，由于检测升级，所以只能用客户端，超星还是两者都可以用的。所以我分客户端和油猴脚本演示，二选一即可。
 网页脚本 # 这里我推荐使用FireFox浏览器，因为安装插件的时候，FireFox是直接可以访问插件商店的，如果使用Chrome需要能访问Google
-安装油猴插件 安装OCS脚本 然后打开你的网课页面就开始刷了。
-客户端 # 到官网下载客户端，安装完成后打开，创建一个浏览器并运行
+安装 油猴插件 安装 OCS脚本 然后打开你的网课页面就开始刷了。
+客户端 # 到 官网下载客户端，安装完成后打开，创建一个浏览器并运行
 然后登录超星/智慧树，进入你要刷的课程页面，会有弹窗，最好开启自动调整窗口大小。正常的话他会一直刷下去，除非出现验证码。如果有平时分的话可以开启定时。
 答题 # 在这里我推荐两个</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/onlinecourse/feature.png" />
@@ -84,10 +84,10 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       <guid>https://ohdmire.github.io/posts/zerotier/</guid>
       <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
 介绍 # ZeroTier的优点
-采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网：ZeroTier
+采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网： ZeroTier
 推荐直接使用Google账号登录，方便快捷
 创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
-加入设备 # 下载对应操作系统的客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
+加入设备 # 下载对应操作系统的 客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/zerotier/feature.png" />
     </item>
     

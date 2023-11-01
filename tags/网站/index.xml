@@ -14,12 +14,12 @@
       <pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ohdmire.github.io/posts/website/</guid>
-      <description>网站涉及相关 # 网站设计 # 首先我使用了Hugo这个网站框架并且配上了stack主题
-网站搭建 # 将网站搭建在GitHub Pages上
-还使用了Azure的静态web解析，相当于有两个域名了
-网站编辑 # 我使用Obsidian进行博客网站的编辑，他支持Markdown语言，并且拥有模板。
-本来是向用Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了Obsidian
-同时我编辑的内容也通过OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
+      <description>网站涉及相关 # 网站设计 # 首先我使用了 Hugo这个网站框架并且配上了 stack主题
+网站搭建 # 将网站搭建在 GitHub Pages上
+还使用了 Azure的静态web解析，相当于有两个域名了
+网站编辑 # 我使用 Obsidian进行博客网站的编辑，他支持 Markdown语言，并且拥有模板。
+本来是向用 Visual Studio Code 进行编辑的，这样还可以做到编译和发布all in one，但是考虑到模板和文件内容整理问题，我还是使用了 Obsidian
+同时我编辑的内容也通过 OneDrive同步到云端，这样也不用担心数据丢失的问题</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/website/feature.png" />
     </item>
     
