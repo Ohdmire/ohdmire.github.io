@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中药学 on Ohdmire</title>
+    <link>https://ohdmire.github.io/series/%E4%B8%AD%E8%8D%AF%E5%AD%A6/</link>
+    <description>Recent content in 中药学 on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/series/%E4%B8%AD%E8%8D%AF%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解表药</title>
+      <link>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/</guid>
+      <description>解表药 # 发散风寒药 # 麻黄 # 发汗解表，宣肺平喘，利水消肿
+桂枝 # 发汗解肌，温通经脉，助阳化气，平冲降逆
+紫苏 # 解表散寒，行气和胃
+生姜@ # 解表散寒，温中止呕，化痰止咳，解鱼蟹毒
+香薷@ # 发汗解表，化湿和中，利水消肿
+荆芥 # 解表散寒，透疹，消疮
+防风 # 祛风解表，胜湿止痛，止痉
+羌活 # 解表散寒，祛风除湿，止痛
+白芷 # 解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓</description>
+      
+    </item>
+    
+    <item>
+      <title>驱虫药</title>
+      <link>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/</guid>
+      <description>驱虫药 # 使君子@ # 杀虫，消积
+苦楝皮@ # 杀虫，疗癣
+槟榔 # 杀虫，消积，行气，利水，截疟</description>
+      
+    </item>
+    
+    <item>
+      <title>消食药</title>
+      <link>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/</guid>
+      <description>消食药 # 山楂 # 消食健胃，行气散淤，化浊降脂
+六神曲@ # 消食和胃
+麦芽@ # 行气消食，健脾开胃，回乳消胀
+莱菔子 # 消食除胀，降气化痰
+鸡内金 # 健胃消食，涩精止遗，通淋化石</description>
+      
+    </item>
+    
+  </channel>
+</rss>
