@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>异地组网 on Ohdmire</title>
+    <link>https://ohdmire.github.io/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/</link>
+    <description>Recent content in 异地组网 on Ohdmire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2023 Ohdmire</copyright>
+    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用moonlight&#43;tailscale在教室玩电脑</title>
+      <link>https://ohdmire.github.io/posts/moonlighttailscale/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/posts/moonlighttailscale/</guid>
+      <description>moonlight+tailscale # 前言 # 使用moonlight可以串流游戏或应用程序，然后再使用tailscale异地组建一个局域网，就可以在教室里面玩到宿舍的电脑啦
+本教程讲分为上下两个部分，第一部分说明如何在局域网内使用moonlight串流游戏，第二部分说明如何加上tailscale实现异地组建局域网
+moonlight # 首先是moonlight部分
+安装 # moonlight依赖于NVIDIA的GeForce Experience，所以确保安装好并更新 GeForceExperience
+非N卡用户请参考其他串流方案
+在GeForce Experience里点击设置-SHIELD-GAMESTREAM找到并开启 如果遇到没有SHIELD这个选项的，请使用魔法 或者使用Host大法 UsbEAm Hosts Editor
+接下来在手机上安装moonlight
+Google Play Store Amazon App Store F-Droid Github APK 准备部分就完成了，下面是连接部分</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/moonlighttailscale/feature.png" />
+    </item>
+    
+    <item>
+      <title>异地组网-ZeroTier简明教程</title>
+      <link>https://ohdmire.github.io/posts/zerotier/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/posts/zerotier/</guid>
+      <description>ZeroTier简明教程 # 引言 # 对于现在的环境来说，公网IPv4已经很难申请，IPv6还未普及，对于需要远程访问的我来说，ddns虽然不错，但是他需要付费，而且还有许多流量和设备的限制。这时候我发现了ZeroTier
+介绍 # ZeroTier的优点
+采用P2P技术，去中心化 无限创建网络 最高支持25个设备 开源支持自建 相比公网IP安全性高，加入网络需要认证 教程 # 注册账号 # 官网： ZeroTier
+推荐直接使用Google账号登录，方便快捷
+创建Network # 点击Create A Network后就会自动创建一个网络，点击该Network进入设置。记住Network ID，你之后要靠该ID加入使用设备。
+加入设备 # 下载对应操作系统的 客户端，以Windows和AndroID为例子，打开软件后输入Network ID以加入网络</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/zerotier/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

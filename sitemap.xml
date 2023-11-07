@@ -5,10 +5,42 @@
     
       <url>
             <loc>https://ohdmire.github.io/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+            <lastmod>2023-11-07T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/posts/</loc>
+            <lastmod>2023-11-07T00:00:00+00:00</lastmod>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/posts/moonlighttailscale/</loc>
+            <lastmod>2023-11-07T00:00:00+00:00</lastmod>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
     
   
     
@@ -21,16 +53,12 @@
     
   
     
-  
-    
       <url>
             <loc>https://ohdmire.github.io/notes/</loc>
             <lastmod>2023-11-06T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
     
   
     
@@ -153,15 +181,6 @@
     
   
     
-      <url>
-            <loc>https://ohdmire.github.io/posts/</loc>
-            <lastmod>2023-10-15T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
   
     
       <url>
@@ -170,8 +189,6 @@
             <changefreq>always</changefreq>
             <priority>0.5</priority>
           </url>
-    
-  
     
   
     
