@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>详解程序中循环次数的判断</title>
+      <link>https://ohdmire.github.io/posts/loopcount/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/posts/loopcount/</guid>
+      <description>循环次数 # 前言 # 很多同学来问我循环体循环了几次到底该怎么判定？我打算今天给出一个通用的解决方案
+下面我以VB与Python结合来解释
+基础 # 首先一个循环体必须有的值
+初始值 结束值 步长 条件 上面这4个是组成循环的必要条件，缺一不可，任何一个已知的循环体中我们都能够求出他们的值 解题的核心思想是找到最后一个满足循环条件的数（结束值）
+那么如何寻找？
+请你把循环看作是植树问题。
+植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）
+下面的T代表树Tree，X代表这个地方是空的
+T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/loopcount/feature.png" />
+    </item>
+    
     <item>
       <title>使用moonlight&#43;tailscale在教室玩电脑</title>
       <link>https://ohdmire.github.io/posts/moonlighttailscale/</link>

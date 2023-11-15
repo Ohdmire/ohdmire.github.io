@@ -7,7 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Tue, 07 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>详解程序中循环次数的判断</title>
+      <link>https://ohdmire.github.io/posts/loopcount/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/posts/loopcount/</guid>
+      <description>循环次数 # 前言 # 很多同学来问我循环体循环了几次到底该怎么判定？我打算今天给出一个通用的解决方案
+下面我以VB与Python结合来解释
+基础 # 首先一个循环体必须有的值
+初始值 结束值 步长 条件 上面这4个是组成循环的必要条件，缺一不可，任何一个已知的循环体中我们都能够求出他们的值 解题的核心思想是找到最后一个满足循环条件的数（结束值）
+那么如何寻找？
+请你把循环看作是植树问题。
+植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）
+下面的T代表树Tree，X代表这个地方是空的
+T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/loopcount/feature.png" />
+    </item>
+    
+    <item>
+      <title>ATRI视频文稿</title>
+      <link>https://ohdmire.github.io/essays/atri%E6%96%87%E7%A8%BF/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/essays/atri%E6%96%87%E7%A8%BF/</guid>
+      <description> 视频介绍 # 我的回忆部分 # 2020年暑假的一天下午，我像平常一样，百无聊赖的在gal资源站上瞎逛，偶然间发现了一款游戏，他的封面深深的吸引着我。一望无际的大海和天空，被海水淹没的学校，废墟之上点缀的杂草，那种美感让我迫不及待的把他下载下来。
+他就是今天我要介绍的一款游戏，ATRI
+打开游戏，主题旋律非常的好听，让我一个向来很急的人都放着循环了好几遍。不愧是松本文记大佬写的曲子，
+游戏剧情部分 # 交织影响部分 # </description>
+      
+    </item>
+    
     <item>
       <title>使用moonlight&#43;tailscale在教室玩电脑</title>
       <link>https://ohdmire.github.io/posts/moonlighttailscale/</link>
@@ -23,6 +54,18 @@ moonlight # 首先是moonlight部分
 接下来在手机上安装moonlight
 Google Play Store Amazon App Store F-Droid Github APK 准备部分就完成了，下面是连接部分</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/moonlighttailscale/feature.png" />
+    </item>
+    
+    <item>
+      <title>活血化瘀药</title>
+      <link>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/</guid>
+      <description>活血化瘀药 # 活血止痛药 # 川芎 # 活血行气，祛风止痛
+延胡索 # 活血行气，止痛
+郁金 # 活血止痛，行气解郁，清心凉血，利胆退黄</description>
+      
     </item>
     
     <item>
@@ -66,6 +109,23 @@ Google Play Store Amazon App Store F-Droid Github APK 准备部分就完成了�
 麦芽@ # 行气消食，健脾开胃，回乳消胀
 莱菔子 # 消食除胀，降气化痰
 鸡内金 # 健胃消食，涩精止遗，通淋化石</description>
+      
+    </item>
+    
+    <item>
+      <title>止血药</title>
+      <link>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/</guid>
+      <description>止血药 # 凉血止血药 # 小蓟 # 凉血止血，消瘀解毒消痈
+大蓟@ # 凉血止血，消瘀解毒消痈
+地榆 # 凉血止血，解毒敛疮
+槐花@ # 凉血止血，清肝泻火
+侧柏叶@ # 凉血止血，化痰止咳，生发乌发
+白茅根 # 凉血止血，清热利尿
+化瘀止血药 # 三七 # 散瘀止血，消肿定痛
+茜草 # 凉血，祛瘀，止血，通经</description>
       
     </item>
     

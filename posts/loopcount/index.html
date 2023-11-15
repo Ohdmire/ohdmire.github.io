@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>驱虫药 &middot; Ohdmire</title>
-  <meta name="title" content="驱虫药 &middot; Ohdmire" />
+  <title>详解程序中循环次数的判断 &middot; Ohdmire</title>
+  <meta name="title" content="详解程序中循环次数的判断 &middot; Ohdmire" />
   
   
-  <meta name="keywords" content="中药, " />
+  <meta name="keywords" content="教程, " />
   
   
-  <link rel="canonical" href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/" />
+  <link rel="canonical" href="https://ohdmire.github.io/posts/loopcount/" />
   
   
   
@@ -63,49 +63,61 @@
   
   
   
-  <meta property="og:title" content="驱虫药" />
-<meta property="og:description" content="驱虫药 # 使君子@ # 杀虫，消积
-苦楝皮@ # 杀虫，疗癣
-槟榔 # 杀虫，消积，行气，利水，截疟" />
+  <meta property="og:title" content="详解程序中循环次数的判断" />
+<meta property="og:description" content="循环次数 # 前言 # 很多同学来问我循环体循环了几次到底该怎么判定？我打算今天给出一个通用的解决方案
+下面我以VB与Python结合来解释
+基础 # 首先一个循环体必须有的值
+初始值 结束值 步长 条件 上面这4个是组成循环的必要条件，缺一不可，任何一个已知的循环体中我们都能够求出他们的值 解题的核心思想是找到最后一个满足循环条件的数（结束值）
+那么如何寻找？
+请你把循环看作是植树问题。
+植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）
+下面的T代表树Tree，X代表这个地方是空的
+T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/" /><meta property="article:section" content="notes" />
-<meta property="article:published_time" content="2023-11-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-11-06T00:00:00+00:00" />
+<meta property="og:url" content="https://ohdmire.github.io/posts/loopcount/" /><meta property="og:image" content="https://ohdmire.github.io/posts/loopcount/feature.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-14T00:00:00+00:00" />
 
 
-
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="驱虫药"/>
-<meta name="twitter:description" content="驱虫药 # 使君子@ # 杀虫，消积
-苦楝皮@ # 杀虫，疗癣
-槟榔 # 杀虫，消积，行气，利水，截疟"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ohdmire.github.io/posts/loopcount/feature.png"/>
+<meta name="twitter:title" content="详解程序中循环次数的判断"/>
+<meta name="twitter:description" content="循环次数 # 前言 # 很多同学来问我循环体循环了几次到底该怎么判定？我打算今天给出一个通用的解决方案
+下面我以VB与Python结合来解释
+基础 # 首先一个循环体必须有的值
+初始值 结束值 步长 条件 上面这4个是组成循环的必要条件，缺一不可，任何一个已知的循环体中我们都能够求出他们的值 解题的核心思想是找到最后一个满足循环条件的数（结束值）
+那么如何寻找？
+请你把循环看作是植树问题。
+植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）
+下面的T代表树Tree，X代表这个地方是空的
+T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6"/>
 
   
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Notes",
-    "name": "驱虫药",
-    "headline": "驱虫药",
+    "articleSection": "Posts",
+    "name": "详解程序中循环次数的判断",
+    "headline": "详解程序中循环次数的判断",
     
-    "abstract": "驱虫药 # 使君子@ # 杀虫，消积\n苦楝皮@ # 杀虫，疗癣\n槟榔 # 杀虫，消积，行气，利水，截疟",
+    "abstract": "循环次数 # 前言 # 很多同学来问我循环体循环了几次到底该怎么判定？我打算今天给出一个通用的解决方案\n下面我以VB与Python结合来解释\n基础 # 首先一个循环体必须有的值\n初始值 结束值 步长 条件 上面这4个是组成循环的必要条件，缺一不可，任何一个已知的循环体中我们都能够求出他们的值 解题的核心思想是找到最后一个满足循环条件的数（结束值）\n那么如何寻找？\n请你把循环看作是植树问题。\n植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）\n下面的T代表树Tree，X代表这个地方是空的\nT T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6",
     "inLanguage": "zh-cn",
-    "url" : "https:\/\/ohdmire.github.io\/notes\/%E4%B8%AD%E8%8D%AF\/chinesemedicine10\/",
+    "url" : "https:\/\/ohdmire.github.io\/posts\/loopcount\/",
     "author" : {
       "@type": "Person",
       "name": "Ohdmire"
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-11-06T00:00:00\u002b00:00",
-    "datePublished": "2023-11-06T00:00:00\u002b00:00",
+    "dateCreated": "2023-11-14T00:00:00\u002b00:00",
+    "datePublished": "2023-11-14T00:00:00\u002b00:00",
     
-    "dateModified": "2023-11-06T00:00:00\u002b00:00",
+    "dateModified": "2023-11-14T00:00:00\u002b00:00",
     
-    "keywords": ["中药"],
+    "keywords": ["教程"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "11"
+    "wordCount": "222"
   }]
   </script>
 
@@ -694,6 +706,10 @@
   
   
   
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/posts/loopcount/feature_hu798ea0b5b359048c13078e71897c8b79_2469_1200x0_resize_box_3.png);"></div>
+        
+    
   
   
 
@@ -701,8 +717,6 @@
     
     <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
   
-  
-    
   
     
   
@@ -720,17 +734,8 @@
   <li class="inline ">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/notes/"
-      >Notes</a
-    ><span class="px-1 text-primary-500">/</span>
-  </li>
-
-  
-  <li class="inline ">
-    <a
-      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/notes/%E4%B8%AD%E8%8D%AF/"
-      >【持续更新中】中药学一二类药功效</a
+      href="/posts/"
+      >Posts</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -738,8 +743,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/"
-      >驱虫药</a
+      href="/posts/loopcount/"
+      >详解程序中循环次数的判断</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -748,7 +753,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      驱虫药
+      详解程序中循环次数的判断
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -793,9 +798,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-14 00:00:00 &#43;0000 UTC">14 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/中药/10-驱虫药/index.md" title="views">0</span> 
+    <span id="views_posts/关于循环的次数/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -807,7 +812,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/中药/10-驱虫药/index.md" title="likes">0</span> 
+    <span id="likes_posts/关于循环的次数/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -871,12 +876,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    技巧
   </span>
 </span>
 
@@ -890,12 +906,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%AD%E8%8D%AF/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    中药
+    教程
   </span>
 </span>
 
@@ -1069,9 +1085,38 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#使君子">使君子@</a></li>
-    <li><a href="#苦楝皮">苦楝皮@</a></li>
-    <li><a href="#槟榔">槟榔</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#基础">基础</a></li>
+    <li><a href="#植树问题">植树问题</a>
+      <ul>
+        <li><a href="#跳跃的步长">跳跃的步长</a></li>
+        <li><a href="#快速找到结束值">快速找到结束值</a></li>
+        <li><a href="#为什么要分类讨论是什么原理">为什么要分类讨论，是什么原理?</a>
+          <ul>
+            <li><a href="#原理">原理</a></li>
+            <li><a href="#和区别">&gt;和≥区别</a></li>
+            <li><a href="#偏移一个步长内">偏移一个步长内</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#结论">结论</a></li>
+    <li><a href="#程序中的循环例子">程序中的循环例子</a>
+      <ul>
+        <li><a href="#while循环">while循环</a>
+          <ul>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#vb">VB</a></li>
+          </ul>
+        </li>
+        <li><a href="#for循环">for循环</a>
+          <ul>
+            <li><a href="#python-1">Python</a></li>
+            <li><a href="#vb-1">VB</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1085,9 +1130,38 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#使君子">使君子@</a></li>
-    <li><a href="#苦楝皮">苦楝皮@</a></li>
-    <li><a href="#槟榔">槟榔</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#基础">基础</a></li>
+    <li><a href="#植树问题">植树问题</a>
+      <ul>
+        <li><a href="#跳跃的步长">跳跃的步长</a></li>
+        <li><a href="#快速找到结束值">快速找到结束值</a></li>
+        <li><a href="#为什么要分类讨论是什么原理">为什么要分类讨论，是什么原理?</a>
+          <ul>
+            <li><a href="#原理">原理</a></li>
+            <li><a href="#和区别">&gt;和≥区别</a></li>
+            <li><a href="#偏移一个步长内">偏移一个步长内</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#结论">结论</a></li>
+    <li><a href="#程序中的循环例子">程序中的循环例子</a>
+      <ul>
+        <li><a href="#while循环">while循环</a>
+          <ul>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#vb">VB</a></li>
+          </ul>
+        </li>
+        <li><a href="#for循环">for循环</a>
+          <ul>
+            <li><a href="#python-1">Python</a></li>
+            <li><a href="#vb-1">VB</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -1141,156 +1215,309 @@
       <div class="min-w-0 min-h-0 max-w-fit">
         
         
-<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5" >
-    <summary
-        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
-        中药学 - This article is part of a series.
-    </summary>
-    
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/">
-            Part 1: 解表药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/">
-            Part 9: 消食药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part 10: This Article
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/">
-            Part 11: 止血药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/">
-            Part 12: 活血化瘀药
-        </a>
-    </div>
-    
-    
-
-</details>
-
 
 
         <div class="max-w-prose mb-20">
-          <div id="驱虫药" class="anchor"></div>
-<h1 class="relative group">驱虫药 
+          <div id="循环次数" class="anchor"></div>
+<h1 class="relative group">循环次数 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e9%a9%b1%e8%99%ab%e8%8d%af" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%be%aa%e7%8e%af%e6%ac%a1%e6%95%b0" aria-label="锚点">#</a></span>        
     
 </h1>
-<div id="使君子" class="anchor"></div>
-<h2 class="relative group">使君子@ 
+<div id="前言" class="anchor"></div>
+<h2 class="relative group">前言 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e4%bd%bf%e5%90%9b%e5%ad%90" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>杀虫，消积</p>
-<div id="苦楝皮" class="anchor"></div>
-<h2 class="relative group">苦楝皮@ 
+<p>很多同学来问我<strong>循环体循环了几次</strong>到底该怎么判定？我打算今天给出一个通用的解决方案</p>
+<p>下面我以<code>VB</code>与<code>Python</code>结合来解释</p>
+<div id="基础" class="anchor"></div>
+<h2 class="relative group">基础 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e8%8b%a6%e6%a5%9d%e7%9a%ae" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e5%9f%ba%e7%a1%80" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>杀虫，疗癣</p>
-<div id="槟榔" class="anchor"></div>
-<h2 class="relative group">槟榔 
+<p>首先一个循环体必须有的值</p>
+<ul>
+<li><strong>初始值</strong></li>
+<li><strong>结束值</strong></li>
+<li><strong>步长</strong></li>
+<li><strong>条件</strong>
+上面这4个是组成循环的<strong>必要条件</strong>，缺一不可，任何一个已知的循环体中我们都能够求出他们的值</li>
+</ul>
+<p>解题的核心思想是找到<strong>最后一个满足循环条件的数</strong>（<strong>结束值</strong>）</p>
+<p>那么如何寻找？</p>
+<p>请你把循环看作是植树问题。</p>
+<div id="植树问题" class="anchor"></div>
+<h2 class="relative group">植树问题 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%e6%a7%9f%e6%a6%94" aria-label="锚点">#</a></span>        
+            style="text-decoration-line: none !important;" href="#%e6%a4%8d%e6%a0%91%e9%97%ae%e9%a2%98" aria-label="锚点">#</a></span>        
     
 </h2>
-<p>杀虫，消积，行气，利水，截疟</p>
+<p>假设现在我从第1米开始植树（<strong>初始值</strong>为<code>1</code>），每隔1米值1棵树（<strong>步长</strong>为<code>1</code>），我要求不能超过6米（<strong>条件</strong>为<code>i≤6</code>），那么我一共植了多少颗数（问循环了几次）</p>
+<blockquote>
+<p>下面的<code>T</code>代表树Tree，<code>X</code>代表这个地方是空的</p>
+</blockquote>
+<pre tabindex="0"><code>    T   T   T   T   T   T
+0---1---2---3---4---5---6
+</code></pre><p>上面的例子你一眼就可以看出来结束值为<code>6</code>，也就是<strong>最后一个满足这个条件</strong>的数是<code>6</code></p>
+<p>一共植了6颗树木，那么循环的次数就是<code>6</code></p>
+<p>对于比较简单的循环体，你一眼就能找出该数字</p>
+<p>通用公式为<code>(结束值-初始值)/步长</code>，得到<strong>树木的间隔数</strong>（也就是树木之间有几个间隔），然后<code>+1</code>就是<strong>树木的数量</strong>（<strong>循环的次数</strong>）</p>
+<p>所以公式就是<code>循环次数=(结束值-初始值)/步长+1</code></p>
+<p>如果更加复杂一些，步长<strong>不是</strong><code>1</code>怎么办?</p>
+<div id="跳跃的步长" class="anchor"></div>
+<h3 class="relative group">跳跃的步长 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%b7%b3%e8%b7%83%e7%9a%84%e6%ad%a5%e9%95%bf" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>还是植树的例子
+现在我改变条件，变成每隔3米值一棵树（<strong>步长</strong>为<code>3</code>），其他条件依然不变</p>
+<pre tabindex="0"><code>    T   X   X   T   X   X
+0---1---2---3---4---5---6
+</code></pre><p>可以看到，只有<strong>第一米</strong>和<strong>第四米</strong>值了树，也就是说<strong>最后一个满足条件</strong>的数字是<code>4</code></p>
+<p>计算公式为
+<code>(4-1)/3+1</code>=2</p>
+<p>有人可能就要问了，有没有快速找到最后一个满足的值的方法？</p>
+<div id="快速找到结束值" class="anchor"></div>
+<h3 class="relative group">快速找到结束值 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%bf%ab%e9%80%9f%e6%89%be%e5%88%b0%e7%bb%93%e6%9d%9f%e5%80%bc" aria-label="锚点">#</a></span>        
+    
+</h3>
+<p>比如来个复杂一点的例子</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">i</span><span class="o">=</span><span class="mi">50</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span>
+</span></span></code></pre></div><p>比如这个例子，<strong>步长</strong>为<code>-3</code>，<strong>初始值</strong>为<code>50</code>，<strong>判定条件</strong>为<code>i&gt;4</code>，很难一眼看出结束值，那么结束值如何寻找？</p>
+<p>我们可以假设循环了<code>X</code>次刚好出现<strong>最后一个满足条件</strong>的值</p>
+<p>首先，步长是<code>3</code>，也就是说我们假设从<code>i=50</code>开始，一直减少了<code>3</code>，总共减少了<code>3X</code>，最后剩下来的那个数<code>i</code>，刚好满足<code>i&gt;4</code>，而且如果再多一减少一次<code>3(X+1)</code>，就刚好不满足<code>i&gt;4</code>，也就是说<code>i≤4</code>
+列出方程式就是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="mi">50</span><span class="o">-</span><span class="mi">3</span><span class="n">X</span><span class="o">&gt;</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="mi">50</span><span class="o">-</span><span class="mi">3</span><span class="p">(</span><span class="n">X</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="err">≤</span><span class="mi">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#解得</span>
+</span></span><span class="line"><span class="cl"><span class="mf">14.3</span><span class="err">≤</span><span class="n">X</span><span class="o">&lt;</span><span class="mf">15.3</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#X必须为整数</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span><span class="o">=</span><span class="mi">15</span>
+</span></span></code></pre></div><p>也就是说，循环了15下，刚好出现了结束值，结束值就是<code>50-3x15=5</code>
+用这个方法算出的结束值准不会错</p>
+<p>再代入回之前的万能公式<code>循环次数=(结束值-初始值)/步长+1</code>，那么就是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">count</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span><span class="o">/-</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span> <span class="c1">#count=16</span>
+</span></span></code></pre></div><p>当然你也可以直接让<code>循环次数=X+1</code>，因为<code>X</code>刚好是树木的间隔</p>
+<p>⚠️下面的方法是分类讨论，因为还有情况，就是判定条件中&gt;和≥
+如果你觉得列方程比较麻烦，你可以直接拿<code>(条件值-初始值)/步长</code>，得到一个数。</p>
+<ul>
+<li>如果是<strong>整数</strong>，且判定条件中<code>&gt;</code>，刚刚上面我设的<code>X</code>的值=<code>该整数-1</code></li>
+<li>如果是<strong>整数</strong>，且判定条件中<code>≥</code>，刚刚上面我设的<code>X</code>的值=<code>该整数</code></li>
+<li>如果是<strong>小数</strong>，那么整数部分就是刚刚上面我设的<code>X</code>，再计算出结束值一样套入公式即可。</li>
+</ul>
+<div id="为什么要分类讨论是什么原理" class="anchor"></div>
+<h3 class="relative group">为什么要分类讨论，是什么原理? 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e8%a6%81%e5%88%86%e7%b1%bb%e8%ae%a8%e8%ae%ba%e6%98%af%e4%bb%80%e4%b9%88%e5%8e%9f%e7%90%86" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div id="原理" class="anchor"></div>
+<h4 class="relative group">原理 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%8e%9f%e7%90%86" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>首先<strong>条件判断值</strong>和<strong>结束值</strong>一定是相近的，不可能距离超过一个步长。分为两种情况</p>
+<ol>
+<li>结束值与条件判断值<strong>重合</strong></li>
+<li>结束值与条件判断值<strong>偏移一个步长内</strong></li>
+</ol>
+<div id="和区别" class="anchor"></div>
+<h4 class="relative group">&gt;和≥区别 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%92%8c%e5%8c%ba%e5%88%ab" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>当结束值与条件判断值重合时分为条件<code>&gt;</code>和<code>≥</code>区别</p>
+<p>对比一下下面两个问题</p>
+<p>假设现在我从第1米开始植树（<strong>初始值</strong>为<code>1</code>），每隔1米值1棵树（<strong>步长</strong>为<code>1</code>），我要求<strong>不能超过</strong>6米（<strong>条件</strong>为<code>i≤6</code>），那么我一共植了多少颗数（问循环了几次）</p>
+<pre tabindex="0"><code>    T   T   T   T   T   T
+0---1---2---3---4---5---6
+</code></pre><p>假设现在我从第1米开始植树（<strong>初始值</strong>为<code>1</code>），每隔1米值1棵树（<strong>步长</strong>为<code>1</code>），我要求<strong>小于</strong>6米（<strong>条件</strong>为<code>i&lt;6</code>），那么我一共植了多少颗数（问循环了几次）</p>
+<pre tabindex="0"><code>    T   T   T   T   T   X
+0---1---2---3---4---5---6
+</code></pre><p>同样是循环，那么<strong>判定点的条件不一样</strong>可能会导致结束值不一样。
+<strong>因为条件值取不到，所以会少一次循环</strong></p>
+<ul>
+<li>前者的计算<code>X</code>的值<code>(6-1)/1=5</code>，所以循环次数就是<code>6</code></li>
+<li>后者计算<code>X</code>的值<code>(6-1)/1-1=4</code>，所以循环次数就是<code>5</code></li>
+</ul>
+<div id="偏移一个步长内" class="anchor"></div>
+<h4 class="relative group">偏移一个步长内 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e5%81%8f%e7%a7%bb%e4%b8%80%e4%b8%aa%e6%ad%a5%e9%95%bf%e5%86%85" aria-label="锚点">#</a></span>        
+    
+</h4>
+<p>这个就很简单了，直接取整是因为<code>X</code>本质上来说就是循环次数，我们要求的是<strong>满足条件的最后一个数</strong>，所以如果循环出现了小数，说明循环不能够执行完成就能满足条件，那么意味着他执行完循环<strong>必定不满足</strong>条件</p>
+<p>看看例子
+假设现在我从第1米开始植树（<strong>初始值</strong>为<code>1</code>），每隔2米值1棵树（<strong>步长</strong>为<code>2</code>），我要求<strong>不能超过</strong>6米（<strong>条件</strong>为<code>i≤6</code>），那么我一共植了多少颗数（问循环了几次）</p>
+<pre tabindex="0"><code>    T   X   T   X   T   X
+0---1---2---3---4---5---6
+</code></pre><p><code>X</code>的值计算的公式为<code>(6-1)/2=2.5</code>
+这意味着循环2.5次，也就是说在执行第三次的时候，不执行完就能满足<code>i≤6</code>这个值。换句话说如果执行完第三次，那么第三次的值<strong>必定不满足</strong><code>i≤6</code>，所以<code>X</code>取整数部分，循环<code>X</code>次得出来的结果就是<strong>最后一个满足条件</strong>的值</p>
+<div id="结论" class="anchor"></div>
+<h2 class="relative group">结论 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%bb%93%e8%ae%ba" aria-label="锚点">#</a></span>        
+    
+</h2>
+<p><code>(条件值-初始值)/步长</code>，得到一个数与<code>X</code>相关联
+又因为<code>循环次数=X+1</code>，所以</p>
+<ul>
+<li>如果是<strong>整数</strong>，且判定条件中<code>&gt;</code>，<code>循环次数=该整数</code></li>
+<li>如果是<strong>整数</strong>，且判定条件中<code>≥</code>，<code>循环次数=该整数+1</code></li>
+<li>如果是<strong>小数</strong>，`循环次数=该数整数部分+1</li>
+</ul>
+<p>只需要记住第一种情况取不到所以<code>-1+1</code>刚好抵消掉了</p>
+<div id="程序中的循环例子" class="anchor"></div>
+<h2 class="relative group">程序中的循环例子 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e7%a8%8b%e5%ba%8f%e4%b8%ad%e7%9a%84%e5%be%aa%e7%8e%af%e4%be%8b%e5%ad%90" aria-label="锚点">#</a></span>        
+    
+</h2>
+<div id="while循环" class="anchor"></div>
+<h3 class="relative group">while循环 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#while%e5%be%aa%e7%8e%af" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div id="python" class="anchor"></div>
+<h4 class="relative group">Python 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#python" aria-label="锚点">#</a></span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">100</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span>
+</span></span></code></pre></div><ul>
+<li>初始值为<code>1</code></li>
+<li>结束值待求</li>
+<li>步长为<code>2</code></li>
+<li>条件为<code>i≤100</code></li>
+</ul>
+<p>计算<code>(100-1)/2</code>取整<code>+1</code>=50</p>
+<div id="vb" class="anchor"></div>
+<h4 class="relative group">VB 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vb" aria-label="锚点">#</a></span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Integer</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="n">22</span>
+</span></span><span class="line"><span class="cl"><span class="k">Do</span> <span class="k">While</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">2</span>
+</span></span><span class="line"><span class="cl"><span class="k">Loop</span>
+</span></span></code></pre></div><ul>
+<li>初始值为<code>22</code></li>
+<li>结束值待求</li>
+<li>步长为<code>2</code></li>
+<li>条件为<code>i&lt;100</code></li>
+</ul>
+<p>计算<code>(100-22)/2</code>=39</p>
+<div id="for循环" class="anchor"></div>
+<h3 class="relative group">for循环 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#for%e5%be%aa%e7%8e%af" aria-label="锚点">#</a></span>        
+    
+</h3>
+<div id="python-1" class="anchor"></div>
+<h4 class="relative group">Python 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#python-1" aria-label="锚点">#</a></span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span></code></pre></div><p>对于for循环，其实是可以改写为while循环，while循环一眼就能看出条件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+</span></span></code></pre></div><ul>
+<li>初始值为<code>0</code></li>
+<li>结束值待求</li>
+<li>步长为<code>1</code></li>
+<li>条件为<code>i&lt;100</code></li>
+</ul>
+<p>计算<code>(100-0)/1</code>=100</p>
+<div id="vb-1" class="anchor"></div>
+<h4 class="relative group">VB 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vb-1" aria-label="锚点">#</a></span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">For</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span> <span class="k">To</span> <span class="n">100</span> <span class="k">Step</span> <span class="n">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">Next</span>
+</span></span></code></pre></div><p>相当于</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vb" data-lang="vb"><span class="line"><span class="cl"><span class="k">Dim</span> <span class="n">i</span> <span class="ow">As</span> <span class="kt">Integer</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="n">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">Do</span> <span class="k">While</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">2</span>
+</span></span><span class="line"><span class="cl"><span class="k">Loop</span>
+</span></span></code></pre></div><ul>
+<li>初始值为<code>0</code></li>
+<li>结束值待求</li>
+<li>步长为<code>2</code></li>
+<li>条件为<code>i&lt;=100</code></li>
+</ul>
+<p>计算<code>(100-0)/2</code>然后<code>+1</code>=51</p>
 
         </div>
                 
         
-<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
-    <summary
-        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
-        中药学 - This article is part of a series.
-    </summary>
-    
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/">
-            Part 1: 解表药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/">
-            Part 9: 消食药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        Part 10: This Article
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/">
-            Part 11: 止血药
-        </a>
-    </div>
-    
-    
-    
-    <div
-        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-        <a href="https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/">
-            Part 12: 活血化瘀药
-        </a>
-    </div>
-    
-    
-
-</details>
-
 
         
   
@@ -1300,7 +1527,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/&amp;text=%e9%a9%b1%e8%99%ab%e8%8d%af"
+      href="https://twitter.com/intent/tweet/?url=https://ohdmire.github.io/posts/loopcount/&amp;text=%e8%af%a6%e8%a7%a3%e7%a8%8b%e5%ba%8f%e4%b8%ad%e5%be%aa%e7%8e%af%e6%ac%a1%e6%95%b0%e7%9a%84%e5%88%a4%e6%96%ad"
       title="分享到 Twitter"
       aria-label="分享到 Twitter"
       >
@@ -1319,7 +1546,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/&amp;resubmit=true&amp;title=%e9%a9%b1%e8%99%ab%e8%8d%af"
+      href="https://t.me/share/url?url=https://ohdmire.github.io/posts/loopcount/&amp;resubmit=true&amp;title=%e8%af%a6%e8%a7%a3%e7%a8%8b%e5%ba%8f%e4%b8%ad%e5%be%aa%e7%8e%af%e6%ac%a1%e6%95%b0%e7%9a%84%e5%88%a4%e6%96%ad"
       title=""
       aria-label=""
       >
@@ -1338,7 +1565,7 @@
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/&amp;subject=%e9%a9%b1%e8%99%ab%e8%8d%af"
+      href="mailto:?body=https://ohdmire.github.io/posts/loopcount/&amp;subject=%e8%af%a6%e8%a7%a3%e7%a8%8b%e5%ba%8f%e4%b8%ad%e5%be%aa%e7%8e%af%e6%ac%a1%e6%95%b0%e7%9a%84%e5%88%a4%e6%96%ad"
       title="通过电子邮件发送"
       aria-label="通过电子邮件发送"
       >
@@ -1364,11 +1591,11 @@
   
   
 
-  <a href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/" class="min-w-full">
+  <a href="/posts/moonlighttailscale/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/moonlighttailscale/feature_hud0de82cf379824590c33c9094b08516d_298315_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1376,7 +1603,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/">止血药</div>
+          href="/posts/moonlighttailscale/">使用moonlight+tailscale在教室玩电脑</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1417,9 +1644,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-07 00:00:00 &#43;0000 UTC">7 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/中药/11-止血药/index.md" title="views">0</span> 
+    <span id="views_posts/moonlight和tailscale/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1431,7 +1658,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/中药/11-止血药/index.md" title="likes">0</span> 
+    <span id="likes_posts/moonlight和tailscale/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1473,12 +1700,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
   </span>
 </span>
 
@@ -1492,12 +1719,45 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%AD%E8%8D%AF/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/moonlight/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    中药
+    moonlight
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/tailscale/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    tailscale
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%BC%82%E5%9C%B0%E7%BB%84%E7%BD%91/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    异地组网
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%B2%E6%B5%81/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    串流
   </span>
 </span>
 
@@ -1522,11 +1782,11 @@
   
   
 
-  <a href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/" class="min-w-full">
+  <a href="/posts/onlinecourse/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/onlinecourse/feature_hu1a6c5c2294d8cd6b1f50e8889cbc83b5_448328_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1534,7 +1794,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/">活血化瘀药</div>
+          href="/posts/onlinecourse/">大学生生存指南——网课</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1575,9 +1835,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-10-15 00:00:00 &#43;0000 UTC">15 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/中药/12-活血化瘀药/index.md" title="views">0</span> 
+    <span id="views_posts/网课助手/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1589,7 +1849,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/中药/12-活血化瘀药/index.md" title="likes">0</span> 
+    <span id="likes_posts/网课助手/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1631,12 +1891,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
   </span>
 </span>
 
@@ -1650,12 +1910,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%AD%E8%8D%AF/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%A4%A7%E5%AD%A6%E7%94%9F/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    中药
+    大学生
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%BD%91%E8%AF%BE/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    网课
   </span>
 </span>
 
@@ -1680,11 +1951,11 @@
   
   
 
-  <a href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/" class="min-w-full">
+  <a href="/posts/t2s-s2t/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/t2s-s2t/feature_hud6952016226169985b8ba3953ba2dfee_281431_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1692,7 +1963,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/">消食药</div>
+          href="/posts/t2s-s2t/">使用opencc进行简繁转换</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1733,9 +2004,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-09-26 00:00:00 &#43;0000 UTC">26 September 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/中药/9-消食药/index.md" title="views">0</span> 
+    <span id="views_posts/简繁转化/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1747,7 +2018,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/中药/9-消食药/index.md" title="likes">0</span> 
+    <span id="likes_posts/简繁转化/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1789,12 +2060,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%8A%80%E5%B7%A7/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    技巧
   </span>
 </span>
 
@@ -1808,12 +2090,23 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%AD%E8%8D%AF/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    中药
+    简体中文
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    繁体中文
   </span>
 </span>
 
@@ -1838,11 +2131,11 @@
   
   
 
-  <a href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/" class="min-w-full">
+  <a href="/posts/e5/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/e5/feature_hu1bf1e8cecdcdcb6fd57659a53775caab_6019864_600x0_resize_box_3.png);"></div>
         
       
 
@@ -1850,7 +2143,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/">解表药</div>
+          href="/posts/e5/">Microsoft 365 E5开发者使用指南</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -1891,9 +2184,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-06-12 00:00:00 &#43;0000 UTC">12 June 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/中药/1-解表药/index.md" title="views">0</span> 
+    <span id="views_posts/e5/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1905,7 +2198,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/中药/1-解表药/index.md" title="likes">0</span> 
+    <span id="likes_posts/e5/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -1947,12 +2240,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
   </span>
 </span>
 
@@ -1966,12 +2259,45 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%AD%E8%8D%AF/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/e5/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    中药
+    E5
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/onedrive/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    OneDrive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/office365/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Office365
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E5%BE%AE%E8%BD%AF/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    微软
   </span>
 </span>
 
@@ -1996,11 +2322,11 @@
   
   
 
-  <a href="/notes/jquery/" class="min-w-full">
+  <a href="/posts/gamedownload/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
-        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/img/ocean_hu3d03a01dcc18bc5be0e67db3d8d209a6_5097493_600x0_resize_q75_box.jpg);"></div>
+        <div class="w-full thumbnail_card_related nozoom" style="background-image:url(/posts/gamedownload/feature_hu0efe790cc80c5fa11dbef893210319c4_503545_600x0_resize_q75_box.jpg);"></div>
         
       
 
@@ -2008,7 +2334,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/jquery/">jQuery</div>
+          href="/posts/gamedownload/">关于一些外服游戏下载节省流量</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2049,9 +2375,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-11-05 00:00:00 &#43;0000 UTC">5 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-03-21 00:00:00 &#43;0000 UTC">21 March 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/jquery/index.md" title="views">0</span> 
+    <span id="views_posts/游戏下载/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -2063,7 +2389,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/jquery/index.md" title="likes">0</span> 
+    <span id="likes_posts/游戏下载/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -2105,12 +2431,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%95%99%E7%A8%8B/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    教程
   </span>
 </span>
 
@@ -2124,23 +2450,56 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E4%B8%8B%E8%BD%BD/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    JavaScript
+    下载
   </span>
 </span>
 
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/jquery/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/blue-archive/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    jQuery
+    Blue Archive
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/project-sekai/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Project Sekai
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/heaven-burns-red/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Heaven Burns Red
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/clash/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    clash
   </span>
 </span>
 
@@ -2165,7 +2524,7 @@
   
   
 
-  <a href="/notes/javascriptbrowsernote/" class="min-w-full">
+  <a href="/essays/atri%E6%96%87%E7%A8%BF/" class="min-w-full">
     
     <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative backdrop-blur">
         
@@ -2177,7 +2536,7 @@
 
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/notes/javascriptbrowsernote/">JavaScript浏览器笔记</div>
+          href="/essays/atri%E6%96%87%E7%A8%BF/">ATRI视频文稿</div>
         
 
         <div class="text-sm text-neutral-500 dark:text-neutral-400">
@@ -2218,9 +2577,9 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-28 00:00:00 &#43;0000 UTC">28 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2023-11-12 00:00:00 &#43;0000 UTC">12 November 2023</time><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="views_notes/JavaScript浏览器/index.md" title="views">0</span> 
+    <span id="views_essays/atri文稿/index.md" title="views">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -2232,7 +2591,7 @@
 </span>
 </span><span class="px-2 text-primary-500">&middot;</span><span>
     
-    <span id="likes_notes/JavaScript浏览器/index.md" title="likes">0</span> 
+    <span id="likes_essays/atri文稿/index.md" title="likes">0</span> 
     
     <span class="inline-block align-text-bottom">
 
@@ -2274,12 +2633,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E7%AC%94%E8%AE%B0/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E6%96%87%E7%A8%BF/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    笔记
+    文稿
   </span>
 </span>
 
@@ -2293,12 +2652,12 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/javascript/&#34;,'_self');">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/%E6%96%87%E7%A8%BF/&#34;,'_self');">
     <span class="flex">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
   >
-    JavaScript
+    文稿
   </span>
 </span>
 
@@ -2327,8 +2686,8 @@
       </div>
      
      <script>
-        var oid = "views_notes\/中药\/10-驱虫药\/index.md"
-        var oid_likes = "likes_notes\/中药\/10-驱虫药\/index.md"
+        var oid = "views_posts\/关于循环的次数\/index.md"
+        var oid_likes = "likes_posts\/关于循环的次数\/index.md"
       </script>
       
       
@@ -2347,7 +2706,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/">
+            <a class="flex group mr-3" href="/posts/moonlighttailscale/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -2359,11 +2718,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >消食药</span
+                  >使用moonlight+tailscale在教室玩电脑</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time>
+                    <time datetime="2023-11-07 00:00:00 &#43;0000 UTC">7 November 2023</time>
                   
                 </span>
               </span>
@@ -2371,28 +2730,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >解表药</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-11-06 00:00:00 &#43;0000 UTC">6 November 2023</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
