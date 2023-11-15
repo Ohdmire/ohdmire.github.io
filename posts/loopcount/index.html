@@ -1323,8 +1323,8 @@ T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来
 <p>再代入回之前的万能公式<code>循环次数=(结束值-初始值)/步长+1</code>，那么就是</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">count</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span><span class="o">/-</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span> <span class="c1">#count=16</span>
 </span></span></code></pre></div><p>当然你也可以直接让<code>循环次数=X+1</code>，因为<code>X</code>刚好是树木的间隔</p>
-<p>⚠️下面的方法是分类讨论，因为还有情况，就是判定条件中&gt;和≥
-如果你觉得列方程比较麻烦，你可以直接拿<code>(条件值-初始值)/步长</code>，得到一个数。</p>
+<p>⚠️下面的方法是分类讨论，因为还有情况，就是判定条件中<code>&gt;</code>和<code>≥</code></p>
+<p>如果你觉得列方程比较麻烦，你可以直接拿<code>(条件值-初始值)/步长</code>，得到一个数。</p>
 <ul>
 <li>如果是<strong>整数</strong>，且判定条件中<code>&gt;</code>，刚刚上面我设的<code>X</code>的值=<code>该整数-1</code></li>
 <li>如果是<strong>整数</strong>，且判定条件中<code>≥</code>，刚刚上面我设的<code>X</code>的值=<code>该整数</code></li>
