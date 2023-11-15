@@ -1309,7 +1309,7 @@ T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来
 </span></span><span class="line"><span class="cl">    <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">-</span><span class="mi">3</span>
 </span></span></code></pre></div><p>比如这个例子，<strong>步长</strong>为<code>-3</code>，<strong>初始值</strong>为<code>50</code>，<strong>判定条件</strong>为<code>i&gt;4</code>，很难一眼看出结束值，那么结束值如何寻找？</p>
 <p>我们可以假设循环了<code>X</code>次刚好出现<strong>最后一个满足条件</strong>的值</p>
-<p>首先，步长是<code>3</code>，也就是说我们假设从<code>i=50</code>开始，一直减少了<code>3</code>，总共减少了<code>3X</code>，最后剩下来的那个数<code>i</code>，刚好满足<code>i&gt;4</code>，而且如果再多一减少一次<code>3(X+1)</code>，就刚好不满足<code>i&gt;4</code>，也就是说<code>i≤4</code>
+<p>首先，步长是<code>3</code>，也就是说我们假设从<code>i=50</code>开始，一直减少了<code>3</code>，总共减少了<code>3X</code>，最后剩下来的那个数<code>i</code>，刚好满足<code>i&gt;4</code>，而且如果再多减少一次<code>3(X+1)</code>，就刚好不满足<code>i&gt;4</code>，也就是说<code>i≤4</code>
 列出方程式就是</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="mi">50</span><span class="o">-</span><span class="mi">3</span><span class="n">X</span><span class="o">&gt;</span><span class="mi">4</span>
 </span></span><span class="line"><span class="cl"><span class="mi">50</span><span class="o">-</span><span class="mi">3</span><span class="p">(</span><span class="n">X</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="err">≤</span><span class="mi">4</span>
