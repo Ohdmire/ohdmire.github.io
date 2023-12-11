@@ -121,7 +121,7 @@ wiki上也详细讲述了安装教程我就不再多说
     "keywords": ["bitwarden","密码"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1273"
+    "wordCount": "1277"
   }]
   </script>
 
@@ -1385,7 +1385,11 @@ wiki上也详细讲述了安装教程我就不再多说
 </span></span><span class="line"><span class="cl">sudo apt install caddy
 </span></span></code></pre></div><p>安装完成后请新建立一个Caddyfile文件
 编辑为以下内容</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">example.com</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="err">http_port</span> <span class="err">8080</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">example.com</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="err">tls</span> <span class="err">cert.pem</span> <span class="err">key.pem</span>
 </span></span><span class="line"><span class="cl">	<span class="err">reverse_proxy</span> <span class="err">127.0.0.1:80</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>

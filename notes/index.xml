@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2023 Ohdmire</copyright>
-    <lastBuildDate>Mon, 06 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中药考试复习</title>
+      <link>https://ohdmire.github.io/notes/chinesemedicinetest/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/notes/chinesemedicinetest/</guid>
+      <description>中药学 # 发散风热药 # 发散风寒药 # 麻黄 # 发汗解表，宣肺平喘，利水消肿
+紫苏叶 # 解表散寒，行气和胃
+白芷 # 解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓
+细辛 # 解表散寒，祛风止痛，通窍，温肺化饮
+发散风热药 # 、
+蝉蜕 # 疏散风热，利咽开音，透疹，明目退翳，息风止痉
+柴胡 # 疏散退热，疏肝解郁，升举阳气</description>
+      
+    </item>
+    
     <item>
       <title>jQuery</title>
       <link>https://ohdmire.github.io/notes/jquery/</link>
