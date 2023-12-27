@@ -24,7 +24,7 @@ bitwarden的优势在于跨平台，和自建云托管服务器，相比起Chrom
 ssl证书 # 推荐使用acme.sh获取证书
 acme.sh的wiki
 wiki上也详细讲述了安装教程我就不再多说
-推荐使用这条命令来获取域名。其中mydomain2.com 换成已经完成解析的域名</description>
+推荐使用这条命令来获取域名。其中mydomain.com 换成已经完成解析的域名</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/bitwarden/feature.png" />
     </item>
     
