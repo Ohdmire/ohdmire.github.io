@@ -60,28 +60,6 @@
     
   
     
-      <url>
-            <loc>https://ohdmire.github.io/essays/atri%E6%96%87%E7%A8%BF/</loc>
-            <lastmod>2023-11-12T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/essays/</loc>
-            <lastmod>2023-11-12T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -192,6 +170,15 @@
     
       <url>
             <loc>https://ohdmire.github.io/essays/essay/</loc>
+            <lastmod>2023-10-23T00:00:00+00:00</lastmod>
+            <changefreq>always</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://ohdmire.github.io/essays/</loc>
             <lastmod>2023-10-23T00:00:00+00:00</lastmod>
             <changefreq>always</changefreq>
             <priority>0.5</priority>
