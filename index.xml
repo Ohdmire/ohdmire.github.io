@@ -6,7 +6,7 @@
     <description>Recent content on Ohdmire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>© 2023 Ohdmire</copyright>
+    <copyright>© 2024 Ohdmire</copyright>
     <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中药考试复习</title>
@@ -39,7 +39,7 @@
 请你把循环看作是植树问题。
 植树问题 # 假设现在我从第1米开始植树（初始值为1），每隔1米值1棵树（步长为1），我要求不能超过6米（条件为i≤6），那么我一共植了多少颗数（问循环了几次）
 下面的T代表树Tree，X代表这个地方是空的
-T T T T T T 0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6</description>
+T T T T T T0---1---2---3---4---5---6 上面的例子你一眼就可以看出来结束值为6，也就是最后一个满足这个条件的数是6</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/posts/loopcount/feature.png" />
     </item>
     
@@ -403,6 +403,16 @@ E5注册 # 首先最好新注册一个Outlook的邮箱账号 这个账号将作�
       <guid>https://ohdmire.github.io/friends/proxyerium/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/friends/proxyerium/feature.png" />
+    </item>
+    
+    <item>
+      <title>zyuque的博客</title>
+      <link>https://ohdmire.github.io/friends/zyuque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/friends/zyuque/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/friends/zyuque/feature.png" />
     </item>
     
   </channel>
