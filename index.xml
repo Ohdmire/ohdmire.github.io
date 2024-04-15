@@ -7,20 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Ohdmire</copyright>
-    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ohdmire.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>中药考试复习</title>
-      <link>https://ohdmire.github.io/notes/chinesemedicinetest/</link>
-      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <title>’osu!(lazer) Updates April 13, 2024‘</title>
+      <link>https://ohdmire.github.io/osu/osu/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://ohdmire.github.io/notes/chinesemedicinetest/</guid>
-      <description>中药学 # 解表药 # 发散风寒药 # 麻黄 # 发汗解表，宣肺平喘，利水消肿
-紫苏叶 # 解表散寒，行气和胃
-白芷 # 解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓
-细辛 # 解表散寒，祛风止痛，通窍，温肺化饮
-发散风热药 # 蝉蜕 # 疏散风热，利咽开音，透疹，明目退翳，息风止痉
-柴胡 # 疏散退热，疏肝解郁，升举阳气
-清热药 # 清热泻火药 # 石膏 # 生：清热泻火，除烦止渴//煅：收湿，生肌，敛疮，止血</description>
+      <guid>https://ohdmire.github.io/osu/osu/</guid>
+      <description>osu!(lazer) Updates: April 13, 2024 # 警告：看到这条新闻的第一眼你就已经被Laser包围了，这可能导致超级棒的Lazer更新增多！
+新的一月带来了又一轮的更新，您可以通过阅读下文或观看视频摘要来了解。
+较小的变化 # 现在在 osu!taik，osu!catch 和 osu!mania 中暂停后有倒计时。给你一点准备时间，而不是太快地把你扔进战斗。 在 osu!catch 的香蕉雨中不会失败了。catch社区终于可以安心享受香蕉雨了。 旋转工具按钮现在即使只选择了 1 个打击圈也能工作。对于制图社区来说，这是一个小而受欢迎的改变。 支持在歌曲选择中通过多个谱面状态进行搜索这。意味着你可以输入 status=loved,ranked 来获取 Loved 和 Ranked 的地图。查看此 wiki文章以获取所有搜索过滤器的列表。 编辑器性能改善。感谢 EVAST!</description>
+      
+    </item>
+    
+    <item>
+      <title>New Featured Artist: ptar124</title>
+      <link>https://ohdmire.github.io/osu/osu/</link>
+      <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/osu/osu/</guid>
+      <description>osu!taiko veteran ptar124 has gone from digital drumming to&amp;hellip; well, still digital drumming, but with more than just Dons and Kats as our latest Featured Artist!
+ptar124 is a name anyone in the tournament scene should recognise.</description>
       
     </item>
     
@@ -131,53 +138,6 @@ Google Play Store Amazon App Store F-Droid Github APK 准备部分就完成了�
 化瘀止血药 # 三七 # 散瘀止血，消肿定痛
 茜草 # 凉血，祛瘀，止血，通经</description>
       
-    </item>
-    
-    <item>
-      <title>jQuery</title>
-      <link>https://ohdmire.github.io/notes/jquery/</link>
-      <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohdmire.github.io/notes/jquery/</guid>
-      <description> jQuery # </description>
-      
-    </item>
-    
-    <item>
-      <title>JavaScript浏览器笔记</title>
-      <link>https://ohdmire.github.io/notes/javascriptbrowsernote/</link>
-      <pubDate>Sat, 28 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohdmire.github.io/notes/javascriptbrowsernote/</guid>
-      <description>浏览器 # 浏览器对象 # window # window对象不但充当全局作用域，而且表示浏览器窗口
-innerWidth属性 innerHeight属性 navigator # navigator对象表示浏览器的信息，最常用的属性包括：
-navigator.appName：浏览器名称； navigator.appVersion：浏览器版本； navigator.language：浏览器设置的语言； navigator.platform：操作系统类型； navigator.userAgent：浏览器设定的User-Agent字符串。 screen # screen对象表示屏幕的信息，常用的属性有：
-screen.width：屏幕宽度，以像素为单位； screen.height：屏幕高度，以像素为单位； screen.colorDepth：返回颜色位数，如8、16、24。**** location # location对象表示当前页面的URL信息
-http://www.example.com:8080/path/index.html?a=1&amp;amp;b=2#TOP location.protocol; // &amp;#39;http&amp;#39; location.</description>
-      
-    </item>
-    
-    <item>
-      <title>JavaScript笔记</title>
-      <link>https://ohdmire.github.io/notes/javascriptnote/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohdmire.github.io/notes/javascriptnote/</guid>
-      <description>关于 # 文章内容来源于 廖雪峰的官方网站
-数据类型 # Number # 123; // 整数123 0.456; // 浮点数0.456 1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5 -99; // 负数 NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示 Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity 字符串 # 转义字符\ 多行字符串`` 字符串运算 # x=a+b; //类似于Python中的format let name=&amp;#39;123&amp;#39;; x=`xxx,${name}`; 字符串操作 # //字符串会转换为Array var s = &amp;#39;Hello, world!</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/notes/javascriptnote/feature.png" />
-    </item>
-    
-    <item>
-      <title>【临时】随笔</title>
-      <link>https://ohdmire.github.io/essays/essay/</link>
-      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ohdmire.github.io/essays/essay/</guid>
-      <description>没有分类的主题，大概会先以#为一个主题吧
-界限 # 从原始时代开始，细胞通过细胞膜将自身与外界隔离开来，控制物质的进出。而发展到人类这个宏观的大个体，我们依然拥有着将自身与外界隔离开的器官：皮肤。
-人的思想意识也是如此。为什么我们依赖感觉器官接收信息加工后传入大脑而不是直接让大脑接收信息？这个世界上的信息非常之庞大，直接让大脑置身于环境之中大脑很难生存。所以人类为了保护自我，或者说是维持自我意识，选择了将大脑封闭起来，让感受器去接收部分的信息。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/essays/essay/feature.jpg" />
     </item>
     
     <item>
