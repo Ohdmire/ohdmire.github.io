@@ -1,411 +1,198 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/</loc>
-            <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/osu/osu/</loc>
-            <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/osu/</loc>
-            <lastmod>2024-04-13T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/osu/osu/</loc>
-            <lastmod>2024-03-31T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/</loc>
-            <lastmod>2023-11-14T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/loopcount/</loc>
-            <lastmod>2023-11-14T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/moonlighttailscale/</loc>
-            <lastmod>2023-11-07T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/</loc>
-            <lastmod>2023-11-06T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/</loc>
-            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/westernphilosophy0/</loc>
-            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/westernphilosophy1/</loc>
-            <lastmod>2023-10-19T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/onlinecourse/</loc>
-            <lastmod>2023-10-15T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/t2s-s2t/</loc>
-            <lastmod>2023-09-26T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/bitwarden/</loc>
-            <lastmod>2023-09-23T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/e5/</loc>
-            <lastmod>2023-06-12T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/zerotier/</loc>
-            <lastmod>2023-04-26T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/gamedownload/</loc>
-            <lastmod>2023-03-21T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/xm5/</loc>
-            <lastmod>2023-01-17T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/onepresskill/</loc>
-            <lastmod>2023-01-07T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/superpaste/</loc>
-            <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/pytranscriber/</loc>
-            <lastmod>2022-12-01T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/posts/website/</loc>
-            <lastmod>2022-11-24T00:00:00+00:00</lastmod>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/doing/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/friends/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/friends/proxyerium/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/friends/zyuque/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/about/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-      <url>
-            <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/</loc>
-            <changefreq>always</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
+
+  <url>
+    <loc>https://ohdmire.github.io/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/osu/osu/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/osu/</loc>
+    <lastmod>2024-04-13T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/osu/osu/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/loopcount/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/moonlighttailscale/</loc>
+    <lastmod>2023-11-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine12/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine1/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine10/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine9/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/chinesemedicine11/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E4%B8%AD%E8%8D%AF/</loc>
+    <lastmod>2023-11-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/westernphilosophy0/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/notes/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8D%81%E4%BA%94%E8%AE%B2/westernphilosophy1/</loc>
+    <lastmod>2023-10-19T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/onlinecourse/</loc>
+    <lastmod>2023-10-15T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/t2s-s2t/</loc>
+    <lastmod>2023-09-26T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/bitwarden/</loc>
+    <lastmod>2023-09-23T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/e5/</loc>
+    <lastmod>2023-06-12T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/zerotier/</loc>
+    <lastmod>2023-04-26T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/gamedownload/</loc>
+    <lastmod>2023-03-21T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/xm5/</loc>
+    <lastmod>2023-01-17T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/onepresskill/</loc>
+    <lastmod>2023-01-07T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/superpaste/</loc>
+    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/pytranscriber/</loc>
+    <lastmod>2022-12-01T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/posts/website/</loc>
+    <lastmod>2022-11-24T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/%E6%A8%A1%E6%9D%BF/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/doing/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/friends/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/about/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ohdmire.github.io/%E6%A8%A1%E6%9D%BF/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
