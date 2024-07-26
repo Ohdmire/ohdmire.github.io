@@ -32,5 +32,24 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ohdmire.github.io/osu/osu-update-2024.4.13/feature.jpg" />
     </item>
     
+    <item>
+      <title></title>
+      <link>https://ohdmire.github.io/osu/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ohdmire.github.io/osu/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
+      <description>介绍每日挑战 # 一种全新的游玩方式！
+应各位的需求，osu! 会借鉴其他游戏的功能。来看看下面的视频中， pishifat 与 peppy 一起解释正在发生的事情，也可以继续阅读大致了解一下。
+多亏 上个视频评论区中你们 3000 多人的支持，每日挑战现已上线！
+这些是每天推出的特色谱面，可以在主菜单的“游玩”部分找到。每个人都可以实时对战
+我们每天都会推一张新图，难度渐进，每周一回到最低难度。
+在通过每日谱面后，结果就会计入个人资料的“每日挑战”总数（每天结束时更新）。
+你可以在 osu!(lazer) 客户端中找到每日挑战， 在这里下载 lazer 吧。目前只有 osu! 模式支持此功能。
+如果这个功能激起了社区积极参与的兴趣，我们就会将其发扬壮大。也就是说，开发者们会接受社区的反馈，所以请不要犹豫，向我们讲讲你的想法与意见吧。
+游戏里见！
+—Walavouchey</description>
+      
+    </item>
+    
   </channel>
 </rss>
